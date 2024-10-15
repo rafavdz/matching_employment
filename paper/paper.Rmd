@@ -66,11 +66,7 @@ Location-based accessibility measures are valuable for assessing the benefits en
 2. How does the evaluation of PT infrastructure differs when accounting for matching employment opportunities in accessibility measures?
 3. What are the social equity implications of the above?
 
-This paper contributes to literature by:
-
-* Examining the implications of relaxing the assumption that all employment opportunities are equally attractive to all the population in accessibility measures drawing on an empirical case for a ten-year period.
-* Examining the role of the MAUP in these effects.
-* Reports the findings of GMC, an understudied mega-city, by identifying and digitally reconstructing in a common format (general transit feed specification, GTFS) a series of temporal stages of the MPTN in GMC for a ten-year period (2009-2019).
+This paper contributes to literature by examining the implications of relaxing the assumption that all employment opportunities are equally attractive to all the population in accessibility measures drawing on an empirical case for a ten-year period. It also investigates how this specifications interact with the MAUP. Additionally, it presents findings for GMC, an understudied mega-city, by identifying and digitally reconstructing in a common format (general transit feed specification, GTFS) a series of temporal stages of the MPTN in GMC for the same ten-year period from 2009 to 2019.
 
 # Literature review
 
@@ -78,9 +74,10 @@ This paper contributes to literature by:
 
 @Levinson2020 assert that accessibility measures "the ease of reaching valued destinations" (p. 130). This notion combines two basic elements, namely the ease of travel and the spatial dispersion of opportunities reflected in land use patterns, including services and other people, for example. Furthermore, this definition limits opportunities to those which are deemed valuable. Thus, the *for whom* question becomes relevant. In line with this discussion, @Theriault2013 provides a more explicit definition of accessibility, regarding it as “the ability that persons living in that area can, within an acceptable travel time, reach a satisfactory diversity of activity locations that are important to them” (p. 234).
 
-The operationalisation of accessibility has been represented in a variety of forms in literature. The most common groupings are infrastructure-based, person-based, place- or location-based, and utility-based measures [@Geurs2004]. Place-based ones are frequently used in literature. This has been related to their consistency with a conceptual definition, flexibility, and ease of interpretation, which increase their potential impact on transport policy. These measures characterise the space according to constrains or enablers of mobility in conjunction with land use patters by discretising a region, e.g in spatial units or zones. In consistency with the practical application of the concept, and their ability to recognise the distinctive characteristics of space, including the long-term transport infrastructure, such as rapid- and semi-rapid transport project, this review focuses on location-based measures. In addition, it has been argued that these types of measures can also be regarded as person-based given the possibility to incorporate people's preferences or abilities [@Paez2012].
+The operationalisation of accessibility has taken various forms in the literature. The most common are infrastructure-based, person-based, place-based, and utility-based measures [@Geurs2004]. Place-based measures are frequently used due to their consistency with conceptual definitions, flexibility, and ease of interpretation, enhancing their impact on transport policy. These measures characterise space based on mobility constraints or enablers, combined with land use patterns, by dividing regions into spatial units or zones. This review focuses on location-based measures due to their relevance in policy discussions and their ability to account for people's abilities and preferences [@Paez2012].
 
-## Accessibility measures
+
+## Accessibility measures and empirical application
 
 Location-based measures consist of the sum of the product of two functions, namely $g(\cdot)$ and $f(\cdot)$, as shown in Equation \ref{eq:location-based1} [@Paez2012]:
 
@@ -104,41 +101,43 @@ In Equation \ref{eq:access-employment-general}, households and opportunities are
 
 Location-based measures can consider some of these distinctive elements. For instance, Equation \ref{eq:location-based1} refers to the following components: (1) individual’s profiles; (2) how different profiles perceive or experience the space, and; (3) constraints that may prevent segments of the population to access some type of activities. Some of these aspects have been found to be relevant in empirical studies. For instance, gender in @Osland2010a or age and gender in @Theriault2013 in the study of the property prices.
 
-The operationalization of measures accounting for employment preferences or restrictions can vary. In empirical studies, these characteristics can be expressed as type of person $m$ at $j$ and type of employment $m$ at $k$ [@Pereira2019; @Shen1998; @Pan2020]. Accordingly, only employment opportunities $E$ matching the profile of residents between $j$ and $k$ are considered in the accessibility measure. Thus, this reflects the notion that residents would find attractive only employment opportunities that match their skills and education level with corresponding employment opportunities. 
+The operationalization of measures accounting for employment preferences or restrictions can vary. In empirical studies, these characteristics can be expressed as type of person $m$ at $j$ and type of employment $m$ at $k$ [@Pereira2019; @Shen1998; @Pan2020]. Accordingly, only employment opportunities $E$ matching the profile of residents between $j$ and $k$ are considered in the accessibility measure. This reflects the notion that residents would find attractive only employment opportunities that match their skills and education level. 
 
 In @Pereira2019, an accessibility measure recognizing such characteristics is implemented as a *proxy* match by distinguishing the upper and lower halves of residents' income and education requirements in employment opportunities. Specifically, the lower half is matched only with employment opportunities requiring secondary or primary education, while the upper half considers those requiring higher or secondary education. Although the aim of this study is the identification of potential inequalities in transport policy and not the explicit discussion of this measure, the authors report no substantial difference in their conclusions when disregarding the match in accessibility measures.
 
-@Levinson2020 suggest to weight employment in each category with the number of eligible workers within each corresponding segment. This perspective thus considers two aspects discussed in employment mismatch literature, competition for employment opportunities and labour segmentation. @Bian2020 refers to these aspects as a numerical (objective) imbalance and an expectation imbalance (subjective), respectively. 
+@Levinson2020 suggest to weight employment in each category with the number of eligible workers within each corresponding segment. This perspective thus considers two aspects discussed in employment mismatch literature, competition for employment opportunities and labour segmentation. @Bian2020 refers to these aspects as a numerical (objective) imbalance and an expectation imbalance (subjective), respectively.
 
-An empirical application of this type can be found in in @Pan2020. This study characterise employment opportunities according to the number of white- and blue-collar jobs at potential destinations, on the resident's side, it considers the number of unemployed population to reflect job seekers and categorized these according to their level of education, i.e. *associate’s degree or above* and *high school degree or lower*. Based on this information, white-collar jobs are deemed to be available to job seekers holding an associate’s degree or above and blue-collar one to the less educated group.
+An empirical application which explores both numerical and expectation imbalance can be found in @Pan2020. To compute accessibility measures in Houston, the study categorises employment opportunities by the number of white- and blue-collar jobs at potential destinations. On the residents' side, it considers unemployed individuals as job seekers, categorising them by education level: *associate’s degree or above* and *high school degree or lower*. White-collar jobs are relevant only to job seekers with an associate’s degree or higher, while blue-collar jobs are relevant to the less educated group. The measures also account for different transport modes, i.e. automobile, drive to transit, and walk to transit. Results show that accessibility is concentrated in core areas, declining slowly for drivers and much more sharply for transit users. The study concludes that automobile are even more essential for low-educated groups since blue-collar jobs are more dispersed across the city than white-collar jobs. The study concludes low-educated groups are more dependent of car since blue-collar jobs are more dispersed across the city than white-collar jobs.
 
-
-
+The study in @Pan2020 follows a 'descriptive' rather than a 'prescriptive' approach [@Paez2012]. This limits its use in transport policy evaluation, as it characterises multiple residents within the same location rather than providing a single measure for a determined zone. Additionally, it does not address the differences or implications of using education and employment matching compared to accessibility measures that disregard these distinctions.
 
 ### The modifiable aereal problem unit in accessibility measures
 
-Given that location-based measures tend to characterise the space in discrete units, they suffer from the MAUP.
+Another aspect of location-based measures is that these tend to characterise the space in discrete units. Thus, these often suffer from the MAUP. The MAUP literature distinguishes two main types of issues, namely *scale* effects and *zoning* effects [@Wong2009a]. Scale effects refer to the variability in spatial analysis results depending on the spatial resolution used. Zoning effects, on the other hand, arise from the spatial configuration of areas while maintaining the same number of zones in an area of study. Unless location-based accessibility is calculated at the individual level, it will likely be affected by these issues. Therefore, this is a main consideration for most location-based applications.
 
-<!-- XXX reported that Y-Z. -->
-<!-- However, there are no reports examining the interactions with refinements of accessibility measures, e.g. the consideration of matching opportunities. -->
+Considerable effort has been made to understand the effects and structural patterns of the MAUP. The clearest effects are observed in simple univariate statistics. It has been noted that while mean values remain fairly constant across scales, variance tends to decline as spatial resolution decreases, with a narrower range at lower resolutions [@Dark2007; @Wong2009]. However, this structure tends to dissipate in multivariate regression analyses [@Fotheringham1991]. Zoning effects, on the other hand, are less predictable and are influenced by factors such as spatial autocorrelation and aggregation methods, e.g. mean, sum, median [@Wong2009]. Zoning effects are minimal in cases of random spatial patterns, but results are highly sensitive to zoning when strong positive spatial autocorrelation exists [@Lee2019].
 
-## Evaluation of public transport
+Accessibility studies often use a single unit of analysis. Thus, literature is limited in the role of MAUP in location-accessibility [@Stepniak2015]. An empirical study in Poland examined three gravity-type accessibility measures at different spatial scales. The findings showed that larger units, such as municipalities, produced smoother estimates compared to disaggregated grid-based inputs, consistent with MAUP literature [@Wong2009]. Additionally, differences in self-potential estimates were attributed to the gravity measures' components (e.g., transport and land use) rather than the estimation process itself. Further work has suggested that errors arise from aggregating travel times within zones (intra-zone) and between zones (inter-zone) [@Stepniak2017]. A comparison with disaggregated travel times suggests that using population-weighted centroids provides more accurate results than geometric centroids or areal-based methods @Stepniak2015. @Pereira2019a investigated the equity effects of transport infrastructure in Rio de Janeiro, Brazil, taking MAUP into account. The study employed three analyses that utilised two hexagonal grids and traffic zones. The findings indicate that while the direction of the relationship between accessibility increments and residents' income remained stable, there were significant differences in the magnitude and significance of this association across different spatial aggregations.
 
-Location-based accessibility measures have been used to evaluate the performance of public transport systems in policy report and research [@Ermagun2021; @Liu2022; @Conway2018; @Malekzadeh2020; @Palmateer2021]. A measure based on realistic travel times can reflect important elements of a public transport system. This is because travel time by public transport is affected by several aspects of the system, such as:
+Although there are recent relevant contributions of MAUP and accessibility, there are no reports examining the interactions with refinements of accessibility measures, e.g. the consideration of matching opportunities.
 
-* The topology of the network, e.g. connectivity, centrality.
-* Capacity of the infrastructure, e.g. degree of right of way segregation, capacity and design of stations.
-* Spatial coverage, e.g. availability of infrastructure and catchment areas.
-* Operational characteristics, e.g. frequency of services, overlapping routes, express services, transfer wait times.
+## Equity evaluation of transport in transport infrastructure
 
-Despite the growing relevance of accessibility measures in the evaluation of public transport infrastructure, knowledge of the implications of overlooking matching employment are limited in literature.
+Transport equity concerns the adequate allocation of transport resources among different population groups and places [@Lucas2019]. This issue can be framed within the context of social justice, which is often defined as the "morally proper distribution of benefits and burdens among members of a society" [@Lucas2019, p. 7]. This definition captures the essence of transport equity by incorporating three key elements (ibid): 1) the resource being distributed, such as mobility or accessibility; 2) the social attributes of society's members; and 3) the moral principles used to assess whether a given allocation is fair or equitable [@Martens2019].
 
+The 'equity standard', implicit in the third point, is major topic of debate in literature. The typical questions involve, for example, should everyone receive the same amount of the good or carry the same burden, should populations in most need receive the most, etc. Karner at al. [-@Karner2024] discuss two main moral philosophies addressing these questions, namely the egalitarian and the sufficientarian. The former addresses the systematic exclusion or reduction of opportunities for neglected populations. The latter is about ensuring that minimal resources are allocated in a way that allows people to meet essential needs.
+
+Location-based accessibility measures have been used as a key benefit being distributed in the evaluate the performance of public transport infrastructure in policy reports and research [@Ermagun2021; @Liu2022; @Conway2018; @Malekzadeh2020; @Palmateer2021]. One motivation is because the use of realistic travel times can reflect important elements of a public transport system, such as the topology of the network, spatial network, and operation characteristics.
+
+In line with its philosophical and moral perspective, the operationalisation of the accessibility poverty notion requires the definition of a sufficiency threshold. Accessibility poverty draws inspiration from income poverty literature and adopts an analogous poverty line [@Martens2019a]. For analytical purposes, studies often utilise a percentile of the number of accessible opportunities. For example, @Karner2024 employs the population-weighted median of job accessibility in the Washington metropolitan area. Similarly, @Martens2019a introduces a combined index that incorporates the percentile of employment accessible by car alongside income deprivation, indicating that an individual or group is considered to be in accessibility poverty if they face both low public transport accessibility and income deprivation. This approach is founded on the understanding that marginalised populations rely on public transport, and low-income households may either be unable to afford the costs associated with maintaining a car or find it undesirable to do so.
+
+Despite the growing relevance of accessibility measures in the evaluation of public transport infrastructure, knowledge of the implications of overlooking matching employment are limited in literature. In this study, we aim to examine the implications of the use of a matching accessibility measure accounting for the MAUP, and its role in transport infrastructure equity evaluation. We cover 10-year period on a empirical study which includes a range of transport projects.
 
 # Methods
 
 ## Accessibility measures examined
 
-The general accessibility measure, also referred to as 'All' in the Results section, is computed with the following equation:
+For this study, a general accessibility measure, also referred to as 'All', is computed with the following equation:
 
 \begin{equation}
   A^{All}_{jt} = \sum^J_{j=1} E_k f(c_{jkt})
@@ -396,7 +395,7 @@ where, $c^{PT}_{jkt}$ is the modelled travel time from $j$ to $k$ at the MPTN te
 
 ### Accessibility indicators
 
-To focus on the key spatial differences between generic and matching accessibility measures and the role of the MAUP, the first section of the analysis summarises the level of MPTN accessibility over the period of study as following:
+To focus on the key spatial differences between generic and matching accessibility measures and the role of the MAUP, the first section of the analysis summarises the level accessibility over the period of study as following:
 
 \begin{equation} 
   A^{All}_{j} = \text{median}(A^{All}_{jt}) \text{ for } t= 1,2,..,7,
