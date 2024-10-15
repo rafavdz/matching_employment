@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  7 OCT 2024 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  14 OCT 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,71 +694,71 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 15
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[2{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[2{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 
-[3]
-<figures/metro_map.png, id=165, 505.89pt x 505.89pt>
-File: figures/metro_map.png Graphic file (type png)
-<use figures/metro_map.png>
-Package pdftex.def Info: figures/metro_map.png  used on input line 332.
-(pdftex.def)             Requested size: 422.77661pt x 422.7833pt.
+[3{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
 
 
 [4]
+<figures/metro_map.png, id=174, 505.89pt x 505.89pt>
+File: figures/metro_map.png Graphic file (type png)
+<use figures/metro_map.png>
+Package pdftex.def Info: figures/metro_map.png  used on input line 367.
+(pdftex.def)             Requested size: 422.77661pt x 422.7833pt.
 
-[5
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[5]
+
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.352 
+l.399 
        <./figures/metro_map.png>]
-<figures/evo_transit_network.png, id=188, 578.16pt x 361.35pt>
+<figures/evo_transit_network.png, id=191, 578.16pt x 361.35pt>
 File: figures/evo_transit_network.png Graphic file (type png)
 <use figures/evo_transit_network.png>
-Package pdftex.def Info: figures/evo_transit_network.png  used on input line 409.
+Package pdftex.def Info: figures/evo_transit_network.png  used on input line 444.
 (pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
-
-Underfull \vbox (badness 2302) has occurred while \output is active []
-
-
-
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.429 
-      ]
-LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 443.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 443.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.64996> on input line 443.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.75> on input line 443.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 [7
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.472 
+      ]
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 478.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.5> on input line 478.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.64996> on input line 478.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.75> on input line 478.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.462 \subsection
-                 {Data}\label{data}
+l.506 T
+       he count data included were transferred to the SAS using the
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.462 \subsection
-                 {Data}\label{data} <./figures/evo_transit_network.png>]
-Underfull \vbox (badness 1701) has occurred while \output is active []
-
-
-
-[8]
+l.506 T
+       he count data included were transferred to the SAS using the <./figures/evo_transit_network.png>]
 
 [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
 
 
@@ -766,141 +766,156 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
 
-[12
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13]
+
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.730 \begin{landscape}
+l.849 \begin{landscape}
                        ]
-<../output/plots_maps/exploratory/access_map_grid.png, id=236, 794.97pt x 563.706pt>
+<../output/plots_maps/exploratory/access_map_grid.png, id=253, 794.97pt x 563.706pt>
 File: ../output/plots_maps/exploratory/access_map_grid.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/access_map_grid.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/access_map_grid.png  used on input line 734.
+Package pdftex.def Info: ../output/plots_maps/exploratory/access_map_grid.png  used on input line 853.
 (pdftex.def)             Requested size: 657.65411pt x 466.35341pt.
 
-Overfull \hbox (7.22412pt too wide) in paragraph at lines 734--735
+Overfull \hbox (7.22412pt too wide) in paragraph at lines 853--854
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 37.74841pt on input line 738.
+LaTeX Warning: Float too large for page by 37.74841pt on input line 857.
 
 
 
-[13
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.740 \end{landscape}
+l.859 \end{landscape}
                       <../output/plots_maps/exploratory/access_map_grid.png>]
-<../output/plots_maps/exploratory/lisa_diff_map.png, id=246, 578.16pt x 433.62pt>
+<../output/plots_maps/exploratory/lisa_diff_map.png, id=262, 578.16pt x 433.62pt>
 File: ../output/plots_maps/exploratory/lisa_diff_map.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/lisa_diff_map.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_diff_map.png  used on input line 813.
+Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_diff_map.png  used on input line 932.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 
-[14
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.829 
+l.949 
       
 
 
 ]
-<../output/plots_maps/exploratory/lisa_composition_plot.png, id=254, 578.16pt x 361.35pt>
+<../output/plots_maps/exploratory/lisa_composition_plot.png, id=270, 578.16pt x 361.35pt>
 File: ../output/plots_maps/exploratory/lisa_composition_plot.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/lisa_composition_plot.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_composition_plot.png  used on input line 845.
+Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_composition_plot.png  used on input line 965.
 (pdftex.def)             Requested size: 399.2946pt x 249.55783pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[15
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.849 \end{figure}
+l.969 \end{figure}
                    <../output/plots_maps/exploratory/lisa_diff_map.png>]
-<../output/plots_maps/exploratory/plot_longitudinal_relative_500.png, id=261, 433.62pt x 289.08pt>
+<../output/plots_maps/exploratory/plot_longitudinal_relative_500.png, id=277, 433.62pt x 289.08pt>
 File: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png  used on input line 880.
+Package pdftex.def Info: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png  used on input line 999.
 (pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
 
-
-[16
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.894 
-       <../output/plots_maps/exploratory/lisa_composition_plot.png>]
-<../output/plots_maps/exploratory/equity_overtime.png, id=269, 433.62pt x 289.08pt>
-File: ../output/plots_maps/exploratory/equity_overtime.png Graphic file (type png)
-<use ../output/plots_maps/exploratory/equity_overtime.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/equity_overtime.png  used on input line 906.
-(pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[17
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.933 
-       <../output/plots_maps/exploratory/plot_longitudinal_relative_500.png>]
-Underfull \vbox (badness 1137) has occurred while \output is active []
+Underfull \vbox (badness 4366) has occurred while \output is active []
 
 
 
 [18
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.960 
-       <../output/plots_maps/exploratory/equity_overtime.png>]
-<../output/plots_maps/exploratory/equity_barplot.png, id=283, 578.16pt x 361.35pt>
-File: ../output/plots_maps/exploratory/equity_barplot.png Graphic file (type png)
-<use ../output/plots_maps/exploratory/equity_barplot.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/equity_barplot.png  used on input line 963.
-(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
+l.1013 
+        <../output/plots_maps/exploratory/lisa_composition_plot.png>]
+<../output/plots_maps/exploratory/equity_overtime.png, id=285, 433.62pt x 289.08pt>
+File: ../output/plots_maps/exploratory/equity_overtime.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/equity_overtime.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/equity_overtime.png  used on input line 1025.
+(pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1052 
+        <../output/plots_maps/exploratory/plot_longitudinal_relative_500.png>]
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1079 
+        <../output/plots_maps/exploratory/equity_overtime.png>]
+<../output/plots_maps/exploratory/equity_barplot.png, id=301, 578.16pt x 361.35pt>
+File: ../output/plots_maps/exploratory/equity_barplot.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/equity_barplot.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/equity_barplot.png  used on input line 1082.
+(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
+
+
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.993 
-       <../output/plots_maps/exploratory/equity_barplot.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[21]
+l.1113 
+        <../output/plots_maps/exploratory/equity_barplot.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1436) has occurred while \output is active []
 
 
 
 [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[26]
 No file paper.bbl.
 
 
-[24] (./paper.aux)
+[27] (./paper.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -909,24 +924,21 @@ L3 programming layer <2024-07-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 5E2CDAB3C6C0900C56D17CA3AA84B84B;5420.
+(rerunfilecheck)             Checksum: 574507B7EA834AD324C9B85BCA07E173;5827.
  ) 
 Here is how much of TeX's memory you used:
- 15146 strings out of 475539
- 243204 string characters out of 5776837
+ 15177 strings out of 475539
+ 243831 string characters out of 5776837
  1948957 words of memory out of 5000000
- 37162 multiletter control sequences out of 15000+600000
- 660703 words of font info for 212 fonts, out of 8000000 for 9000
+ 37176 multiletter control sequences out of 15000+600000
+ 657833 words of font info for 211 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,15n,79p,1002b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
-</Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on paper.pdf (24 pages, 7791240 bytes).
+</Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on paper.pdf (27 pages, 7786622 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 424 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 500000)
- 54545 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 52505 words of extra memory for PDF output out of 61914 (max. 10000000)
 
