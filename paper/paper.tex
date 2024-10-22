@@ -41,35 +41,29 @@ matching in spatial accessibility measures}
 
 
 % Pandoc citation processing
-%From Pandoc 3.1.8
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
   \fi
   % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
 \usepackage{calc}
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
@@ -103,13 +97,33 @@ matching in spatial accessibility measures}
 
 
 \begin{abstract}
-The definition of accessibility emphasises the role of the
+The definition of accessibility encompasses the role of the
 attractiveness of opportunities at potential destinations that people
 consider valuable. This study revises the common assumption in empirical
 studies that residents are equally attracted to all types of employment
-and examines its implications for public transport evaluation.
-Additionally, the role of the modifiable areal unit problem (MAUP) is
-also explored in this relationship.
+and examines its implications for public transport evaluation from a
+social equity perspective. Additionally, the role of the modifiable
+areal unit problem (MAUP) is also explored in this relationship. The
+study draws on the case of Greater Mexico City over a ten-year period,
+in which seven temporal stages of the main public transport network are
+examined. The key results highlight a significant difference between
+accessibility measures that account for employment matching and those
+that do not, though these distinctions diminish when lower spatial
+resolutions are used. The spatial analysis also shows that the
+differences are consistently larger for lower-educated populations. In
+terms of public transport infrastructure evaluation over time, the study
+confirms that relying on simple measures, such as the global average,
+may overlook critical transport equity insights. Additionally, the
+impact of including employment matching in equity analyses varies, with
+outcomes differing case by case. Depending on the accessibility measure,
+the analyses show that a transport improvement might have progressive
+effects with one measure, while another measure may indicate regressive
+effects, or both measures can sometimes align. Overall, the comparisons
+between measures suggest their complementarity in equity evaluations.
+The findings have implications for policy analysts, given the systematic
+differences in how transport projects tend to affect less-educated
+populations and the heterogeneity in the type of population impacted by
+specific transport projects on a case-by-case basis.
 \end{abstract}
 
 \keywords{
@@ -122,13 +136,14 @@ also explored in this relationship.
     Modifiable areal unit problem (MAUP)
   }
 
-\section{Introduction}\label{introduction}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 A key function of a transport system is to provide people with access to
 different locations at different times so that they can physically
 participate in a diverse range of activities (Miller 2018).
 Accessibility therefore has an important role to play in transport
-planning, and various measures have been proposed (see K. Geurs and Wee
+planning, and various measures have been proposed (see Geurs and van Wee
 (2023) for a summary). Location-based measures, which measure the level
 of accessibility to a particular type of activity available at a
 location, have been especially popular. They have been used to study the
@@ -191,8 +206,9 @@ study. Our findings are presented in Section \ref{sec:findings} and then
 discussed in Section \ref{sec:discussion}. Lastly, some concluding
 remarks are offered in Section \ref{sec:conclusions}.
 
+\hypertarget{literature-review}{%
 \section{\texorpdfstring{Literature review
-\label{sec:lit_review}}{Literature review }}\label{literature-review}
+\label{sec:lit_review}}{Literature review }}\label{literature-review}}
 
 Levinson and Wu (2020) assert that accessibility measures ``the ease of
 reaching valued destinations'' (p.~130). This notion combines two basic
@@ -209,7 +225,7 @@ them'' (p.~234).
 
 The operationalisation of accessibility has taken various forms in the
 literature. The most common are infrastructure-based, person-based,
-place-based, and utility-based measures (K. T. Geurs and van Wee 2004).
+place-based, and utility-based measures (Geurs and van Wee 2004).
 Place-based measures are frequently used due to their consistency with
 conceptual definitions, flexibility, and ease of interpretation,
 enhancing their impact on transport policy. These measures characterise
@@ -219,8 +235,9 @@ focuses on location-based measures due to their relevance in policy
 discussions and their ability to account for people's abilities and
 preferences (Páez, Scott, and Morency 2012).
 
+\hypertarget{accessibility-measures-and-empirical-application}{%
 \subsection{Accessibility measures and empirical
-application}\label{accessibility-measures-and-empirical-application}
+application}\label{accessibility-measures-and-empirical-application}}
 
 Location-based measures consist of the sum of the product of two
 functions, namely \(g(\cdot)\) and \(f(\cdot)\), as shown in Equation
@@ -254,12 +271,12 @@ opportunities are implicitly assumed to be homogeneous, i.e., all types
 of employment are equally attractive for all types of residents (Houston
 2005; Shen 1998). However, contributions from theory highlight the
 characteristics of the demand (residents at origins) and supply at
-potential destinations (K. T. Geurs and van Wee 2004; Levinson and Wu
-2020). Specifically, Levinson and Wu state that ``different job
-categories represent different economic activities, and different types
-of jobs generally require different skills and education levels'' (2020,
-147). This distinction is supported by Human Capital Theory from labour
-market studies (Schultz 1961; Becker 1994).
+potential destinations (Geurs and van Wee 2004; Levinson and Wu 2020).
+Specifically, Levinson and Wu state that ``different job categories
+represent different economic activities, and different types of jobs
+generally require different skills and education levels'' (2020, 147).
+This distinction is supported by Human Capital Theory from labour market
+studies (Schultz 1961; Becker 1994).
 
 Location-based measures can consider some of these distinctive elements.
 For instance, Equation \ref{eq:location-based1} refers to the following
@@ -327,8 +344,9 @@ measure for a particular zone. Additionally, it does not address the
 differences or implications of using education and employment matching
 compared to accessibility measures that disregard these distinctions.
 
+\hypertarget{the-modifiable-areal-unit-problem-in-accessibility-measures}{%
 \subsubsection{The modifiable areal unit problem in accessibility
-measures}\label{the-modifiable-areal-unit-problem-in-accessibility-measures}
+measures}\label{the-modifiable-areal-unit-problem-in-accessibility-measures}}
 
 Location-based measures tend to characterise space in discrete units.
 Thus, these often suffer from the MAUP. The MAUP literature
@@ -384,8 +402,9 @@ and location-based accessibility measures, there are no studies
 examining the interactions with refined of accessibility measures, e.g.,
 measures considering matching opportunities.
 
+\hypertarget{equity-evaluation-of-transport-in-transport-infrastructure}{%
 \subsection{Equity evaluation of transport in transport
-infrastructure}\label{equity-evaluation-of-transport-in-transport-infrastructure}
+infrastructure}\label{equity-evaluation-of-transport-in-transport-infrastructure}}
 
 Transport equity concerns the adequate allocation of transport resources
 among different population groups and places (Lucas et al. 2019). This
@@ -445,11 +464,13 @@ role in transport infrastructure equity evaluation. We cover a 10-year
 period on a empirical study which includes a range of transport
 projects.
 
+\hypertarget{methods}{%
 \section{\texorpdfstring{Methods
-\label{sec:methods}}{Methods }}\label{methods}
+\label{sec:methods}}{Methods }}\label{methods}}
 
+\hypertarget{accessibility-measures-examined}{%
 \subsection{Accessibility measures
-examined}\label{accessibility-measures-examined}
+examined}\label{accessibility-measures-examined}}
 
 For this study, a general accessibility measure, also referred to as
 `All', is computed with the following equation:
@@ -490,7 +511,8 @@ is to avoid the assumption implying that some zones have accessibility
 values equal to 0. The specific data sources and procedures are detailed
 in the next sub-sections.
 
-\subsection{Study area}\label{study-area}
+\hypertarget{study-area}{%
+\subsection{Study area}\label{study-area}}
 
 Greater Mexico City (GMC) (\emph{Zona Metropolitana del Valle de
 México}) is located in the south-centre of Mexico. In 2015, GMC had
@@ -510,8 +532,9 @@ and it is home to 17\% of the national population.
   \label{fig:metro-map}
 \end{figure}
 
+\hypertarget{the-main-public-transport-network-mptn}{%
 \subsubsection{The main public transport network
-(MPTN)}\label{the-main-public-transport-network-mptn}
+(MPTN)}\label{the-main-public-transport-network-mptn}}
 
 The focus of this work is \emph{rapid transit} and \emph{semi-rapid
 transit} infrastructure, excluding specialized modes i.e., \emph{aerial
@@ -587,8 +610,9 @@ The MPTN stages and corresponding corresponding corridors are in Figure
   \label{fig:evolution-network}
 \end{figure}
 
+\hypertarget{spatial-analytical-framework}{%
 \subsubsection{Spatial analytical
-framework}\label{spatial-analytical-framework}
+framework}\label{spatial-analytical-framework}}
 
 Various spatial analytical schemes (SAS) are considered to address the
 research questions related to the MAUP. The area of study is
@@ -635,9 +659,11 @@ language (R Core Team 2021) following previous work (Pereira 2018). Post
 code polygons are sourced from the Mexican Post Office (\emph{Correos de
 México}) `Version 5'.
 
-\subsection{Data}\label{data}
+\hypertarget{data}{%
+\subsection{Data}\label{data}}
 
-\subsubsection{Demographic}\label{demographic}
+\hypertarget{demographic}{%
+\subsubsection{Demographic}\label{demographic}}
 
 The demographic comes from the 2010 Population Census (INEGI 2012).
 These data were selected for their detailed disaggregation at the city
@@ -651,7 +677,8 @@ areas. The average education level was assigned using the
 \emph{population weighting method}. In addition, this takes into
 consideration the number of inhabitants and their type.
 
-\subsubsection{Employment}\label{employment}
+\hypertarget{employment}{%
+\subsubsection{Employment}\label{employment}}
 
 Employment data are sourced from the 2014 Economic Census (\emph{Censos
 Económicos 2014}) (INEGI 2015b) and accessed at the city block level via
@@ -673,8 +700,9 @@ weighting method (Saporito et al. 2007).
 The average income was computed for each areal unit based on the total
 number of employment positions and the total gross remuneration paid.
 
+\hypertarget{public-transport-timetables}{%
 \subsubsection{Public transport
-timetables}\label{public-transport-timetables}
+timetables}\label{public-transport-timetables}}
 
 The estimated travel time used in the accessibility measures is based on
 scheduled public transport services. The Transport Authority in Mexico
@@ -707,8 +735,9 @@ reflect 2013 levels due to the unavailability of earlier data. All
 non-MPTN services were excluded, thereby focusing exclusively on the
 benefits of the MPTN.
 
+\hypertarget{road-network-and-pedestrian-infrastructure}{%
 \subsubsection{Road network and pedestrian
-infrastructure}\label{road-network-and-pedestrian-infrastructure}
+infrastructure}\label{road-network-and-pedestrian-infrastructure}}
 
 The road and pedestrian infrastructure network is sourced from
 \emph{OpenStreetMap} (OSM) (Manually downloaded on 30th October 2019
@@ -717,10 +746,12 @@ through a web export tool available in
 journeys to realistically represent the access/egress stage to a public
 transport service when combining walking and public transport.
 
+\hypertarget{mptn-travel-times-and-impedance-parameters}{%
 \subsection{MPTN travel times and impedance
-parameters}\label{mptn-travel-times-and-impedance-parameters}
+parameters}\label{mptn-travel-times-and-impedance-parameters}}
 
-\subsubsection{Modeled travel time}\label{modeled-travel-time}
+\hypertarget{modeled-travel-time}{%
+\subsubsection{Modeled travel time}\label{modeled-travel-time}}
 
 Travel time matrices were calculated for each origin-destination (OD)
 pair across each SAS using a combination of walking and public transport
@@ -748,8 +779,9 @@ Spence 1995; Stepniak and Rosik 2015). The metric distance was
 transformed to travel time using the average speed modelled for short
 journeys (less than 3 km).
 
+\hypertarget{spatial-decay-function-and-calibration-of-accessibility-parameters}{%
 \subsubsection{Spatial decay function and calibration of accessibility
-parameters}\label{spatial-decay-function-and-calibration-of-accessibility-parameters}
+parameters}\label{spatial-decay-function-and-calibration-of-accessibility-parameters}}
 
 The spatial decay function and parameters for the accessibility measures
 were determined using estimates from a trip distribution model,
@@ -827,9 +859,12 @@ where, \(c^{PT}_{jkt}\) is the modelled travel time from \(j\) to \(k\)
 at the MPTN temporal stage \(t\). The optimized parameters used are
 \(\beta = 0.031\) and \(\mu = 1.662\).
 
-\subsection{Analytical framework}\label{analytical-framework}
+\hypertarget{analytical-framework}{%
+\subsection{Analytical framework}\label{analytical-framework}}
 
-\subsubsection{Accessibility indicators}\label{accessibility-indicators}
+\hypertarget{accessibility-indicators}{%
+\subsubsection{Accessibility
+indicators}\label{accessibility-indicators}}
 
 To focus on the key spatial differences between generic and matching
 accessibility measures and the role of the MAUP, the first section of
@@ -859,8 +894,9 @@ as following:
 This ranges between 0 and 1, where values near to 0 indicate low
 similarity and 1 a high similarity rate.
 
+\hypertarget{accessibility-equity-measures}{%
 \subsubsection{Accessibility equity
-measures}\label{accessibility-equity-measures}
+measures}\label{accessibility-equity-measures}}
 
 For the transport equity evaluation of infrastructure projects, the
 prevalence of accessibility shortfalls measure is adopted from Martens
@@ -891,8 +927,9 @@ i.e., All or Matching. Accessibility by car is estimated using Equation
 estimated travel time by car. This approach draws on Martens and
 Bastiaanssen (2019).
 
+\hypertarget{indicators-of-spatial-association}{%
 \subsubsection{Indicators of spatial
-association}\label{indicators-of-spatial-association}
+association}\label{indicators-of-spatial-association}}
 
 Two spatial statistics techniques are used to measure the spatial
 difference between the All and Matching measures. The first, the Global
@@ -926,10 +963,12 @@ We compute a map of p-values that represent the probability of exceeding
 the observed values under the null hypothesis, allowing for the
 identification of significant clusters.
 
+\hypertarget{findings}{%
 \section{\texorpdfstring{Findings
-\label{sec:findings}}{Findings }}\label{findings}
+\label{sec:findings}}{Findings }}\label{findings}}
 
-\subsection{Spatial analysis}\label{spatial-analysis}
+\hypertarget{spatial-analysis}{%
+\subsection{Spatial analysis}\label{spatial-analysis}}
 
 Table \ref{tab:sas-summary} summarises descriptive statistics for both
 accessibility measures across various SASs. The mean values for the
@@ -1053,8 +1092,9 @@ as the scale increases. For example, the difference is 0.08 points in
 the smallest grid but only 0.03 points in the 4 km grid. Postcode
 boundaries, however, show the largest gap, of nearly 0.2 points.
 
+\hypertarget{general-versus-matching-accessibility-and-equity-implications}{%
 \subsubsection{General versus matching accessibility and equity
-implications}\label{general-versus-matching-accessibility-and-equity-implications}
+implications}\label{general-versus-matching-accessibility-and-equity-implications}}
 
 In the next step of the analysis, the accessibility measures are
 directly compared using a similarity rate, where values close to 0
@@ -1117,8 +1157,9 @@ the previous paragraph, where peripheral zones tend display high
 similarity rates. At the same time, these are areas tend to be populated
 by low-educated groups, particularly to the North and North-East.
 
+\hypertarget{main-public-transport-network-assessment}{%
 \subsection{Main public transport network
-assessment}\label{main-public-transport-network-assessment}
+assessment}\label{main-public-transport-network-assessment}}
 
 In this section, the focus shifts from spatial variations to temporal
 changes, aiming to capture the effects of public transport network
@@ -1140,7 +1181,6 @@ stages show minor average increases.
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/plot_longitudinal_relative_500.png}
   \caption{Relative change of accessibility population weighted mean over various temporal stages.}
-  <!-- \footnotesize{...} -->
   \label{fig:relative-change}
 \end{figure}
 
@@ -1166,7 +1206,6 @@ thresholds can be observed. This is in the direction expected.
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/equity_overtime.png}
   \caption{Equity analysis over various temporal stages. S = Stage.}
-  <!-- \footnotesize{...} -->
   \label{fig:headcount-lineplot}
 \end{figure}
 
@@ -1223,7 +1262,6 @@ areas with higher education levels are considered beneficiaries.
   \centering
   \includegraphics[width=0.95\textwidth]{../output/plots_maps/exploratory/equity_barplot.png}
   \caption{Equity analysis by education level over various temporal stages.}
-  <!-- \footnotesize{...} -->
   \label{fig:equity-barplot}
 \end{figure}
 
@@ -1234,8 +1272,9 @@ the third and fifth quintiles, a pattern consistent across all
 thresholds. As noted, no significant population was taken out of the
 minimal accessibility thresholds in Stages 6 and 7.
 
+\hypertarget{discussion}{%
 \section{\texorpdfstring{Discussion
-\label{sec:discussion}}{Discussion }}\label{discussion}
+\label{sec:discussion}}{Discussion }}\label{discussion}}
 
 The results examining the spatial differences between generic and
 matching accessibility measures showed important interactions with the
@@ -1318,8 +1357,9 @@ characteristics of the population simultaneously. Thus, it is
 recommended to use both measures to form comprehensive insights into the
 impact of transport infrastructure on a case-based basis.
 
+\hypertarget{limitations-and-future-work}{%
 \subsection{Limitations and future
-work}\label{limitations-and-future-work}
+work}\label{limitations-and-future-work}}
 
 The present study comes with the following limitations. Specifically,
 the analyses assume that all populations within zones share similar
@@ -1350,8 +1390,9 @@ patterns.
 
 \FloatBarrier
 
+\hypertarget{conclusions}{%
 \section{\texorpdfstring{Conclusions
-\label{sec:conclusions}}{Conclusions }}\label{conclusions}
+\label{sec:conclusions}}{Conclusions }}\label{conclusions}}
 
 The present study relaxed a common assumption of accessibility analysis
 that access to employment is equally attractive to all types of
@@ -1378,292 +1419,293 @@ play complementary roles.
 
 \FloatBarrier
 
-\section*{References}\label{references}
+\hypertarget{references}{%
+\section*{References}\label{references}}
 \addcontentsline{toc}{section}{References}
 
-\phantomsection\label{refs}
+\hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-Ahlfeldt2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Ahlfeldt2013}{}}%
 Ahlfeldt, Gabriel M. 2013. {``If We Build It, Will They Pay? Predicting
 Property Price Effects of Transport Innovations.''} \emph{Environment
 and Planning A} 45 (8): 1977--94. \url{https://doi.org/10.1068/a4549}.
 
-\bibitem[\citeproctext]{ref-Becker1994}
+\leavevmode\vadjust pre{\hypertarget{ref-Becker1994}{}}%
 Becker, Gary S. 1994. \emph{Human {Capital}: {A Theoretical} and
 {Empirical Analysis} with {Special Reference} to {Education}}. 3rd ed.
 Chicago: The University of Chicago Press.
 
-\bibitem[\citeproctext]{ref-Bian2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Bian2020}{}}%
 Bian, Xinyi. 2020. {``Employment Mismatch from a Distributive Justice
 Perspective.''} \emph{European Journal of Training and Development} 44
 (8/9): 829--45. \url{https://doi.org/10.1108/EJTD-01-2020-0012}.
 
-\bibitem[\citeproctext]{ref-R-spdep}
+\leavevmode\vadjust pre{\hypertarget{ref-R-spdep}{}}%
 Bivand, Roger. 2021. \emph{Spdep: {Spatial} Dependence: {Weighting}
 Schemes, Statistics}. Manual.
 
-\bibitem[\citeproctext]{ref-Conway2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Conway2018}{}}%
 Conway, Matthew Wigginton, Andrew Byrd, and Michael Van Eggermond. 2018.
 {``Accounting for Uncertainty and Variation in Accessibility Metrics for
 Public Transport Sketch Planning.''} \emph{Journal of Transport and Land
 Use} 11 (1). \url{https://doi.org/10.5198/jtlu.2018.1074}.
 
-\bibitem[\citeproctext]{ref-Dark2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Dark2007}{}}%
 Dark, Shawna J., and Danielle Bram. 2007. {``The Modifiable Areal Unit
 Problem ({MAUP}) in Physical Geography.''} \emph{Progress in Physical
 Geography: Earth and Environment} 31 (5): 471--79.
 \url{https://doi.org/10.1177/0309133307083294}.
 
-\bibitem[\citeproctext]{ref-Duranton2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Duranton2015}{}}%
 Duranton, Gilles, and Diego Puga. 2015. {``Urban {Land Use}.''} In
 \emph{Handbook of {Regional} and {Urban Economics}}, edited by Gilles
 Duranton, J. Vernon Henderson, and William C. Strange, 5:467--560.
 Handbook of {Regional} and {Urban Economics}. Elsevier.
 \url{https://doi.org/10.1016/B978-0-444-59517-1.00008-8}.
 
-\bibitem[\citeproctext]{ref-Ermagun2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Ermagun2021}{}}%
 Ermagun, Alireza. 2021. {``Transit Access and Urban Space-Time Structure
 of {American} Cities.''} \emph{Journal of Transport Geography} 93 (May).
 \url{https://doi.org/10.1016/j.jtrangeo.2021.103066}.
 
-\bibitem[\citeproctext]{ref-Fotheringham1991}
+\leavevmode\vadjust pre{\hypertarget{ref-Fotheringham1991}{}}%
 Fotheringham, A Stewart, and David W S Wong. 1991. {``The Modifiable
 Areal Unit Problem in Multivariate Statistical Analysis.''}
 \emph{Environment \& Planning A} 23 (7): 1025--44.
 \url{https://doi.org/10.1068/a231025}.
 
-\bibitem[\citeproctext]{ref-Frost1995}
+\leavevmode\vadjust pre{\hypertarget{ref-Frost1995}{}}%
 Frost, M. E., and N. A. Spence. 1995. {``The Rediscovery of
 Accessibility and Economic Potential: The Critical Issue of
 Self-Potential.''} \emph{Environment \& Planning A} 27 (11): 1833--48.
 \url{https://doi.org/10.1068/a271833}.
 
-\bibitem[\citeproctext]{ref-Geurs2004}
+\leavevmode\vadjust pre{\hypertarget{ref-Geurs2004}{}}%
 Geurs, Karst T., and Bert van Wee. 2004. {``Accessibility Evaluation of
 Land-Use and Transport Strategies: {Review} and Research Directions.''}
 \emph{Journal of Transport Geography} 12 (2): 127--40.
 \url{https://doi.org/10.1016/j.jtrangeo.2003.10.005}.
 
-\bibitem[\citeproctext]{ref-geurs2023accessibility}
-Geurs, Karst, and Bert van Wee. 2023. {``Accessibility: Perspectives,
-Measures and Applications.''} In \emph{The Transport System and
-Transport Policy: An Introduction}, 178--99. Edward Elgar.
+\leavevmode\vadjust pre{\hypertarget{ref-geurs2023accessibility}{}}%
+---------. 2023. {``Accessibility: Perspectives, Measures and
+Applications.''} In \emph{The Transport System and Transport Policy: An
+Introduction}, 178--99. Edward Elgar.
 
-\bibitem[\citeproctext]{ref-Gibbons2005}
+\leavevmode\vadjust pre{\hypertarget{ref-Gibbons2005}{}}%
 Gibbons, Stephen, and Stephen Machin. 2005. {``Valuing Rail Access Using
 Transport Innovations.''} \emph{Journal of Urban Economics} 57 (1):
 148--69. \url{https://doi.org/10.1016/j.jue.2004.10.002}.
 
-\bibitem[\citeproctext]{ref-Guerra2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Guerra2015}{}}%
 Guerra, Erick. 2015. {``The Geography of Car Ownership in {Mexico City}:
 A Joint Model of Households' Residential Location and Car Ownership
 Decisions.''} \emph{Journal of Transport Geography} 43 (February):
 171--80. \url{https://doi.org/10.1016/j.jtrangeo.2015.01.014}.
 
-\bibitem[\citeproctext]{ref-Handy1997}
+\leavevmode\vadjust pre{\hypertarget{ref-Handy1997}{}}%
 Handy, Susan L, and Deb A Niemeier. 1997. {``Measuring Accessibility: An
 Exploration of Issues and Alternatives.''} \emph{Environment and
 Planning A} 29 (7): 1175--94. \url{https://doi.org/10.1068/a291175}.
 
-\bibitem[\citeproctext]{ref-Houston2005}
+\leavevmode\vadjust pre{\hypertarget{ref-Houston2005}{}}%
 Houston, Donald S. 2005. {``Methods to {Test} the {Spatial Mismatch
 Hypothesis}.''} \emph{Economic Geography} 81 (4): 407--34.
 \url{https://doi.org/10.1111/j.1944-8287.2005.tb00281.x}.
 
-\bibitem[\citeproctext]{ref-INEGI2012}
+\leavevmode\vadjust pre{\hypertarget{ref-INEGI2012}{}}%
 INEGI. 2012. {``Sistema Para La {Consulta} de {Informaci{ó}n Censal}
 ({SCINCE}).''} \emph{Instituto Nacional de Estad{í}stica y Geograf{í}a}.
 https://www.inegi.org.mx/app/descarga/?ti=13\&ag=01.
 
-\bibitem[\citeproctext]{ref-INEGI2015a}
+\leavevmode\vadjust pre{\hypertarget{ref-INEGI2015a}{}}%
 ---------. 2015a. {``Censos {Econ{ó}micos} 2014.''} Instituto Nacional
 de Estad{í}stica y Geograf{í}a.
 
-\bibitem[\citeproctext]{ref-INEGI2015}
+\leavevmode\vadjust pre{\hypertarget{ref-INEGI2015}{}}%
 ---------. 2015b. {``Encuesta {Intercensal} 2015.''}
 https://www.inegi.org.mx/programas/intercensal/2015/.
 
-\bibitem[\citeproctext]{ref-INEGI2018}
+\leavevmode\vadjust pre{\hypertarget{ref-INEGI2018}{}}%
 ---------. 2018. {``Encuesta {Origen Destino} En {Hogares} de La {Zona
 Metropolitana} Del {Valle} de {M{é}xico} ({EOD}) 2017.''}
 
-\bibitem[\citeproctext]{ref-johnson2017econometric}
+\leavevmode\vadjust pre{\hypertarget{ref-johnson2017econometric}{}}%
 Johnson, Daniel, Marco Ercolani, and Peter Mackie. 2017. {``Econometric
 Analysis of the Link Between Public Transport Accessibility and
 Employment.''} \emph{Transport Policy} 60: 1--9.
 
-\bibitem[\citeproctext]{ref-Karner2024}
+\leavevmode\vadjust pre{\hypertarget{ref-Karner2024}{}}%
 Karner, Alex, Rafael H. M. Pereira, and Steven Farber. 2024. {``Advances
 and Pitfalls in Measuring Transportation Equity.''}
 \emph{Transportation}, January.
 \url{https://doi.org/10.1007/s11116-023-10460-7}.
 
-\bibitem[\citeproctext]{ref-Lee2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Lee2019}{}}%
 Lee, Sang-Il, Monghyeon Lee, Yongwan Chun, and Daniel A. Griffith. 2019.
 {``Uncertainty in the Effects of the Modifiable Areal Unit Problem Under
 Different Levels of Spatial Autocorrelation: A Simulation Study.''}
 \emph{International Journal of Geographical Information Science} 33 (6):
 1135--54. \url{https://doi.org/10.1080/13658816.2018.1542699}.
 
-\bibitem[\citeproctext]{ref-Letouze2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Letouze2022}{}}%
 Letouzé, Emmanuel, Zinnya del Villar, Rodrigo Lara Molina, Berenice
 Fernandez Nieto, Guillermo Romero, Julie Ricard, Diego Vazquez, and
 Laura Arely Centeno Maya. 2022. {``Parallel {Worlds}: {Revealing} the
 {Inequity} of {Access} to {Urban Spaces} in {Mexico City Through
 Mobility Data}.''} \emph{Projections} 16 (June).
 
-\bibitem[\citeproctext]{ref-Levinson2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Levinson2020}{}}%
 Levinson, David M, and Hao Wu. 2020. {``Towards a General Theory of
 Access.''} \emph{Journal of Transport and Land Use} 13 (1): 129--58.
 \url{https://doi.org/10.5198/jtlu.2020.1660}.
 
-\bibitem[\citeproctext]{ref-Liu2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Liu2022}{}}%
 Liu, Luyu, Adam Porr, and Harvey J. Miller. 2022. {``Realizable
 Accessibility: Evaluating the Reliability of Public Transit
 Accessibility Using High-Resolution Real-Time Data.''} \emph{Journal of
 Geographical Systems}, May.
 \url{https://doi.org/10.1007/s10109-022-00382-w}.
 
-\bibitem[\citeproctext]{ref-Lucas2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Lucas2019}{}}%
 Lucas, Karen, Karel Martens, Floridea Di Ciommo, and Ariane
 Dupont-Kieffer. 2019. {``Introduction.''} In \emph{Measuring {Transport
 Equity}}, edited by Karen Lucas, Karel Martens, Floridea Di Ciommo, and
 Ariane Dupont-Kieffer, 3--12. Elsevier.
 \url{https://doi.org/10.1016/B978-0-12-814818-1.00001-9}.
 
-\bibitem[\citeproctext]{ref-Malekzadeh2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Malekzadeh2020}{}}%
 Malekzadeh, Ali, and Edward Chung. 2020. {``A Review of Transit
 Accessibility Models: {Challenges} in Developing Transit Accessibility
 Models.''} \emph{International Journal of Sustainable Transportation} 14
 (10): 733--48. \url{https://doi.org/10.1080/15568318.2019.1625087}.
 
-\bibitem[\citeproctext]{ref-Martens2019a}
+\leavevmode\vadjust pre{\hypertarget{ref-Martens2019a}{}}%
 Martens, Karel, and Jeroen Bastiaanssen. 2019. {``An Index to Measure
 Accessibility Poverty Risk.''} In \emph{Measuring {Transport Equity}},
 edited by Karen Lucas, Karel Martens, Floridea Di Ciommo, and Ariane
 Dupont-Kieffer, 39--55. Elsevier.
 \url{https://doi.org/10.1016/B978-0-12-814818-1.00003-2}.
 
-\bibitem[\citeproctext]{ref-Martens2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Martens2019}{}}%
 Martens, Karel, Jeroen Bastiaanssen, and Karen Lucas. 2019. {``Measuring
 Transport Equity: {Key} Components, Framings and Metrics.''} In
 \emph{Measuring {Transport Equity}}, 13--36. Elsevier.
 \url{https://doi.org/10.1016/B978-0-12-814818-1.00002-0}.
 
-\bibitem[\citeproctext]{ref-Merlin2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Merlin2017}{}}%
 Merlin, Louis A. 2017. {``A Portrait of Accessibility Change for Four
 {US} Metropolitan Areas.''} \emph{Journal of Transport and Land Use} 10
 (1). \url{https://doi.org/10.5198/jtlu.2015.808}.
 
-\bibitem[\citeproctext]{ref-miller2018accessibility}
+\leavevmode\vadjust pre{\hypertarget{ref-miller2018accessibility}{}}%
 Miller, Eric J. 2018. {``Accessibility: Measurement and Application in
 Transportation Planning.''} \emph{Transport Reviews} 38 (5): 551--55.
 
-\bibitem[\citeproctext]{ref-Moraga2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Moraga2023}{}}%
 Moraga, Paula. 2023. \emph{Spatial {Statistics} for {Data Science}:
 {Theory} and {Practice} with {R}}. Chapman \& Hall/CRC Data Science
 Series.
 
-\bibitem[\citeproctext]{ref-Nunez2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Nunez2017}{}}%
 Nuñez, Hector M., Dusan Paredes, and Rafael Garduño-Rivera. 2017. {``Is
 Crime in {Mexico} a Disamenity? {Evidence} from a Hedonic Valuation
 Approach.''} \emph{Annals of Regional Science} 59 (1): 171--87.
 \url{https://doi.org/10.1007/s00168-017-0823-8}.
 
-\bibitem[\citeproctext]{ref-Ortega-Avila2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Ortega-Avila2023}{}}%
 Ortega-Avila, Ana G. 2023. {``Spatial {Patterns} and {Health-Based
 Characterization} of the {Retail Food Environment} in {Mexico City}.''}
 \emph{Applied Spatial Analysis and Policy} 16 (4): 1683--1705.
 \url{https://doi.org/10.1007/s12061-023-09521-2}.
 
-\bibitem[\citeproctext]{ref-Osland2010a}
+\leavevmode\vadjust pre{\hypertarget{ref-Osland2010a}{}}%
 Osland, Liv. 2010. {``Spatial Variation in Job Accessibility and Gender:
 {An} Intraregional Analysis Using Hedonic House-Price Estimation.''}
 \emph{Environment and Planning A} 42 (9): 2220--37.
 \url{https://doi.org/10.1068/a42422}.
 
-\bibitem[\citeproctext]{ref-osland2008effects}
+\leavevmode\vadjust pre{\hypertarget{ref-osland2008effects}{}}%
 Osland, Liv, and Inge Thorsen. 2008. {``Effects on Housing Prices of
 Urban Attraction and Labor-Market Accessibility.''} \emph{Environment
 and Planning A} 40 (10): 2490--2509.
 
-\bibitem[\citeproctext]{ref-Paez2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Paez2012}{}}%
 Páez, Antonio, Darren M. Scott, and Catherine Morency. 2012.
 {``Measuring Accessibility: {Positive} and Normative Implementations of
 Various Accessibility Indicators.''} \emph{Journal of Transport
 Geography} 25: 141--53.
 \url{https://doi.org/10.1016/j.jtrangeo.2012.03.016}.
 
-\bibitem[\citeproctext]{ref-Palmateer2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Palmateer2021}{}}%
 Palmateer, Chelsey, Andrew Owen, David M Levinson, and Alireza Ermagun.
 2021. {``The {Role} of {Transit Service Area Definition} for
 {Access-based Evaluation}.''} In \emph{Applications of {Access}}.
 Sidney: The University of Sidney.
 
-\bibitem[\citeproctext]{ref-Pan2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Pan2020}{}}%
 Pan, Qisheng, Zhonghua Jin, and Xuejun Liu. 2020. {``Measuring the
 Effects of Job Competition and Matching on Employment Accessibility.''}
 \emph{Transportation Research Part D: Transport and Environment} 87
 (October): 102535. \url{https://doi.org/10.1016/j.trd.2020.102535}.
 
-\bibitem[\citeproctext]{ref-Pereira2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Pereira2018}{}}%
 Pereira, Rafael H M. 2018. {``Distributive {Justice} and {Transportation
 Equity}: {Inequality} in Accessibility in {Rio} de {Janeiro}.''} PhD
 thesis.
 
-\bibitem[\citeproctext]{ref-Pereira2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Pereira2019}{}}%
 Pereira, Rafael H M, David Banister, Tim Schwanen, and Nate Wessel.
 2019. {``Distributional Effects of Transport Policies on Inequalities in
 Access to Opportunities in {Rio} de {Janeiro}.''} \emph{Journal of
 Transport and Land Use} 12 (1 SE -).
 \url{https://doi.org/10.5198/jtlu.2019.1523}.
 
-\bibitem[\citeproctext]{ref-Pereira2019a}
+\leavevmode\vadjust pre{\hypertarget{ref-Pereira2019a}{}}%
 Pereira, Rafael H M, Laurent Grégoire, and Alex Karner. 2019.
 {``Tutorial with Reproducible Example to Estimate a Travel Time Matrix
 Using {OpenTripPlanner} and {Python}.''}
 \url{https://doi.org/10.5281/zenodo.3242134}.
 
-\bibitem[\citeproctext]{ref-R-base}
+\leavevmode\vadjust pre{\hypertarget{ref-R-base}{}}%
 R Core Team. 2021. \emph{R: {A} Language and Environment for Statistical
 Computing}. Manual. Vienna, Austria: R Foundation for Statistical
 Computing.
 
-\bibitem[\citeproctext]{ref-Rojas2000}
+\leavevmode\vadjust pre{\hypertarget{ref-Rojas2000}{}}%
 Rojas, Mariano, Humberto Angulo, and Irene Velázquez. 2000.
 {``Rentabilidad de La Inversi{ó}n En Capital Humano En {M{é}xico}.''}
 \emph{Econom{í}a Mexicana. Nueva {É}poca} IX (2): 113--42.
 
-\bibitem[\citeproctext]{ref-Saporito2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Saporito2007}{}}%
 Saporito, Salvatore, Jana M Chavers, Laura C Nixon, and Megan R
 McQuiddy. 2007. {``From Here to There: {Methods} of Allocating Data
 Between Census Geography and Socially Meaningful Areas.''} \emph{Social
 Science Research} 36 (3): 897--920.
 \url{https://doi.org/10.1016/j.ssresearch.2006.05.004}.
 
-\bibitem[\citeproctext]{ref-R-r5r}
+\leavevmode\vadjust pre{\hypertarget{ref-R-r5r}{}}%
 Saraiva, Marcus, Rafael H. M. Pereira, Daniel Herszenhut, Carlos Kaue
 Vieira Braga, and Matthew Wigginton Conway. 2021. \emph{R5r: {Rapid}
 Realistic Routing with {R5}}. Manual.
 
-\bibitem[\citeproctext]{ref-Schultz1961}
+\leavevmode\vadjust pre{\hypertarget{ref-Schultz1961}{}}%
 Schultz, Theodore W. 1961. {``Investment in {Human Capital}.''}
 \emph{The American Economic Review} 51 (1): 1--17.
 \url{https://www.jstor.org/stable/1818907}.
 
-\bibitem[\citeproctext]{ref-Shen1998}
+\leavevmode\vadjust pre{\hypertarget{ref-Shen1998}{}}%
 Shen, Q. 1998. {``Location Characteristics of Inner-City Neighborhoods
 and Employment Accessibility of Low-Wage Workers.''} \emph{Environment
 and Planning B: Planning and Design} 25 (3): 345--65.
 \url{https://doi.org/10.1068/b250345}.
 
-\bibitem[\citeproctext]{ref-Stepniak2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Stepniak2017}{}}%
 Stepniak, Marcin, and Chris Jacobs-Crisioni. 2017. {``Reducing the
 Uncertainty Induced by Spatial Aggregation in Accessibility and Spatial
 Interaction Applications.''} \emph{Journal of Transport Geography} 61
 (April): 17--29. \url{https://doi.org/10.1016/j.jtrangeo.2017.04.001}.
 
-\bibitem[\citeproctext]{ref-Stepniak2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Stepniak2015}{}}%
 Stepniak, Marcin, and Piotr Rosik. 2015. {``The {Impact} of {Data
 Aggregation} on {Potential Accessibility Values}.''} In
 \emph{Geoinformatics for {Intelligent Transportation}}, edited by Igor
@@ -1671,7 +1713,7 @@ Ivan, Itzhak Benenson, Bin Jiang, Jiří Horák, James Haworth, and Tomáš
 Inspektor, 227--40. Cham: Springer International Publishing.
 \url{https://doi.org/10.1007/978-3-319-11463-7_16}.
 
-\bibitem[\citeproctext]{ref-Theriault2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Theriault2013}{}}%
 Thériault, Marius, Marion Voisin, and François Des Rosiers. 2013.
 {``Accessibility of {Urban Services}: {Modeling Socio}-Spatial
 {Differences} and Their {Impacts} on {Residential Values}.''} In
@@ -1679,37 +1721,37 @@ Thériault, Marius, Marion Voisin, and François Des Rosiers. 2013.
 Estate Value}}, edited by Marius Thériault and François Des Rosiers,
 225--54. London: ISTE Ltd adn John Wiley \& Sons, Inc.
 
-\bibitem[\citeproctext]{ref-Thorsen1998}
+\leavevmode\vadjust pre{\hypertarget{ref-Thorsen1998}{}}%
 Thorsen, Inge, and Jens Petter Gitlesen. 1998. {``Empirical Evaluation
 of Alternative Model Specifications to Predict Commuting Flows.''}
 \emph{Journal of Regional Science} 38 (2): 273--92.
 \url{https://doi.org/10.1111/1467-9787.00092}.
 
-\bibitem[\citeproctext]{ref-tiznado2021public}
+\leavevmode\vadjust pre{\hypertarget{ref-tiznado2021public}{}}%
 Tiznado-Aitken, Ignacio, Juan Carlos Muñoz, and Ricardo Hurtubia. 2021.
 {``Public Transport Accessibility Accounting for Level of Service and
 Competition for Urban Opportunities: An Equity Analysis for Education in
 Santiago de Chile.''} \emph{Journal of Transport Geography} 90: 102919.
 
-\bibitem[\citeproctext]{ref-Walker2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Walker2021}{}}%
 Walker, Jeffery T. 2021. {``Ecological {Fallacy}.''} In \emph{The
 {Encyclopedia} of {Research Methods} in {Criminology} and {Criminal
 Justice}}, 478--82. John Wiley \& Sons, Ltd.
 \url{https://doi.org/10.1002/9781119111931.ch98}.
 
-\bibitem[\citeproctext]{ref-Wong2009}
+\leavevmode\vadjust pre{\hypertarget{ref-Wong2009}{}}%
 Wong, David W S. 2009a. {``The {Modifiable Areal Unit Problem}
 ({MAUP}).''} In \emph{The {SAGE Handbook} of {Spatial Analysis}}.
 London: SAGE Publications Ltd.
 \url{https://doi.org/10.4135/9780857020130}.
 
-\bibitem[\citeproctext]{ref-Wong2009a}
+\leavevmode\vadjust pre{\hypertarget{ref-Wong2009a}{}}%
 ---------. 2009b. {``Modifiable {Areal Unit Problem}.''} In
 \emph{International {Encyclopedia} of {Human Geography}}, edited by Rob
 Kitchin and Nigel Thrift, 169--74. Oxford: Elsevier.
 \url{https://doi.org/10.1016/B978-008044910-4.00475-2}.
 
-\bibitem[\citeproctext]{ref-Wong1999}
+\leavevmode\vadjust pre{\hypertarget{ref-Wong1999}{}}%
 Wong, David W S, H. Lasus, and R. F. Falk. 1999. {``Exploring the
 Variability of Segregation Index {D} with Scale and Zonal Systems: An
 Analysis of Thirty {US} Cities.''} \emph{Environment and Planning A} 31

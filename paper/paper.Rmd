@@ -13,7 +13,8 @@ authors:
     location: Hillhead, Glasgow G12 8RZ, United Kingdom
     email: David.McArthur@glasgow.ac.uk
 abstract: |
- The definition of accessibility emphasises the role of the attractiveness of opportunities at potential destinations that people consider valuable. This study revises the common assumption in empirical studies that residents are equally attracted to all types of employment and examines its implications for public transport evaluation. Additionally, the role of the modifiable areal unit problem (MAUP) is also explored in this relationship.
+ The definition of accessibility encompasses the role of the attractiveness of opportunities at potential destinations that people consider valuable. This study revises the common assumption in empirical studies that residents are equally attracted to all types of employment and examines its implications for public transport evaluation from a social equity perspective. Additionally, the role of the modifiable areal unit problem (MAUP) is also explored in this relationship. The study draws on the case of Greater Mexico City over a ten-year period, in which seven temporal stages of the main public transport network are examined. The key results highlight a significant difference between accessibility measures that account for employment matching and those that do not, though these distinctions diminish when lower spatial resolutions are used. The spatial analysis also shows that the differences are consistently larger for lower-educated populations. In terms of public transport infrastructure evaluation over time, the study confirms that relying on simple measures, such as the global average, may overlook critical transport equity insights. Additionally, the impact of including employment matching in equity analyses varies, with outcomes differing case by case. Depending on the accessibility measure, the analyses show that a transport improvement might have progressive effects with one measure, while another measure may indicate regressive effects, or both measures can sometimes align. Overall, the comparisons between measures suggest their complementarity in equity evaluations. The findings have implications for policy analysts, given the systematic differences in how transport projects tend to affect less-educated populations and the heterogeneity in the type of population impacted by specific transport projects on a case-by-case basis.
+ 
 keywords:
   - Accessibility
   - Employment matching
@@ -597,7 +598,6 @@ Figure \ref{fig:relative-change} provides an overview of the relative average ch
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/plot_longitudinal_relative_500.png}
   \caption{Relative change of accessibility population weighted mean over various temporal stages.}
-  <!-- \footnotesize{...} -->
   \label{fig:relative-change}
 \end{figure}
 
@@ -609,7 +609,6 @@ We also draw on the results from a transport equity perspective. An advantage is
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/equity_overtime.png}
   \caption{Equity analysis over various temporal stages. S = Stage.}
-  <!-- \footnotesize{...} -->
   \label{fig:headcount-lineplot}
 \end{figure}
 
@@ -625,7 +624,6 @@ Figure \ref{fig:equity-barplot} shows the net population taken out from various 
   \centering
   \includegraphics[width=0.95\textwidth]{../output/plots_maps/exploratory/equity_barplot.png}
   \caption{Equity analysis by education level over various temporal stages.}
-  <!-- \footnotesize{...} -->
   \label{fig:equity-barplot}
 \end{figure}
 
