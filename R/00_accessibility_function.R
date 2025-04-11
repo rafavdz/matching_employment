@@ -93,7 +93,8 @@ accessibility <-
 
       # Summarise by origin and k
       # If type of origin is NA, then access is NA
-      access_dt <- ttm[!is.na(or_edu_decile),
+      access_dt <- ttm[
+        !is.na(or_edu_decile),
         list(
           accessibility = sum(access_w, na.rm = T),
           or_dec = first(or_edu_decile)
@@ -101,10 +102,10 @@ accessibility <-
         by = .(from_id, dest_inc_decile)
       ]
       # Subset access weights that match k in O and D and summarise by origin
-      access_dt <- access_dt[or_dec == dest_inc_decile,
-        .(accessibility = sum(accessibility, na.rm = T)),
-        by = .(from_id)
-      ]
+      access_dt <- access_dt[, .(
+        accessibility = sum(fifelse(or_dec == dest_inc_decile, accessibility, 0), na.rm = TRUE)
+      ), by = .(from_id)]
+      
     } else {
       stop("Unkown opportunity type")
     }
