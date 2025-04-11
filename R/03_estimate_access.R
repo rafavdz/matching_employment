@@ -6,7 +6,6 @@
 ############################################################################
 ############################################################################
 
-# Date: 2024-08-19
 # Author: Rafael Verduzco
 
 # This code comes from '01_census_access/R/9.2_estimate_access'.
@@ -36,22 +35,22 @@ grids <- setNames(grids, grids)
 ttm_base_path <- "data/ttm_mexicocity//"
 
 # create directory to store temp results
-out <- "data/accessibility_r5r/"
+out <- "data/accessibility_r5r2/"
 dir.create(out)
 
 # Read data at origin and destination -------------------------------------
 
 # Read employment data (destination)
-data_destination <-
-  lapply(list.files("data/censo_ec_2014", full.names = T)[1:5], fread) %>%
+data_destination <- list.files("data/censo_ec_2014", full.names = T)[1:5] %>% 
+  lapply(fread) %>%
   map(select, -est_remun_tot:-oc_pe_den_sq_km) %>%
   map(rename_at, vars(-id), ~ paste0("dest_", .)) %>%
   setNames(grids)
 data_destination <- rbindlist(data_destination, idcol = 'grid')
 
 # Read population census data (origin)
-data_origin <-
-  lapply(list.files("data/scince_2012/", full.names = T), fread) %>%
+data_origin <-list.files("data/scince_2012/", full.names = T) %>% 
+  lapply(fread) %>%
   map(select, id, edu49_r, edu_decile) %>%
   map(rename_at, vars(-id), ~ paste0("or_", .)) %>%
   setNames(grids)
@@ -130,7 +129,8 @@ for (ttm_n in ttm_paths_pt) {
       fn = acc_pars$dec_fn[i],
       beta = acc_pars$beta[i],
       mu = acc_pars$mu[i],
-      opportunity = acc_pars$opportunity[i]
+      opportunity = acc_pars$opportunity[i], 
+      local_match = FALSE
     )
     
     # Assign parameters used for estimates
@@ -211,7 +211,8 @@ for (ttm_n in ttm_paths_car) {
       fn = acc_pars_car$dec_fn[i],
       beta = acc_pars_car$beta[i],
       mu = acc_pars_car$mu[i],
-      opportunity = acc_pars_car$opportunity[i]
+      opportunity = acc_pars_car$opportunity[i],
+      local_match = FALSE
     )
     
     # Assign parameters used for estimates
