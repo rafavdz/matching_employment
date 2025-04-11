@@ -1,14 +1,12 @@
 
 
-# Date: 24/03/2022
-# Author: Rafael Verduzco
-
 # This script corresponds to the analysis. Ch. 6, titled:
 # In essence, it is an empirical review of PT accessibility in GMC.
 
 # This code:
 # 1. focuses on descriptive statistics
 
+# Author: Rafael Verduzco
 
 # Set environment ---------------------------------------------------------
 
@@ -25,13 +23,13 @@ library(tidyverse)
 grids <- c("grid_1000", "grid_2000", "grid_4000", "grid_500",  "postcodes")
 # Accessibility estimates for public transport
 access_pt <- 
-  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "pt") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "pt") %>%
   map(fread) %>%
   bind_rows()
 
 # Accessibility estimate for car
 access_car <- 
-  list.files("data/accessibility_r5r//", full.names = TRUE, pattern = "car") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "car") %>%
   map(fread) %>%
   setNames(grids)
 
