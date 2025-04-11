@@ -158,7 +158,7 @@ desc_stats2 <- access_pt %>%
 observations <- access_pt %>% 
   group_by(grid) %>% 
   summarise(
-    n = n_distinct(origin),
+    n = n_distinct(from_id),
     n = format2(n, 0)
   ) %>% 
   pull(n)
