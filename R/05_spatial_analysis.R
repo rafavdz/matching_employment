@@ -32,7 +32,7 @@ access_pt <-
 
 # Accessibility estimate for car
 access_car <- 
-  list.files("data/accessibility/", full.names = TRUE, pattern = "car") %>%
+  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "car") %>%
   map(data.table::fread) %>%
   setNames(grids)
 
