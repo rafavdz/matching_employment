@@ -40,10 +40,14 @@ exp_fn <- function(d_ij, w, gamma = 1, beta, mu = 0, delta_ij = 0) {
 
 # Load function to compute access by origin
 accessibility <-
-  function(ttm, fn, beta,
-           mu = 0, gamma = 1,
-           w = "dest_est_pe_oc",
-           opportunity = "all") {
+  function(
+    ttm, fn, beta,
+    mu = 0, gamma = 1,
+    w = "dest_est_pe_oc",
+    opportunity = "all",
+    # The argument below checks if opportunities i = j should be make available 
+    local_match = TRUE
+      ){
     # TTM as data table
     if (!is.data.table(ttm)) {
       ttm <- as.data.table(ttm)
@@ -83,8 +87,12 @@ accessibility <-
         by = .(from_id)
       ]
     } else if (opportunity == "k") {
+      
       # Make available opportunities if i = j
-      ttm[, dest_inc_decile := fifelse(from_id == to_id, or_edu_decile, dest_inc_decile)]
+      if (local_match == TRUE){
+        ttm[, dest_inc_decile := fifelse(from_id == to_id, or_edu_decile, dest_inc_decile)]
+      }
+      
       # Summarise by origin and k
       # If type of origin is NA, then access is NA
       access_dt <- ttm[!is.na(or_edu_decile),
