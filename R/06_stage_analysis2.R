@@ -28,13 +28,13 @@ grids <- c("grid_1000", "grid_2000", "grid_4000", "grid_500",  "postcodes")
 
 # Accessibility estimate for public transport
 access_pt <- 
-  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "pt") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "pt") %>%
   map(data.table::fread) %>%
   bind_rows()
 
 # Accessibility estimate for car
 access_car <- 
-  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "car") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "car") %>%
   map(data.table::fread) %>%
   setNames(grids) %>% 
   bind_rows(.id = 'grid')
