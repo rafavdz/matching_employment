@@ -26,13 +26,13 @@ library(spdep)
 grids <- c("grid_1000", "grid_2000", "grid_4000", "grid_500",  "postcodes")
 # Accessibility estimate for public transport
 access_pt <- 
-  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "pt") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "pt") %>%
   map(data.table::fread) %>%
   bind_rows()
 
 # Accessibility estimate for car
 access_car <- 
-  list.files("data/accessibility_r5r/", full.names = TRUE, pattern = "car") %>%
+  list.files("data/accessibility_r5r2/", full.names = TRUE, pattern = "car") %>%
   map(data.table::fread) %>%
   setNames(grids)
 
@@ -272,7 +272,7 @@ access_pt_aggregated <- access_pt %>%
 # Descriptive by grid -----------------------------------------------------
 
 
-
+# Compute descriptive stats aggregated by Grid
 sas_decriptive_stats <- access_pt_aggregated %>%
   st_drop_geometry() %>% 
   rename(accessibility = accessibility_med) %>% 
@@ -759,31 +759,68 @@ access_spat_stats <- access_spat_stats %>%
 
 
 # Map LISA results
+# lisa_diff_map <- access_spat_stats %>% 
+#   mutate(
+#     pysal = ifelse(p_folded_sim <= 0.05, as.character(pysal), NA)
+#   ) %>%
+#   ggplot() +
+#   geom_sf(aes(fill = pysal), col = NA) +
+#   geom_sf(data = states, fill = NA, size = 0.25, col = "White") +
+#   geom_star(
+#     data = zocalo, aes(x, y, starshape = "CBD (Zócalo)"), 
+#     fill = "white", col = "black", size = 1.5, alpha = 0.9
+#   ) +
+#   coord_sf(
+#     xlim = c(metro_bbox[1], metro_bbox[3]), 
+#     ylim = c(metro_bbox[2], metro_bbox[4])
+#   ) +
+#   facet_wrap(~ grid_labelled) +
+#   scale_starshape(name = NULL) +
+#   scale_fill_viridis_d(
+#     option = 'turbo', 
+#     begin = 0.1, 
+#     end = 0.9,
+#     na.value = c("Not significant" = "grey50")
+#   ) +
+#   theme_void() +
+#   labs(
+#     fill = 'LISA\ncluster (p <=0.05)'
+#   ) +
+#   theme(legend.position = c(0.85, 0.25))
+
 lisa_diff_map <- access_spat_stats %>% 
-  mutate(pysal = ifelse(p_folded_sim <= 0.1, as.character(pysal), NA)) %>%
-  ggplot() +
-  geom_sf(aes(fill = pysal), col = NA) +
-  geom_sf(data = states, fill = NA, size = 0.25, col = "White") +
+  mutate(
+    pysal = ifelse(p_folded_sim <= 0.05, as.character(pysal), NA)
+  ) %>% 
+  ggplot() + 
+  geom_sf(aes(fill = pysal), col = NA) + 
+  geom_sf(data = states, fill = NA, size = 0.25, col = "White") + 
   geom_star(
-    data = zocalo, aes(x, y, starshape = "CBD (Zócalo)"), 
-    fill = "white", col = "black", size = 1.5, alpha = 0.9
-  ) +
+    data = zocalo, 
+    aes(x, y, starshape = "CBD (Zócalo)"), 
+    fill = "white", 
+    col = "black", 
+    size = 1.5, 
+    alpha = 0.9
+  ) + 
   coord_sf(
     xlim = c(metro_bbox[1], metro_bbox[3]), 
     ylim = c(metro_bbox[2], metro_bbox[4])
-  ) +
-  facet_wrap(~ grid_labelled) +
-  scale_starshape(name = NULL) +
+  ) + 
+  facet_wrap(~ grid_labelled) + 
+  scale_starshape(name = NULL) + 
   scale_fill_viridis_d(
-    option = 'turbo', 
-    begin = 0.1, 
+    option = 'turbo',
+    begin = 0.1,
     end = 0.9,
-    na.value = c("Not significant" = "grey50")
-  ) +
-  theme_void() +
+    na.value = "grey50",
+    na.translate = TRUE,
+    labels = function(x) ifelse(is.na(x), "Not significant", x)
+  ) + 
+  theme_void() + 
   labs(
-    fill = 'LISA\ncluster (p <=0.10)'
-  ) +
+    fill = 'LISA\ncluster (p <=0.05)'
+  ) + 
   theme(legend.position = c(0.85, 0.25))
 
 
