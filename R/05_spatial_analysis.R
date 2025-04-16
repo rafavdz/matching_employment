@@ -759,35 +759,6 @@ access_spat_stats <- access_spat_stats %>%
 
 
 # Map LISA results
-# lisa_diff_map <- access_spat_stats %>% 
-#   mutate(
-#     pysal = ifelse(p_folded_sim <= 0.05, as.character(pysal), NA)
-#   ) %>%
-#   ggplot() +
-#   geom_sf(aes(fill = pysal), col = NA) +
-#   geom_sf(data = states, fill = NA, size = 0.25, col = "White") +
-#   geom_star(
-#     data = zocalo, aes(x, y, starshape = "CBD (Zócalo)"), 
-#     fill = "white", col = "black", size = 1.5, alpha = 0.9
-#   ) +
-#   coord_sf(
-#     xlim = c(metro_bbox[1], metro_bbox[3]), 
-#     ylim = c(metro_bbox[2], metro_bbox[4])
-#   ) +
-#   facet_wrap(~ grid_labelled) +
-#   scale_starshape(name = NULL) +
-#   scale_fill_viridis_d(
-#     option = 'turbo', 
-#     begin = 0.1, 
-#     end = 0.9,
-#     na.value = c("Not significant" = "grey50")
-#   ) +
-#   theme_void() +
-#   labs(
-#     fill = 'LISA\ncluster (p <=0.05)'
-#   ) +
-#   theme(legend.position = c(0.85, 0.25))
-
 lisa_diff_map <- access_spat_stats %>% 
   mutate(
     pysal = ifelse(p_folded_sim <= 0.05, as.character(pysal), NA)
