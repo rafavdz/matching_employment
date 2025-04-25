@@ -164,20 +164,23 @@ travel time) incurred to reach those destinations from a given origin.
 One assumption implicit in such a simple measure, and one common in
 empirical studies, is that all types of employment are potentially
 relevant for, and equally attractive to, everyone. Studies examining the
-implications of relaxing this assumptions are rare. See Osland (2010) or
+implications of this assumption are rare; See Osland (2010) or
 Thériault, Voisin, and Des Rosiers (2013) for examples.
 
-This paper makes an original contribution by examining some of the
-implications of relaxing the assumption of equally attractive employment
-opportunities. Instead of this assumption, with a basis in Human Capital
-Theory, we categorise workers and jobs according to education and income
-level. Workers only match with a job if their level of education
-corresponds to the job's level of income. We examine the implications of
-this change on spatial patterns of accessibility and on accessibility
-poverty calculations. Additional novelty is added by considering how the
-modifiable areal unit problem (MAUP) might impact on changes in the way
-accessibility is calculated. Accordingly, we address three research
-questions:
+This paper makes an original contribution by examining the implications
+of using a refined accessibility measure which reconsiders the
+assumption of equally attractive employment opportunities. Drawing on
+accessibility literature and the Human Capital Theory --- which suggests
+that individuals invest in education and training to increase their
+productivity and earnings potential (Becker 1994; Schultz 1961)--- we
+categorise workers and jobs according to education and income level.
+Workers only match with a job if their level of education corresponds to
+the job's level of income. We examine the implications of this
+refinement on spatial patterns of accessibility and on the social
+distribution of accessibility. Additional novelty is added by
+considering how the modifiable areal unit problem (MAUP) might impact in
+the way accessibility is calculated. Accordingly, we address three
+research questions:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -186,41 +189,41 @@ questions:
   What are the key spatial differences between generic and matching
   accessibility measures and what is the role of the MAUP?
 \item
-  How does the evaluation of PT infrastructure differs when accounting
+  How does the evaluation of PT infrastructure differ when accounting
   for matching employment opportunities in accessibility measures?
 \item
   What are the social equity implications of the above?
 \end{enumerate}
 
 Our study is set in Greater Mexico City (GMC), an understudied
-mega-city. We make use of multi-source spatial data to examine the
-impacts of a number of expansions of the main public transport network
-(MPTN) over the period 2009 to 2019. In general, we find that accounting
-for heterogeneity among workers and jobs can have important implications
-for the conclusions we draw about how changes to the transport network
-alter patterns of accessibility and accessibility poverty. Our analysis
-of MAUP showed that larger areal units tend to minimise the difference
-in accessibility measures accounting for heterogeneity and those that
-ignore it. However, zoning effects can lead to some of the differences
-being maintained even when moving to larger units.
+mega-city. We examine the impacts of a number of expansions of the main
+public transport network (MPTN) over the period 2009 to 2019. In
+general, we find that accounting for heterogeneity among workers and
+jobs can have important implications for the conclusions we draw about
+how changes to the transport network alter patterns of accessibility and
+accessibility poverty. Our analysis of MAUP showed that larger areal
+units tend to minimise the difference in accessibility measures
+accounting for heterogeneity and those that ignore it. However, zoning
+effects can lead to some of the differences being maintained even when
+moving to larger units.
 
 The remainder of the paper is structured as follows. Section
 \ref{sec:lit_review} presents a review of the relevant literature.
 Section \ref{sec:methods} outlines the data and methods used in the
-study. Our findings are presented in Section \ref{sec:findings} and then
-discussed in Section \ref{sec:discussion}. Lastly, some concluding
-remarks are offered in Section \ref{sec:conclusions}.
+study. Our findings are presented in Section \ref{sec:findings}. Lastly,
+the discussion of results and concluding remarks are offered in Section
+\ref{sec:discussion}.
 
 \section{\texorpdfstring{Literature review
 \label{sec:lit_review}}{Literature review }}\label{literature-review}
 
 Levinson and Wu (2020) assert that accessibility measures ``the ease of
-reaching valued destinations'' (p.~130). This notion combines two basic
-elements, namely the ease of travel and the spatial dispersion of
-opportunities reflected in land use patterns, including services and
-other people, for example. Furthermore, this definition limits
-opportunities to those which are deemed valuable. Thus, the \emph{for
-whom} question becomes relevant. In line with this discussion,
+reaching valued destinations'' (p.~130). This notion combines two
+fundamental elements, namely the ease of travel and the spatial
+dispersion of opportunities reflected in land use patterns, including
+services and other people, for example. Furthermore, this definition
+limits opportunities to those which are deemed valuable. Thus, the
+\emph{for whom} question becomes relevant. In line with this discussion,
 Thériault, Voisin, and Des Rosiers (2013) provides a more explicit
 definition of accessibility, regarding it as ``the ability that persons
 living in that area can, within an acceptable travel time, reach a
@@ -228,16 +231,20 @@ satisfactory diversity of activity locations that are important to
 them'' (p.~234).
 
 The operationalisation of accessibility has taken various forms in the
-literature. The most common are infrastructure-based, person-based,
-place-based, and utility-based measures (Geurs and van Wee 2004).
-Place-based measures are frequently used due to their consistency with
-conceptual definitions, flexibility, and ease of interpretation,
-enhancing their impact on transport policy. These measures characterise
-space based on mobility constraints or enablers, combined with land use
-patterns, by dividing regions into spatial units or zones. This review
-focuses on location-based measures due to their relevance in policy
-discussions and their ability to account for people's abilities and
-preferences (Páez, Scott, and Morency 2012).
+literature (Geurs and van Wee 2004). Infrastructure-based measures focus
+on the performance of the transport network, such as travel times or
+distances. Person-based measures consider individual constraints, such
+as time availability or personal mobility. Utility-based measures,
+rooted in economic theory, estimate the perceived benefit or
+satisfaction individuals derive from accessing opportunities.
+Place-based measures are frequently used in empirical studies due to
+their consistency with conceptual definitions, flexibility, and ease of
+interpretation, enhancing their impact on transport policy. These
+measures characterise space based on mobility constraints or enablers,
+combined with land use patterns, by dividing regions into spatial units
+or zones. This review focuses on location-based measures due to their
+relevance in policy discussions and their ability to account for
+people's abilities and preferences (Páez, Scott, and Morency 2012).
 
 \subsection{Accessibility measures and empirical
 application}\label{accessibility-measures-and-empirical-application}
@@ -272,14 +279,29 @@ cost in \(f(c_{ij})\) is often represented by travel time.
 In Equation \ref{eq:access-employment-general}, households and
 opportunities are implicitly assumed to be homogeneous, i.e., all types
 of employment are equally attractive for all types of residents (Houston
-2005; Shen 1998). However, contributions from theory highlight the
-characteristics of the demand (residents at origins) and supply at
-potential destinations (Geurs and van Wee 2004; Levinson and Wu 2020).
-Specifically, Levinson and Wu state that ``different job categories
-represent different economic activities, and different types of jobs
-generally require different skills and education levels'' (2020, 147).
-This distinction is supported by Human Capital Theory from labour market
-studies (Schultz 1961; Becker 1994).
+2005; Shen 1998). For instance, a public transport equity study in
+Chicago estimated accessibility to various destinations, including
+employment, and analysed its association with socio-demographic
+composition (Ermagun and Tilahun 2020). A higher proportion of
+low-income residents was negatively associated with employment
+accessibility, which was measured using the total number of jobs
+available at each destination, regardless of type. In Santiago, Chile, a
+study incorporating observed GPS-based public transport travel times
+found that municipalities with lower income levels had significantly
+lower accessibility to all types of employment (Basso et al. 2020).
+
+Contributions from theory highlight the characteristics of the demand
+(residents at origins) and supply at potential destinations (Geurs and
+van Wee 2004; Levinson and Wu 2020). Specifically, Levinson and Wu state
+that ``different job categories represent different economic activities,
+and different types of jobs generally require different skills and
+education levels'' (2020, 147). This distinction is supported by Human
+Capital Theory (Schultz 1961; Becker 1994), which suggests that
+individuals invest in their education, skills, and training with the
+expectation of improving their productivity and, consequently, their
+earning potential. Therefore, accessibility to employment is not just a
+matter of spatial proximity, but also of alignment between job seekers
+and job opportunities.
 
 Location-based measures can consider some of these distinctive elements.
 For instance, Equation \ref{eq:location-based1} refers to the following
@@ -293,14 +315,14 @@ Voisin, and Des Rosiers (2013) in the study of the property prices.
 The operationalisation of measures accounting for employment preferences
 or restrictions can vary. In empirical studies, these characteristics
 can be expressed as type of person \(m\) at \(j\) and type of employment
-\(m\) at \(k\) (Pereira et al. 2019; Shen 1998; Pan, Jin, and Liu 2020).
+\(m\) at \(k\) (Pereira 2019; Shen 1998; Pan, Jin, and Liu 2020).
 Accordingly, only employment opportunities \(E\) matching the profile of
 residents between \(j\) and \(k\) are considered in the accessibility
 measure. This reflects the notion that residents would only find
-attractive employment opportunities that match their skills and
-education level.
+attractive employment opportunities that match their skills or education
+level.
 
-In Pereira et al. (2019), an accessibility measure recognising such
+In Pereira (2019), an accessibility measure recognising such
 characteristics is implemented as a \emph{proxy} match by distinguishing
 the upper and lower halves of residents' income and education
 requirements in employment opportunities. Specifically, the lower half
@@ -327,25 +349,26 @@ opportunities by the number of white- and blue-collar jobs at potential
 destinations. On the residents' side, it considers unemployed
 individuals as job seekers, categorising them by education level:
 \emph{associate's degree or above} and \emph{high school degree or
-lower}. White-collar jobs are relevant only to job seekers with an
-associate's degree or higher, while blue-collar jobs are relevant to the
-less educated group. The measures also account for different transport
-modes, i.e., automobile, drive to transit, and walk to transit. Results
-show that accessibility is concentrated in core areas, declining slowly
-for drivers and much more sharply for transit users. The study concludes
-that automobile are even more essential for low-educated groups since
-blue-collar jobs are more dispersed across the city than white-collar
-jobs. The study concludes low-educated groups are more dependent of car
+lower}. White-collar jobs are assumed to be relevant only to job seekers
+with an associate's degree or higher, while blue-collar jobs are
+relevant to the less educated group. The measures also account for
+different transport modes, i.e., automobile, drive to transit, and walk
+to transit. Results show that accessibility is concentrated in core
+areas, declining slowly for drivers and much more sharply for transit
+users. The study concludes low-educated groups are more dependent of car
 since blue-collar jobs are more dispersed across the city than
 white-collar jobs.
 
-Pan, Jin, and Liu (2020) follow a `descriptive' rather than a
-`prescriptive' approach (Páez, Scott, and Morency 2012). This limits its
-use in transport policy evaluation, as it characterises multiple
-residents within the same location rather than providing a single
-measure for a particular zone. Additionally, it does not address the
-differences or implications of using education and employment matching
-compared to accessibility measures that disregard these distinctions.
+Pan, Jin, and Liu (2020) follow a `descriptive' approach which limits
+its use in transport policy evaluation. This is because it focuses on
+capturing the variability of accessibility among various population
+groups within the same location, rather than summarising accessibility
+into a single, aggregate measure for each zone. While this provides
+valuable insights into intra-zonal differences, it complicates the
+comparison between areas and the identification of priority zones for
+policy intervention. Additionally, it does not address the differences
+or implications of using education and employment matching compared to
+accessibility measures that disregard these distinctions.
 
 \subsubsection{The modifiable areal unit problem in accessibility
 measures}\label{the-modifiable-areal-unit-problem-in-accessibility-measures}
@@ -353,7 +376,7 @@ measures}\label{the-modifiable-areal-unit-problem-in-accessibility-measures}
 Location-based measures tend to characterise space in discrete units.
 Thus, these often suffer from the MAUP. The MAUP literature
 distinguishes two main types of issues, namely \emph{scale} effects and
-\emph{zoning} effects (Wong 2009b). Scale effects refer to the
+\emph{zoning} effects (Wong 2009a). Scale effects refer to the
 variability in spatial analysis results depending on the spatial
 resolution used. Zoning effects, on the other hand, arise from the
 spatial configuration of areas while maintaining the same number of
@@ -367,11 +390,11 @@ structural patterns of the MAUP. The clearest effects are observed in
 simple univariate statistics. It has been noted that while mean values
 remain fairly constant across scales, variance tends to decline as
 spatial resolution decreases, with a narrower range at lower resolutions
-(Dark and Bram 2007; Wong 2009a). However, this structure tends to
+(Dark and Bram 2007; Wong 2009b). However, this structure tends to
 dissipate in multivariate regression analyses (Fotheringham and Wong
 1991). Zoning effects, on the other hand, are less predictable and are
 influenced by factors such as spatial autocorrelation and aggregation
-methods, e.g., mean, sum, median (Wong 2009a). Zoning effects are
+methods, e.g., mean, sum, median (Wong 2009b). Zoning effects are
 minimal in cases of random spatial patterns, but results are highly
 sensitive to zoning when strong positive spatial autocorrelation exists
 (Lee et al. 2019).
@@ -382,7 +405,7 @@ literature is limited in the role of MAUP in location-accessibility
 gravity-type accessibility measures at different spatial scales. The
 findings showed that larger units, such as municipalities, produced
 smoother estimates compared to disaggregated grid-based inputs,
-consistent with MAUP literature (Wong 2009a). Additionally, differences
+consistent with MAUP literature (Wong 2009b). Additionally, differences
 in self-potential estimates were attributed to the gravity measures'
 components (e.g., transport and land use) rather than the estimation
 process itself. Further work has suggested that errors arise from
@@ -390,18 +413,18 @@ aggregating travel times within zones (intra-zone) and between zones
 (inter-zone) (Stepniak and Jacobs-Crisioni 2017). A comparison with
 disaggregated travel times suggests that using population-weighted
 centroids provides more accurate results than geometric centroids or
-areal-based methods Stepniak and Rosik (2015). Pereira, Grégoire, and
-Karner (2019) investigated the equity effects of transport
-infrastructure in Rio de Janeiro, Brazil, taking MAUP into account. The
-study conducted three analyses that utilised two hexagonal grids and
-traffic zones. The findings indicate that while the direction of the
-relationship between accessibility increments and residents' income
-remained stable, there were significant differences in the magnitude and
-significance of this association across different spatial aggregations.
+areal-based methods Stepniak and Rosik (2015). Pereira et al. (2019)
+investigated the equity effects of transport infrastructure in Rio de
+Janeiro, Brazil, taking MAUP into account. The study conducted three
+analyses that utilised two hexagonal grids and traffic zones. The
+findings indicate that while the direction of the relationship between
+accessibility increments and residents' income remained stable, there
+were significant differences in the magnitude and significance of this
+association across different spatial aggregations.
 
 Although there are recent and relevant contributions considering MAUP
 and location-based accessibility measures, there are no studies
-examining the interactions with refined of accessibility measures, e.g.,
+examining the interactions with refined accessibility measures, e.g.,
 measures considering matching opportunities.
 
 \subsection{Equity evaluation of transport in transport
@@ -416,7 +439,7 @@ captures the essence of transport equity by incorporating three key
 elements (ibid): 1) the resource being distributed, such as mobility or
 accessibility; 2) the social attributes of society's members; and 3) the
 moral principles used to assess whether a given allocation is fair or
-equitable (Martens, Bastiaanssen, and Lucas 2019).
+equitable (Martens and Bastiaanssen 2019).
 
 The `equity standard', implicit in the third point, is major topic of
 debate in literature. The typical questions involve, for example, should
@@ -442,19 +465,19 @@ In line with its philosophical and moral perspective, the
 operationalisation of the accessibility poverty notion requires the
 definition of a sufficiency threshold. Accessibility poverty draws
 inspiration from the income poverty literature and adopts an analogous
-poverty line (Martens and Bastiaanssen 2019). For analytical purposes,
-studies often utilise a percentile of the number of accessible
+poverty line (Martens, Bastiaanssen, and Lucas 2019). For analytical
+purposes, studies often utilise a percentile of the number of accessible
 opportunities. For example, Karner, Pereira, and Farber (2024) employs
 the population-weighted median of job accessibility in the Washington
-metropolitan area. Similarly, Martens and Bastiaanssen (2019) introduces
-a combined index that incorporates the percentile of employment
-accessible by car alongside income deprivation, indicating that an
-individual or group is considered to be in accessibility poverty if they
-face both low public transport accessibility and income deprivation.
-This approach is founded on the understanding that marginalised
-populations rely on public transport, and low-income households may
-either be unable to afford the costs associated with maintaining a car
-or find it undesirable to do so.
+metropolitan area, i.e.~50th percentile. Similarly, Martens,
+Bastiaanssen, and Lucas (2019) introduces a combined index that
+incorporates the percentile of employment accessible by car alongside
+income deprivation, indicating that an individual or group is considered
+to be in accessibility poverty if they face both low public transport
+accessibility and income deprivation. This approach is founded on the
+understanding that marginalised populations rely on public transport,
+and low-income households may either be unable to afford the costs
+associated with maintaining a car or find it undesirable to do so.
 
 Despite the growing relevance of accessibility measures in the
 evaluation of public transport infrastructure, knowledge of the
@@ -468,49 +491,8 @@ projects.
 \section{\texorpdfstring{Methods
 \label{sec:methods}}{Methods }}\label{methods}
 
-\subsection{Accessibility measures
-examined}\label{accessibility-measures-examined}
-
-For this study, a general accessibility measure, also referred to as
-`All', is computed with the following equation:
-
-\begin{equation}
-  A^{All}_{jt} = \sum^J_{j=1} E_k f(c_{jkt})
-   \label{eq:empirical-access-general}
-\end{equation}
-
-\(A^{All}_{jt}\) denotes the general accessibility to employment from
-origin \(j\) at time \(t\). \(E_k\) are the employment opportunities at
-potential destinations, and \(c^{PT}_{jkt}\) is the travel time from
-\(j\) to \(k\) at temporal stage \(t\).
-
-For this work, the implementation of the matching accessibility measure
-is adapted from the literature according to the data available for the
-area of study as follows (Pereira et al. 2019; Pan, Jin, and Liu 2020):
-
-\begin{equation}
-  A^{Matching}_{jtm} = \sum^J_{j=1} E_{km} f(c_{jkt}),
-   \label{eq:empirical-access-matching}
-\end{equation}
-
-Here, \(A^{Matching}_{jtm}\) is the matching accessibility measure from
-\(j\), at temporal stage \(t\), for opportunities of type \(m\). \(m\)
-at \(j\) is categorised in education quintiles based on the median
-number of years in formal education. \(m\) at \(k\) is based on the
-average salary paid at destinations classified by quintiles as well.
-Only employment opportunities \(E\) matching the same education quantile
-between \(j\) and \(k\) are considered in this measure (when
-\(j \neq k\)). This reflects that residents would deem valuable only
-employment opportunities that match their education level. In our study
-area, this is supported by the positive relationship between education
-level and wages (Nuñez, Paredes, and Garduño-Rivera 2017; Rojas, Angulo,
-and Velázquez 2000). An exception occurs when \(j = k\). In this case,
-employment opportunities in the origin are considered as available. This
-is to avoid the assumption implying that some zones have accessibility
-values equal to 0. The specific data sources and procedures are detailed
-in the next sub-sections.
-
-\subsection{Study area}\label{study-area}
+\subsection{Study area and public transport
+network}\label{study-area-and-public-transport-network}
 
 Greater Mexico City (GMC) (\emph{Zona Metropolitana del Valle de
 México}) is located in the south-centre of Mexico. In 2015, GMC had
@@ -524,8 +506,8 @@ and it is home to 17\% of the national population.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/metro_map.png}
-  \caption{Main public transport network (MPTN). Greater Mexico City, 2019.}
+  \includegraphics[width=0.9\textwidth]{figures/metro_map-JGS.png}
+  \caption{Main public transport network (MPTN), Greater Mexico City, 2019. The MPN consists of a variety of modes operated by various agencies which expand across two of the three states.}
   \footnotesize{\textit{Source:} Verduzco-Torres (2023) based on Marco Geoestadístico Nacional 2014 Versión 6.2 (INEGI, 2014); Delimitación de las zonas metropolitanas México 2015 (INEGI, 2018); Secretaría de Movlidad de la Ciudad de México (SEMOVI, n.d.); Sistema de Transporte Masivo y Teleférico del Estado de México (SITRAMyTEM, n.d.); OpenStreetMap (OSM, n.d.).}
   \label{fig:metro-map}
 \end{figure}
@@ -542,8 +524,9 @@ analyses is referred to as the \emph{main public transport network}
 agencies: The metro system, directly operated by the state-owned company
 \emph{Sistema de Transporte Colectivo} (STC) and designated as Metro;
 two BRT systems, namely \emph{Metrobus} (MB) in Ciudad de México and
-Mexibus (MXB) in the state of México; One LRT line operated by STE; and
-one regional rail line designated as \emph{Sub}.
+Mexibus (MXB) in the state of México; One LRT line operated by
+\emph{Sistema de Transporte Masivo} (STE); and one regional rail line
+designated as \emph{Sub}.
 
 The period of study was divided into seven temporal stages to reflect
 significant changes in the MPTN over time. Initially, changes were
@@ -596,12 +579,12 @@ Corridor & Agency & From station & To station & Opening date & Previous change* 
 \end{tabular}
 \end{table}
 
-The MPTN stages and corresponding corresponding corridors are in Figure
+The MPTN stages and corresponding corridors are shown in Figure
 \ref{fig:evolution-network}.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.95\textwidth]{figures/evo_transit_network.png}
+  \includegraphics[width=0.95\textwidth]{figures/evo_transit_network-JGS.png}
   \caption{Temporal stages of the main public transport network. Greater Mexico City, 2010 to 2019.}
   \footnotesize{\textit{Source:} The author based on Semovi (n.d.) and SITRAMyTEM (n.d.).}
   \label{fig:evolution-network}
@@ -614,13 +597,13 @@ Various spatial analytical schemes (SAS) are considered to address the
 research questions related to the MAUP. The area of study is
 systematically partitioned in uniform cells, \(j\), of various gradual
 sizes to examine the scale effects, drawing on Wong, Lasus, and Falk
-(1999). The criteria and implementation employed is adopted from
+(1999). The criteria and implementation employed are adopted from
 empirical accessibility studies, using hexagonal cells of 0.5 km, 1 km,
-2 km, and 4 km (Pereira 2018; Pereira et al. 2019). This is to (i)
-maintain consistency in this research area, (ii) allow comparability,
-(iii) exploit existing analytical tools and resources and, (iv) augment
-previous findings in a different context. A further scheme defined by
-the official post code zones was considered to account for zoning.
+2 km, and 4 km (Pereira 2018, 2019). This is to (i) maintain consistency
+in this research topic, (ii) allow comparability, (iii) exploit existing
+analytical tools and resources and, (iv) augment previous findings in a
+different context. A further scheme defined by the official post code
+zones was considered to account for zoning.
 
 Table \ref{tab:sas-summary} summarises the main characteristics of each
 SAS for cells containing residents or economic activity. The total
@@ -639,7 +622,7 @@ over 50,000.
 \toprule
   & Grid 0.5 km & Grid 1 km & Grid 2 km & Grid 4 km & Post code\\
 \midrule
-Count & 13 297 & 3 972 & 1 264 & 413 & 2 377\\
+Spatial units (Count) & 13 297 & 3 972 & 1 264 & 413 & 2 377\\
 Mean area (Sq. km) & 0.22 & 0.86 & 3.44 & 13.55 & 1.94\\
 Mean population (Inhabitants) & 1 498.13 & 5 093.21 & 16 324.62 & 50 187.76 & 8 317.75\\
 \bottomrule
@@ -650,26 +633,27 @@ Mean population (Inhabitants) & 1 498.13 & 5 093.21 & 16 324.62 & 50 187.76 & 8 
 \end{tabu}
 \end{table}
 
-The polygons were created manually in the \texttt{R} programming
-language (R Core Team 2021) following previous work (Pereira 2018). Post
-code polygons are sourced from the Mexican Post Office (\emph{Correos de
+The polygons were created programmatically with \texttt{R} language (R
+Core Team 2021) following previous work (Pereira 2018). Post code
+polygons are sourced from the Mexican Post Office (\emph{Correos de
 México}) `Version 5'.
 
 \subsection{Data}\label{data}
 
 \subsubsection{Demographic}\label{demographic}
 
-The demographic comes from the 2010 Population Census (INEGI 2012).
-These data were selected for their detailed disaggregation at the city
-block level, including key fields such as total population and average
-years of education completed by individuals aged 15 and older.
+The demographic information comes from the 2010 Population Census (INEGI
+2012). These data were selected for their detailed disaggregation at the
+city block level, including key fields such as total population and
+average years of education completed by individuals aged 15 and older.
 
 The count data included were transferred to the SAS using the
 \emph{areal weighting method} (Saporito et al. 2007). This reassigns the
 data according to the proportional overlay of the source and target
 areas. The average education level was assigned using the
-\emph{population weighting method}. In addition, this takes into
-consideration the number of inhabitants and their type.
+\emph{population weighting method}. This takes into consideration the
+number of inhabitants and their type. This is visualised in the
+\hyperref[appendix]{Appendix}.
 
 \subsubsection{Employment}\label{employment}
 
@@ -686,12 +670,14 @@ Employment information, which came aggregated at a higher geographic
 level than the city-block due to privacy concerns (\textless8\%), were
 re-allocated using proportional estimates based on the spatial
 distribution from the 2015 DENUE (INEGI 2015a). This is an open-access,
-point-level dataset of individual establishments. The employment data
-was also assigned from city blocks to the SAS following the areal
-weighting method (Saporito et al. 2007).
+point-level dataset of individual establishments.
 
-The average income was computed for each areal unit based on the total
-number of employment positions and the total gross remuneration paid.
+The employment data was also assigned from city blocks to the SAS
+following the areal weighting method (Saporito et al. 2007). The average
+income was computed for each areal unit based on the total number of
+employment positions and the total gross remuneration paid. The spatial
+distribution of across various SAS is shown in the
+\hyperref[appendix]{Appendix}.
 
 \subsubsection{Public transport
 timetables}\label{public-transport-timetables}
@@ -701,31 +687,24 @@ scheduled public transport services. The Transport Authority in Mexico
 City (\emph{Secretaría de Movilidad de la Ciudad de México}, Semovi)
 released the first \emph{general transit feed specification} (GTFS)
 files in 2013, which were accessed via the Open Mobility website
-(\url{https://openmobilitydata.org/}). These datasets cover the agencies
-operating most MPTN services in GMC. However, there are some
-limitations: firstly, the geographic coverage primarily includes
-services within Ciudad de México, excluding BRT services provided by
-MXB. Secondly, the temporal coverage starts in 2013, with updates
-occurring only sporadically, approximately once a year.
+(\url{https://openmobilitydata.org/}). These feeds cover the agencies
+operating most MPTN of the services in GMC with approximate annual
+updates. The geographic coverage of the official GTFS data was
+supplemented to include three BRT corridors operated by MXB. This was
+done in \texttt{R} programming environment following the best practices
+for structuring GTFS from \url{http://gtfs.org/}. Additional details are
+available in the \hyperref[appendix]{Appendix}.
 
-To overcome the first limitation, the geographic coverage of the
-official GTFS data was augmented to include three BRT corridors operated
-by MXB. This was carried out \emph{manually} based on unstructured
-information provided by the Transport Agency of the State of Mexico
-(\emph{Sistema de Transporte Masivo y Teleferico del Estado de México},
-Sitramytem). This corresponded to services for 2019 only.
-
-Regarding the second limitation, the MPTN's temporal stages were
-reconstructed using the GTFS standard. The primary input for each stage
-was the closest available official GTFS data reflecting changes in the
-MPTN, with only the relevant services for each corridor in their
-respective stages being retained. For MXB services, 2019 data was
-considered due to the lack of earlier details, assuming uniform
-characteristics of the BRT corridors across the stages. Similarly, for
-other corridors included in early stages, services were assumed to
-reflect 2013 levels due to the unavailability of earlier data. All
-non-MPTN services were excluded, thereby focusing exclusively on the
-benefits of the MPTN.
+The MPTN's temporal stages were reconstructed using the GTFS standard.
+The primary input for each stage was the closest available official GTFS
+data reflecting changes in the MPTN, with only the relevant services for
+each corridor in their respective stages being retained. For MXB
+services, 2019 data was considered due to the lack of earlier details,
+assuming uniform characteristics of the BRT corridors across the stages.
+Similarly, for other corridors included in early stages, services were
+assumed to reflect 2013 levels due to the unavailability of earlier
+data. All non-MPTN services were excluded, thereby focusing exclusively
+on the benefits of the MPTN.
 
 \subsubsection{Road network and pedestrian
 infrastructure}\label{road-network-and-pedestrian-infrastructure}
@@ -737,30 +716,37 @@ through a web export tool available in
 journeys to realistically represent the access/egress stage to a public
 transport service when combining walking and public transport.
 
-\subsection{MPTN travel times and impedance
-parameters}\label{mptn-travel-times-and-impedance-parameters}
+\subsection{Modelling travel time}\label{modelling-travel-time}
 
-\subsubsection{Modeled travel time}\label{modeled-travel-time}
+Travel time by public transport was calculated for each
+origin-destination (OD) pair across each SAS using a combination of
+walking and public transport services within the main public transport
+network. OD points are represented by population-weighted centroids of
+spatial units. Travel times are capped at 180 minutes, based on patterns
+observed in the 2017 Travel Survey (INEGI 2018). Travel times were
+modelled using a door-to-door approach with the \texttt{r5r} software
+package for the \texttt{R} programming language (Saraiva et al. 2021; R
+Core Team 2021). This approach considers access, waiting, onboard,
+transfer, and egress times. All-to-all travel time matrices were
+generated for each SAS across seven temporal stages using reconstructed
+GTFS files and road/pedestrian networks. The estimated travel time
+considers the median time within a three-hour time window between 8 a.m.
+and 11 a.m. The maximum walking distance to access and egress public
+transport or in walking journeys only is limited to 40 minutes,
+approximately 3.2 km at an average walking speed of 4.8 km/h.
 
-Travel time matrices were calculated for each origin-destination (OD)
-pair across each SAS using a combination of walking and public transport
-within the main public transport network. OD points \(j\) and \(k\),
-respectively, are represented by population-weighted centroids of
-spatial units containing economic activity (from the 2014 Economic
-Census) or demographic data (from the 2010 Population Census). Travel
-times are capped at 180 minutes, based on patterns observed in the 2017
-Travel Survey.
-
-Travel times were modelled using a door-to-door approach with the
-\texttt{r5r} software package for the \texttt{R} programming language
-(Saraiva et al. 2021; R Core Team 2021). This approach considers access,
-waiting, onboard, transfer, and egress times. All-to-all travel time
-matrices were generated for each SAS across seven temporal stages using
-reconstructed GTFS files and road/pedestrian networks. The estimated
-travel time considers the median time within a three-hour time window
-between 8 a.m. and 11 a.m. The maximum walking distance to access and
-egress public transport or in walking journeys only is limited to 40
-minutes, approximately 3.2 km at an average walking speed of 4.8 km/h.
+Travel time by private car is modelled using OpenTripPlanner. The
+initial estimate is based on free-flow model. These estimates were then
+adjusted to account for congestion and other unobserved factors using
+travel times obtained from
+\href{https://developers.google.com/apis-explorer}{Google API} services
+for a sample of 9,264 randomly selected OD pairs. This adjustment
+reflects typical conditions on a departure time at 10 a.m. on a
+Wednesday. The difference between the routing estimates was modelled
+using a linear regression framework, and the resulting model was applied
+to the remaining OD pairs. Additionally, an 8.1-minute parking search
+time was considered, following literature and consistent with the
+door-to-door approach (Salonen and Toivonen 2013; Shoup 2006).
 
 The internal-zone travel-times were estimated based on the surface area
 using: \(d_{j=k} = \frac{1}{2} \sqrt{ \frac{area_j}{\pi}}\) (Frost and
@@ -768,73 +754,70 @@ Spence 1995; Stepniak and Rosik 2015). The metric distance was
 transformed to travel time using the average speed modelled for short
 journeys (less than 3 km).
 
+\subsection{Analytical framework}\label{analytical-framework}
+
+\subsubsection{Accessibility measures
+examined}\label{accessibility-measures-examined}
+
+For this study, a general accessibility measure---referred to as
+`All'---is computed using the following below. This label is defined by
+the authors for consistency within the analysis and is not drawn from
+existing classifications in the literature.
+
+\begin{equation}
+  A^{All}_{jt} = \sum^J_{j=1} E_k f(c_{jkt}),
+   \label{eq:empirical-access-general}
+\end{equation}
+
+where \(A^{All}_{jt}\) denotes the general accessibility to employment
+from origin \(j\) at time \(t\). \(E_k\) are the employment
+opportunities at potential destinations, and \(c^{PT}_{jkt}\) is the
+travel time from \(j\) to \(k\) at temporal stage \(t\).
+
+For this work, the implementation of the matching accessibility measure
+is adapted from Pereira (2019) and Pan, Jin, and Liu (2020) as follows:
+
+\begin{equation}
+  A^{Matching}_{jtm} = \sum^J_{j=1} E_{km} f(c_{jkt}),
+   \label{eq:empirical-access-matching}
+\end{equation}
+
+Here, \(A^{Matching}_{jtm}\) is the matching accessibility measure from
+\(j\), at temporal stage \(t\), for opportunities of type \(m\). \(m\)
+at \(j\) is categorised in education quintiles based on the median
+number of years in formal education using residents' information from
+the population census (originally sourced at the city block level as
+detailed in Section 3.2). \(m\) at \(k\) is based on the average salary
+paid at destinations classified by quintiles as well. Only employment
+opportunities \(E\) matching the same education quantile between \(j\)
+and \(k\) are considered in this measure. This reflects that residents
+would deem valuable only employment opportunities that match their
+education level.
+
+The key adaptation of the measure compared to the references in
+empirical studies consists in accounting for education level at the
+origin (characterising residents), rather than residents' income.
+Additionally, job opportunities are characterised by the salaries paid,
+rather than by job type at the destination. This variation reflects the
+data availability and it is supported by the positive relationship
+between education level and wages in the study area (Nuñez, Paredes, and
+Garduño-Rivera 2017; Rojas, Angulo, and Velázquez 2000).
+
 \subsubsection{Spatial decay function and calibration of accessibility
 parameters}\label{spatial-decay-function-and-calibration-of-accessibility-parameters}
 
 The spatial decay function and parameters for the accessibility measures
-were determined using estimates from a trip distribution model,
-following Handy and Niemeier (1997). This analysis used data from the
-2017 Travel Survey (INEGI 2018), focusing on a weekday and journeys
-including public transport or walking.
+were determined using a trip distribution model, following Handy and
+Niemeier (1997). A trip distribution model estimates how many trips
+occur between different origin-destination pairs within a region based
+on the attractiveness of destinations and the spatial separation between
+them. In this context, the spatial decay parameter \(\beta\) reflects
+how individuals perceive the spatial separation between where they live
+and potential destinations. The estimation details are available in the
+\hyperref[appendix]{Appendix}.
 
-Alternative specifications were estimated within a doubly-constrained
-gravity model, expressed as:
-
-\begin{equation}
-  T_{jk} = A_j O_j B_k D_k f(c_{jk})
-  \label{eq:gravity-model}
-\end{equation}
-
-where \begin{equation} 
-  A_j = \left[ \sum{B_k D_k f(c_{jk})} \right]^{-1}
-\end{equation}
-
-and \begin{equation} 
-  B_k = \left[ \sum{A_j O_j f(c_{jk}) }  \right] ^{-1}
-\end{equation}
-
-with balancing factors \(A_j\) and \(B_k\) calculated iteratively.
-\(T_{jk}\) are commuter flows between origins (\(j\)) and destinations
-(\(k\)), with constraints on the number of journeys at each, i.e.,
-\(O_j\) and \(D_k\). \(f(c_{jk})\) is a spatial deterrence or decay
-function. The inverse power (\(c_{jk}^{-\beta}\)) and negative
-exponential (\(e^{(-\beta c_{jk})}\)) decay functions were tested.
-\(\beta\) represents the deterrence parameter. \(c_{jk}\) is the
-observed travel time.
-
-A modified specification aimed at capturing an start-up cost for
-inter-zone journeys or analogously a benefit of residing and working
-within the same zone is also considered (Thorsen and Gitlesen 1998).
-This includes a parameter \(\mu\) which affects only the diagonal
-elements of the OD matrix. The term is given by the following
-expression:
-
-\begin{equation} 
-  \mu \delta_{jk}
-\end{equation}
-
-where Kronecker delta takes the following value:
-
-\begin{equation}
-  \delta_{ij} \left\{
-    \begin{array}{ll}
-        0 & \quad \text{if   } j \neq k \\
-        1 & \quad \text{if   } j = k \\
-    \end{array} 
-   \right.\\
-\end{equation}
-
-The simultaneous calibration of the model parameters \(\beta\) and
-\(\mu\) is achieved via optimization by minimising the standardised root
-mean square error (SRMSE) using the \emph{Nelder-Mead's simplex
-algorithm} as implemented in base \texttt{R} (R Core Team 2021).
-
-The preliminary analyses shows that the negative exponential function
-provided better fitting estimates compared to the inverse power. Also,
-the use of the within-zone parameter \(\mu\) improves the model fit.
-
-Therefore, the selected decay function used in the accessibility
-measures in Equation \ref{eq:empirical-access-general} and Equation
+The selected decay function used in the accessibility measures in
+Equation \ref{eq:empirical-access-general} and Equation
 \ref{eq:empirical-access-matching} is the modified negative exponential
 including \(\mu\), as shown below:
 
@@ -844,10 +827,9 @@ including \(\mu\), as shown below:
 \end{equation}
 
 where, \(c^{PT}_{jkt}\) is the modelled travel time from \(j\) to \(k\)
-at the MPTN temporal stage \(t\). The optimized parameters used are
-\(\beta = 0.031\) and \(\mu = 1.662\).
+at the MPTN temporal stage \(t\).
 
-\subsection{Analytical framework}\label{analytical-framework}
+The optimized parameters used are \(\beta = 0.044\) and \(\mu = 1.654\).
 
 \subsubsection{Accessibility indicators}\label{accessibility-indicators}
 
@@ -883,8 +865,8 @@ similarity and 1 a high similarity rate.
 measures}\label{accessibility-equity-measures}
 
 For the transport equity evaluation of infrastructure projects, the
-prevalence of accessibility shortfalls measure is adopted from Martens
-and Bastiaanssen (2019). This is expressed by the equation below:
+prevalence of accessibility shortfalls measure is adopted from Martens,
+Bastiaanssen, and Lucas (2019). This is expressed by the equation below:
 
 \begin{equation}
   H_t = \sum^{P}_{j=1} I(A_{it} < z)
@@ -898,18 +880,22 @@ accessibility level of at location \(j\) and temporal stage \(t\), \(z\)
 is the sufficiency threshold, and \(I(A_{it} < z)\) is an indicator
 function that equals 1 if \(y_{it}\) is less than the sufficiency
 threshold (\(z\)), and 0 otherwise. We also use the headcount ratio
-\(P_0 = H_t / N\), where a larger share indicates a less fair transport
-system. Given that this is a standardised measure, we can compare the
-different temporal stages.
+\(P_0 = H_t / N\), where \(N\) represents the total population in \(i\).
+Thus, a larger share indicates a less fair transport system. Given that
+this is a standardised measure, we can compare the different temporal
+stages.
 
-We use a range of sufficiency thresholds \(z\) using the 10, 15, 20, and
-30 percentile of accessibility by car for each corresponding measure,
-i.e., All or Matching. Accessibility by car is estimated using Equation
-\ref{eq:empirical-access-general} and Equation
+This study conducts a sensitivity analysis using a range of sufficiency
+thresholds for \(z\) commonly found in empirical studies, namely the 10,
+15, 20, and 25 percentiles of accessibility by car for each
+corresponding measure, i.e., All or Matching. Accessibility by car is
+estimated using Equation \ref{eq:empirical-access-general} and Equation
 \ref{eq:empirical-access-matching} where
 \(f(c_{jk}) = \text{exp}(-\beta c^{Car}_{jk})\). \(c^{Car}_{jk}\) is the
-estimated travel time by car. This approach draws on Martens and
-Bastiaanssen (2019).
+estimated travel time by car. This approach draws on Martens,
+Bastiaanssen, and Lucas (2019). For clarity, the main body of the paper
+presents the results of the 15th percentile. The detailed findings are
+presented in the Appendix section.
 
 \subsubsection{Indicators of spatial
 association}\label{indicators-of-spatial-association}
@@ -919,9 +905,13 @@ difference between the All and Matching measures. The first, the Global
 Moran's I statistic, which measures spatial autocorrelation, is
 expressed as (Moraga 2023):
 
-\[I = \frac{N \sum_{j} \sum_{k} w_{jk} (x_j - \bar{x}) (x_k - \bar{x})}{\left( \sum_{j \neq k} w_{jk} \right) \sum_{j} (x_j - \bar{x})^2}
-\] Where, \(N\) is the number of individual units in each SAS, \(x_j\)
-and \(x_k\) are the accessibility levels at location \(j\) and \(k\),
+\begin{equation}
+  I = \frac{N \sum_{j} \sum_{k} w_{jk} (x_j - \bar{x}) (x_k - \bar{x})}{\left( \sum_{j \neq k} w_{jk} \right) \sum_{j} (x_j - \bar{x})^2}
+\label{eq:moran-i-statistic}
+\end{equation}
+
+Where, \(N\) is the number of individual units in each SAS, \(x_j\) and
+\(x_k\) are the accessibility levels at location \(j\) and \(k\),
 respectively, \(\bar{x}\) is the mean accessibility, \(w_{jk}\)
 represents a binary spatial weight between locations \(i\) and \(j\),
 and the term \(\sum^N_{j=1} \sum^N_{k=1}\) is the sum of the spatial
@@ -930,21 +920,22 @@ which was computed based on 6-nearest neighbours of the OD points with
 the \texttt{spdep} package (Bivand 2021).
 
 Local Moran's I is used to account for local indicators of spatial
-association (LISA), defined as:
+association (LISA) on the similarity rate (defined in Equation
+\ref{eq:similarity-rate}). Local Moran's I is computed as:
 
-\[I_j = \frac{N (x_j - \bar{x})}{\sum_{k} (x_k - \bar{x})^2} \sum_{k} w_{jk} (x_k - \bar{x})
-\]
+\begin{equation}
+  I_j = \frac{N (x_j - \bar{x})}{\sum_{k} (x_k - \bar{x})^2} \sum_{k} w_{jk} (x_k - \bar{x})
+\label{eq:lisa-statistic}
+\end{equation}
 
-A high value for \(I_j\) suggests that the area is surrounded by areas
-with similar values, indicating that it is part of a cluster of high
-observations, low observations, or moderate observations. Conversely, a
-low value implies that the area is surrounded by dissimilar values,
-marking it as an outlier and indicating that the observation of area
-\(j\) differs from most or all of its neighbours.
-
-We compute a map of p-values that represent the probability of exceeding
-the observed values under the null hypothesis, allowing for the
-identification of significant clusters.
+A positive value for \(I_j\) suggests that area \(j\) is surrounded by
+areas with similar values. Conversely, a negative value indicates that
+area \(j\) is surrounded by dissimilar values. This helps identify
+different types of spatial clusters, such as high-high or low-low
+clusters (where areas with high or low values are surrounded by areas
+with similarly high or low values), as well as spatial outliers, such as
+high-low or low-high patterns (where an area with a high value is
+surrounded by low-value neighbours, or vice versa).
 
 \section{\texorpdfstring{Findings
 \label{sec:findings}}{Findings }}\label{findings}
@@ -955,17 +946,18 @@ Table \ref{tab:sas-summary} summarises descriptive statistics for both
 accessibility measures across various SASs. The mean values for the
 measure considering all types of employment range from 59,400 in the 0.5
 km grid to 107,000 in the postcode scheme, while the matching measure
-ranges from 25,500 to 41,600. This indicates a smaller scale for the
-latter due to restrictions imposed in employment opportunities. Notably,
-the mean of the matching measure increases steadily with scale, from
-25,500 in the 0.5 km grid to 54,900 in the 4 km grid, whereas the `All'
-measure shows no consistent trend. The postcodes scheme results in the
-largest mean values. This can be explained by zoning effects.
-Specifically, peripheral regions, which are associated with low
+ranges from 25,500 to 41,600. This indicates a smaller scale range for
+the latter due to restrictions imposed in employment opportunities.
+Notably, the mean of the matching measure increases steadily with scale,
+from 25,700 in the 0.5 km grid to 43,300 in the 4 km grid, whereas the
+`All' measure shows no consistent trend. The postcodes scheme results in
+the largest or relatively large mean, i.e.~107,100 (SD=142,000) and
+37,100 (SD=84,500), respectively. This can be explained by zoning
+effects. Specifically, peripheral regions, which are associated with low
 accessibility, tend to be larger, thereby reducing the number of
-low-accessibility value units. Meanwhile, equal-sized grids fragment
-these regions of the city into a larger number of units, thereby
-lowering the mean.
+observations with low accessibility values. Meanwhile, equal-sized grids
+fragment these regions of the city into a larger number of observations,
+thereby lowering the mean.
 
 \begin{table}
 \centering
@@ -976,11 +968,11 @@ lowering the mean.
 \toprule
 SAS & All & Matching & N\\
 \midrule
-Grid 0.5 km & 59.4 (121.3)\newline {[0.9, 50.8]} & 25.5 (71.4)\newline {[0.3, 9.2]} & 12 535\\
-Grid 1 km & 55.1 (120.8)\newline {[0.8, 31.7]} & 28.5 (83.1)\newline {[0.3, 10.8]} & 3 765\\
-Grid 2 km & 54.1 (130.4)\newline {[0.8, 25.0]} & 37.1 (108.6)\newline {[0.5, 16.6]} & 1 182\\
-Grid 4 km & 62.8 (166.6)\newline {[0.9, 29.2]} & 54.9 (158.1)\newline {[0.8, 27.5]} & 387\\
-Post code & 107.1 (149.2)\newline {[4.8, 157.3]} & 41.5 (85.7)\newline {[2.1, 33.5]} & 2 301\\
+Grid 0.5 km & 59.4 (121.3)\newline {[0.9, 50.8]} & 24.7 (70.9)\newline {[0.1, 7.9]} & 12 535\\
+Grid 1 km & 55.1 (120.8)\newline {[0.8, 31.7]} & 26.0 (81.8)\newline {[0.1, 6.7]} & 3 765\\
+Grid 2 km & 54.1 (130.4)\newline {[0.8, 25.0]} & 31.3 (106.4)\newline {[0.0, 6.4]} & 1 182\\
+Grid 4 km & 62.8 (166.6)\newline {[0.9, 29.2]} & 43.3 (156.4)\newline {[0.0, 2.3]} & 387\\
+Post code & 107.1 (149.2)\newline {[4.8, 157.3]} & 37.1 (84.5)\newline {[0.6, 25.0]} & 2 301\\
 \bottomrule
 \multicolumn{4}{l}{\rule{0pt}{1em}\textit{Note: }}\\
 \multicolumn{4}{l}{\rule{0pt}{1em}Descriptive statistics: Mean (SD) [1st-Q, 3rd-Q]. Figures shown in thousands.}\\
@@ -1029,13 +1021,10 @@ measure are less visible as the scale increases.
 The results of a bivariate Pearson correlation test between the generic
 measure and the matching are presented in Table
 \ref{tab:access-correlationtests}. It is shown that the correlation
-coefficient increases from 0.86 in the 0.5 km scheme to 0.99 in 4 km
-one. This shows that the added information by the refined matching
-measure is gradually lost as the scale of spatial units increases. This
-is likely because accessibility measures emphasise employment
-opportunities that are in close proximity. Therefore, large units mostly
-capture the within-zone opportunities. The postcode schemes show the
-lowest similarity.
+coefficient increases from 0.85 in the 0.5 km scheme to 0.96 in 4 km
+one. This implies that the distinctive information provided by the
+refined matching measure diminishes as larger spatial units are used.
+The postcode schemes show the lowest correlation.
 
 \begin{table}
 \centering
@@ -1049,14 +1038,14 @@ lowest similarity.
 Type & Grid 0.5 km & Grid 1 km & Grid 2 km & Grid 4 km & Post code\\
 \midrule
 \addlinespace[0.3em]
-\multicolumn{6}{l}{\textit{\textbf{Bivariate correlation}}}\\
-\hspace{1em}Pearson & 0.860*** & 0.879*** & 0.937*** & 0.989*** & 0.780***\\
+\multicolumn{6}{l}{\textit{\textbf{Bivariate correlation between All and Matching measures}}}\\
+\hspace{1em}Pearson & 0.853 & 0.855 & 0.900 & 0.964 & 0.753\\
 \addlinespace[0.3em]
 \multicolumn{6}{l}{\textit{\textbf{Global spatial autocorrelation}}}\\
-\hspace{1em}All & 0.926*** & 0.888*** & 0.812*** & 0.690*** & 0.929***\\
-\hspace{1em}Matching & 0.845*** & 0.795*** & 0.742*** & 0.657*** & 0.737***\\
+\hspace{1em}All & 0.926 & 0.888 & 0.812 & 0.690 & 0.929\\
+\hspace{1em}Matching & 0.841 & 0.779 & 0.715 & 0.607 & 0.734\\
 \bottomrule
-\multicolumn{6}{l}{\textsuperscript{} Signif. Codes: ***: >0.01, **: >0.05, *: >0.1}\\
+\multicolumn{6}{l}{\textsuperscript{} All correlation estimates are significant at p-value > 0.01}\\
 \multicolumn{6}{l}{\textsuperscript{} SAS = Spatial analytical scheme.}\\
 \end{tabu}
 \end{table}
@@ -1068,48 +1057,54 @@ by the global spatial autocorrelation test results in Table
 \ref{tab:access-correlationtests}. Moran's \(I\) statistic ranges from 0
 (no spatial autocorrelation) to 1 (high spatial autocorrelation). The
 results show that the matching measure consistently produces lower
-values than the generic accessibility measure. However, the gap narrows
-as the scale increases. For example, the difference is 0.08 points in
-the smallest grid but only 0.03 points in the 4 km grid. Postcode
-boundaries, however, show the largest gap, of nearly 0.2 points.
+values than the generic accessibility measure. The gap is generally
+constant for the grids, i.e.~approximately 0.1 points. However, Postcode
+boundaries show the largest gap, of nearly 0.2 points.
 
 \subsubsection{General versus matching accessibility and equity
 implications}\label{general-versus-matching-accessibility-and-equity-implications}
 
 In the next step of the analysis, the accessibility measures are
-directly compared using a similarity rate, where values close to 0
-indicate low similarity and values close to 1 indicate high similarity.
-We are also interested in whether the differences between matching and
-generic accessibility measures follow a spatial pattern. Figure
+directly compared using the similarity rate in Equation
+\ref{eq:similarity-rate}, where values close to 0 indicate low
+similarity and values close to 1 indicate high similarity. We are also
+interested in whether the differences between matching and generic
+accessibility measures follow a spatial pattern. Figure
 \ref{fig:lisa-map} displays the local Moran's \emph{I} clustering
-results for the similarity rate across each SAS. High- and
-mid-resolution SASs reveal a consistent East-West divide, with High-High
-clusters located towards the West and Low-Low clusters towards the East,
-using the CBD as a reference point. This suggests that differences
-between the accessibility measures tend to be stronger in the eastern
-areas of the city.
+results for the similarity rate across each SAS. A high-high cluster
+indicates that spatial units with a high degree of similarity between
+the generic `All' and `Matching' accessibility measures are surrounded
+by neighbouring units that also display high levels of similarity
+between the two measures. Conversely, a low-low cluster reflects areas
+where both the unit and its neighbours show low similarity rates.
 
 \begin{figure}
   \centering
   \includegraphics[width=1\textwidth]{../output/plots_maps/exploratory/lisa_diff_map.png}
-  \caption{Local indicator of spatial association on similarity rate between generic and matching MPTN accessibility over various SAS.}
-  \footnotesize{SAS = Spatial analytical scheme; MPTN = Main public transport network.}
+  \caption{Local indicator of spatial association clusters on similarity rate between generic and matching MPTN accessibility measure over various SAS.}
+  \footnotesize{A high-high cluster indicates that spatial units with strong similarity between the 'All' and 'Matching' accessibility measures are surrounded by neighbours exhibiting similarly high correspondence between the two measures. SAS = Spatial analytical scheme; MPTN = Main public transport network.}
   \label{fig:lisa-map}
 \end{figure}
 
-While the postcode and 4 km grids show a similar trend for Low-Low
-clusters, the High-High patterns are less consistent across SASs. In
-particular, the postcode SAS show substantial differences in the spatial
-distribution of High-High clusters, with many located in peripheral
-areas. This can be explained by postcode zones in the periphery tending
-to be larger. Thus, travel times to jobs outside the zone are generally
-long and the level of accessibility will likely focus on within-zone
-opportunities. Since the matching measure accounts for all within-zone
-employment opportunities, the similarity rate is high in many peripheral
-zones. This is one way in which zoning can interact in the differences
-between measures.
+High- and mid-resolution SASs reveal a consistent East-West divide, with
+high-high clusters located towards the west and low-low clusters towards
+the east, using the CBD as a reference point. This suggests that
+differences between the accessibility measures tend to be stronger in
+the eastern areas of the city. While the 2 and 4 km grid lose many of
+these spatial patterns, particularly those associated to low-low
+clusters, the Postcode scheme still keeps the main spatial trends. In
+this SAS, large units with low populations in the periphery are visually
+overrepresented.
 
-The overall East-West divide revealed in the LISA analysis is generally
+The differences in large size SAS can be explained because larger units
+imply longer travel times to jobs outside the zone and the level of
+accessibility will likely focus on within-zone opportunities. Since the
+matching measure only accounts for compatible opportunities, large SAS
+tend to be very restrictive, as virtually none of the opportunities in
+neighbouring areas can be considered. This is one way in which zoning
+can interact in the differences between measures.
+
+The overall east-west divide revealed in the LISA analysis is generally
 consistent with well-known spatial trends of key socioeconomic
 indicators in GMC, i.e., with socio-economically advantaged population
 residing in the West (Ortega-Avila 2023). To examine potential
@@ -1117,25 +1112,18 @@ systematic differences, the LISA clusters are examined by their social
 composition. Figure \ref{fig:lisa-composition} displays the proportion
 of the population which were classed in High-High or Low-Low clusters by
 education quintile for all SAS. This only includes significant clusters.
-It is clear that the accessibility measures are very similar for the
-vast majority of the most educated population across all SAS. By
-contrast, most of the population in less educated groups fall within
-Low-Low clusters.
+From the result, it is clear that the accessibility measures are very
+similar for the vast majority of the most educated population across all
+SAS. By contrast, most of the population in less educated groups fall
+within Low-Low clusters.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/lisa_composition_plot.png}
   \caption{Composition of local indicator of spatial association clusters on similarity rate by education quintile.}
-  \footnotesize{LISA outlier clusters are not shown.}
+  \footnotesize{A high-high cluster indicates that spatial units with strong similarity between the 'All' and 'Matching' accessibility measures are surrounded by neighbours exhibiting similarly high correspondence between the two measures. LISA outlier clusters are not shown.}
   \label{fig:lisa-composition}
 \end{figure}
-
-The postcode scheme shows an exception to this trend. According to this
-SAS, most of the least educated population reside in units with high
-similarity. Likely, this is related to the characteristics presented in
-the previous paragraph, where peripheral zones tend display high
-similarity rates. At the same time, these are areas tend to be populated
-by low-educated groups, particularly to the North and North-East.
 
 \subsection{Main public transport network
 assessment}\label{main-public-transport-network-assessment}
@@ -1172,226 +1160,448 @@ introduced in these periods allowed access to additional employment from
 certain residential zones, the jobs at destinations did not match the
 educational qualifications in the areas of influence.
 
-We also draw on the results from a transport equity perspective. An
-advantage is that it can distinguish between populations that were
-already served at an `adequate' level before an intervention and those
-who were not. Figure \ref{fig:headcount-lineplot} shows the head count
-ratio which are under various minimal accessibility thresholds over the
-MPTN temporal stages for the `All' and `Matching' measures. From the
-plot, a general reduction in the population under the accessibility
-thresholds can be observed. This is in the direction expected.
+By taking the sufficiency accessibility threshold as a benchmark, we can
+distinguish between populations that were already served at an
+`adequate' level before a transport intervention occurs and those who
+were not. Strictly, this is not a transport poverty measure as it
+considers all populations. Figure \ref{fig:headcount-lineplot} shows the
+head count ratio which are under various thresholds over the MPTN
+temporal stages for the `All' and `Matching' measures. From the plot, a
+general reduction in the population under the minimal thresholds can be
+observed. This is in the direction expected.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.85\textwidth]{../output/plots_maps/exploratory/equity_overtime.png}
-  \caption{Equity analysis over various temporal stages. S = Stage.}
+  \caption{Minimum accessibility headcount ratio analysis over various temporal stages. S = Stage. P = Percentile, representing the sufficiency threshold based on the accessibility level by car.}
   \label{fig:headcount-lineplot}
 \end{figure}
 
 There are additional insights to draw from the results. First, the scale
-of the ratio is smaller for the matching measure, with the gap narrowing
-as the percentile increases. This relates to the different density
-distributions of the measures, where the `Matching' measure is more
-skewed than the `All' measure. Still, both measures show parallel trends
-for most stages, with a few exceptions. For example, the `All' measure
-consistently declines between Stage 1 (`Before 2010') and Stage 4 (`2013
-to 2015') across all thresholds, while the `Matching' measure only
-begins to reflect this trend after the 15th percentile, showing similar
-trends by the 30th percentile.
+range of the ratio is smaller for the matching measure. Both measures
+show parallel trends for most stages, with a few exceptions. For
+example, the `All' measure consistently declines between Stage 1
+(`Before 2010') and Stage 4 (`2013 to 2015'). Meanwhile, the `Matching'
+measure decreases more steadily over these stages.
 
 Another distinction is that the `Matching' measure shows significant
-improvement in Stage 5 (`2015 to 2016') for all thresholds, which is not
-captured by the `All' measure. This improvement corresponds to the BRT
-corridor MXB-LII, located in the periphery of the MPTN and connecting
-key corridors in the northern areas of the city. This suggests that some
-northern populations were previously considered well-served by the
-generic measure, even though the employment opportunities did not match
-their qualifications. This means that the opening of MXB-LII enabled
-access to matching employment opportunities for those who already had
-access to a minimum number of general opportunities.
+improvement in Stage 5 (`2015 to 2016'), which is not shown by the `All'
+measure. This improvement corresponds to the BRT corridor MXB-LII,
+located in the periphery of the MPTN and connecting key corridors in the
+northern areas of the city. This suggests that some northern populations
+were previously considered well-served by the `All' measure, even though
+the employment opportunities did not match their qualifications. This
+means that the opening of MXB-LII enabled access to matching employment
+opportunities for those who already had access to a minimum number of
+general opportunities.
 
-The global population-weighted average in Figure
+The global population-weighted average shown in Figure
 \ref{fig:relative-change} highlights large accessibility benefits
-introduced in Stage 7 (2018-2019). However, the equity analysis results
-in Figure \ref{fig:headcount-lineplot} show consistent negligible
-impacts across all percentiles and measures in this stage. This is
-because the MB-L7, implemented during this stage, is centrally located
-within the MPTN and primarily serves to articulate existing network
-corridors. As a result, the additional accessibility to employment was
-concentrated in areas that already exceeded the examined thresholds.
+introduced in Stage 7 (2018-2019). However, the results in Figure
+\ref{fig:headcount-lineplot} show consistent negligible impacts (this is
+consistent across all percentiles and measures in this stage, as shown
+in the sensitivity analysis in the Appendix). This is because the MB-L7,
+implemented during this stage, is centrally located within the MPTN and
+primarily serves to articulate existing network corridors. As a result,
+the additional accessibility to employment was concentrated in areas
+that already exceeded the sufficiency thresholds.
 
 Figure \ref{fig:equity-barplot} shows the net population taken out from
-various accessibility thresholds by education quintile across the MPTN
-stages. Between Stage 2 and Stage 4, the groups benefiting from the
-infrastructure are concentrated in the intermediate quantiles, a trend
-more pronounced in the general accessibility measure. The matching
-measure remains consistent for some stages, particularly for the 30th
-percentile threshold. Interestingly, the matching measure reveals a
-progressive distributional effect in Stage 5, where the benefits go to
-lower-educated groups, between the first and third quintile. This makes
-sense, since the MXB-LIII enabled direct connection to the MPTN to two
-densely populated municipalities characterised by high-deprivation
-levels, i.e.~\emph{Ciudad Nezahualcóyotl} and \emph{Chimalhuacan}.
-However, these effects diminish at higher accessibility thresholds,
-likely because low-educated populations reside in less central areas.
-Thus, as the threshold increases, lower-educated zones fall short, while
-areas with higher education levels are considered beneficiaries.
+the sufficiency threshold by education quintile across the MPTN stages.
+A first observation is that values are often higher for the generic
+measure than for the matching one, as seen in Stage 2 and Stage 3. This
+reinforces the idea that although infrastructure enabled additional
+accessibility to employment, these opportunities were not necessarily
+relevant to the intended population. In other words, a generic measure
+may overstate the benefits under certain conditions.
+
+Another striking finding is that both measures show little to no
+improvement for the lowest-educated populations over the period
+examined. However, this comes with a few notable differences. For
+instance, in Stage 4, the `All' measure indicates that over 200,000
+people in the lowest quintile benefited, compared to fewer than 50,000
+under the matching measure. Nonetheless, both measures align in showing
+that infrastructure improvements mostly benefited lower-educated
+populations (quintiles 1 to 3) in this particular stage.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.95\textwidth]{../output/plots_maps/exploratory/equity_barplot.png}
-  \caption{Equity analysis by education level over various temporal stages.}
+  \caption{Equity analysis by education level over various temporal stages. P = Percentile, representing the sufficiency threshold based on the accessibility level by car.}
   \label{fig:equity-barplot}
 \end{figure}
 
 Figure \ref{fig:equity-barplot} also highlights the matching employment
 benefits in Stage 5 (2015-2016), as discussed earlier. Interestingly,
-these benefits primarily went to the more educated population between
-the third and fifth quintiles, a pattern consistent across all
-thresholds. As noted, no significant population was taken out of the
-minimal accessibility thresholds in Stages 6 and 7.
+most of these improvements went to the more educated population between
+the third and fifth quintiles. As noted, no significant population was
+taken out of the sufficiency accessibility thresholds in Stages 6 and 7.
 
-\section{\texorpdfstring{Discussion
-\label{sec:discussion}}{Discussion }}\label{discussion}
+\section{\texorpdfstring{Conclusion and discussion
+\label{sec:discussion}}{Conclusion and discussion }}\label{conclusion-and-discussion}
 
 The results examining the spatial differences between generic and
 matching accessibility measures showed important interactions with the
-MAUP. Specifically, the larger the scale, the less relevant the
+MAUP. Specifically, the larger the grid size, the less relevant the
 distinction of matching accessibility becomes, as indicated by the
 increased correlation. To some extent, this is explained by the tendency
 of larger units to emphasise within-zone opportunities, given the
 increased travel costs for residents to leave the unit or reach another
-one. Thus, at larger scales, accessibility measures tend to reflect
-employment density. Interestingly, the postcode retained matching
-employment information to a very good extent, as evidenced by the low
-correlation. By implication, and as shown visually, the role of public
-transport infrastructure gradually diminishes with the use of larger
-scales. Similarly, postcode units demonstrated a retention of some of
-these features. Analysts who aim to account for matching characteristics
-and the role of transport infrastructure should take these effects into
-consideration.
+one. Interestingly, the postcode retained matching employment
+information to a good extent. By implication, and as shown visually, the
+role of public transport infrastructure gradually diminishes with larger
+grid units. Similarly, postcode units demonstrated a retention of some
+of these features. Analysts who aim to account for matching
+characteristics and the role of transport infrastructure should take
+these effects into consideration.
 
-Furthermore, our results indicate that zones with significant similarity
+Furthermore, our results indicate that zones with high similarity
 between the `All' and `Matching' measures were predominantly composed of
-the most educated population. This reflects a East-West divide, aligning
-with the well-documented spatial inequalities in GMC, such as those
-related to household income and car ownership (Guerra 2015), healthy
-food environments (Ortega-Avila 2023), and social mix (Letouzé et al.
-2022). From an urban economic perspective, highly educated populations
-are likely to be in a position to afford residential locations that
-maximise accessibility to employment opportunities they consider
-valuable, outbidding less affluent groups (Duranton and Puga 2015). An
-implication for accessibility analyses that draw on the assumption of
-equivalent attractiveness of employment is that they might
-systematically overestimate the relevant opportunities available to less
-educated populations. This is expected to be particularly relevant in
-contexts with higher economic inequalities, following urban land-rent
-theory.
+the most educated population. This adds to the existing evidence of the
+east-west inequality divide in the GMC, beyond disparities related to
+household income and car ownership (Guerra 2015), healthy food
+environments (Ortega-Avila 2023), and social mix (Letouzé et al. 2022).
+This finding can be discussed from an urban economic perspective.
+Specifically, highly educated populations are likely to be in a position
+to afford residential locations that maximise accessibility to
+employment opportunities they consider valuable, outbidding less
+affluent groups (Duranton and Puga 2015). An implication for
+accessibility analyses that draw on the assumption of equivalent
+attractiveness of employment is that they might systematically
+overestimate the relevant opportunities available to less educated
+populations. This is expected to be particularly relevant in contexts
+with higher economic inequalities, following urban land-rent theory.
 
 The results regarding the evaluation of public transport infrastructure
 over time are varied. Firstly, it is confirmed that a simple measure
 alone, such as the global average of accessibility, might overlook key
-transport equity insights (Karner, Pereira, and Farber 2024).
+distributional insights (Karner, Pereira, and Farber 2024).
 Specifically, while certain extensions of the MPTN reflect a substantial
-improvement on average, an equity analysis from a sufficiency
-perspective shows negligible effects. We argue that both indicators
-supplement each other. For instance, the results highlight a
-concentration of the benefits in Stage 7 among populations that were
-already well served. This finding was consistent regardless of the
-accessibility measure being used.
+improvement on average, an analysis from a sufficiency perspective shows
+negligible effects, e.g.~in Stage 7 (2018 to 2019). In this case, the
+mean and sufficiency threshold supplement each other. For instance,
+these results highlight a concentration of the benefits in Stage 7 among
+populations that were already well served. This finding was consistent
+regardless of the accessibility measure being used.
 
-Secondly, both accessibility measures point in similar directions with
-parallel trends at a higher level. However, there are particularities to
-note. The matching accessibility measure was more sensitive to
-sufficiency thresholds in the equity analysis. This may be related to
-the observation that the distribution of the baseline used to define the
-thresholds presents a more skewed distribution.
+Both accessibility measures point in similar directions with parallel
+trends at a higher level. However, there are particularities to note.
+The matching accessibility measure was more sensitive to sufficiency
+thresholds. This may be related to the observation that the distribution
+of the baseline used to define the thresholds presents a more skewed
+distribution. Nonetheless, the comparison between measures also showed
+some complementarity. For example, the fact that the matching measure
+reflects that there are populations benefited by particular
+infrastructure interventions, while the general measure does not,
+implies that certain group might have received `general' accessibility
+improvements previously and, later, specific ones related to matching
+employment opportunities. Both indicators are useful when considering
+the former measure as a form of \emph{generalized access to urban
+opportunities}, as the location of employment often reflects the
+provision of a service (Merlin 2017; Levinson and Wu 2020). Meanwhile, a
+distinction of matching employment opportunities is useful when applied
+to commuting to work patterns or labour market inequalities, for
+example.
 
-The comparison between measures also showed some complementarity. For
-example, the fact that the matching measure reflects that there are
-populations benefited by particular infrastructure interventions, while
-the general measure does not, implies that certain group might have
-received `general' accessibility improvements previously and, later,
-specific ones related to matching employment opportunities. Both
-indicators are useful when considering the former measure as a form of
-\emph{generalized access to urban opportunities}, as the location of
-employment often reflects the provision of a service (Merlin 2017;
-Levinson and Wu 2020). Meanwhile, a distinction of matching employment
-opportunities is useful when applied to commuting to work patterns or
-labour market inequalities, for example.
+The particular differences arising from the inclusion of matching
+opportunities in sufficiency analyses vary with a range of outcomes from
+case to case. It is shown that the implementation of a transport project
+can potentially imply benefits either for well-educated or low-educated
+groups only, or that measures can be consistent at times. In the area of
+study, this is observed to be related to the location of the transport
+improvement with respect to the overall transport network and the
+demographic characteristics of the population in proximity to the public
+transport services. This reinforces the important role of accessibility
+measures in public transport evaluation, given that they are able to
+capture key elements of the transport system and characteristics of the
+population simultaneously. Thus, it is recommended to use both measures
+to form comprehensive insights into the impact of transport
+infrastructure on a case-based basis. In regions lacking granular data,
+reduction factors may be considered, as matched employment opportunities
+are generally lower than those identified by generic measures, with
+larger gaps observed among low-educated groups.
 
-Thirdly, the particular differences arising from the inclusion of
-matching opportunities in equity analyses vary with a range of outcomes
-from case to case. It is shown that the implementation of a transport
-project can potentially imply benefits either for well-educated or
-low-educated groups only, or that measures can be consistent at times.
-In the area of study, this is observed to be related to the location of
-the transport improvement with respect to the overall transport network
-and the demographic characteristics of the population in proximity to
-the public transport services. This reinforces the important role of
-accessibility measures in public transport evaluation, given that they
-are able to capture key elements of the transport system and
-characteristics of the population simultaneously. Thus, it is
-recommended to use both measures to form comprehensive insights into the
-impact of transport infrastructure on a case-based basis.
+Finally, the results show that the least educated populations
+experienced little to no improvement during the period studied. This
+pattern is consistent across both accessibility measures, but matching
+accessibility is particularly relevant in Stage 4. This aligns with
+recent findings in London (Nie et al. 2024). This may reflect the
+tendency of disadvantaged populations to be expelled to peripheral
+areas. As a result, even when network extensions reach new
+municipalities, they may still miss the most marginalised groups. These
+results support the need for integrated transport--land use strategies
+to ensure disadvantaged populations benefit from public investments,
+e.g.~inclusionary zoning (Schuetz and Meltzer 2012).
 
 \subsection{Limitations and future
 work}\label{limitations-and-future-work}
 
 The present study comes with the following limitations. Specifically,
-the analyses assume that all populations within zones share similar
-demographic characteristics, e.g., the same education levels or
-employment opportunities. This is a broader issue in geography discussed
-under the `Ecological Fallacy' literature (Walker 2021). This is also
-related to limitations of data, given that individual-level data for
-both jobs and residents are restricted to maintain privacy. However,
-this is expected to have minor implications because the original source
-information is aggregated in small geographic units, the urban block.
-Additionally, the modelled matching access measure used assumes limited
-social mobility, allowing only equal education-income quintiles to be
-matched. Additional research in different contexts can clarify the
-sensitivity of this assumption. Furthermore, the analyses focus on the
-MPTN only, which overlooks street transit services. In the case of the
-study, this is largely constrained by the information available, given
-that comprehensive structured timetable data is not accessible.
+populations within zones are assumed to share similar characteristics,
+e.g., the same education levels or employment opportunities. This is a
+broader issue in geography discussed under the `Ecological Fallacy'
+literature (Walker 2021). This is also related to limitations of data,
+given that individual-level information for both jobs and residents are
+restricted to maintain privacy. However, this is expected to have minor
+implications because the original source information is aggregated in
+small geographic units, the urban block. Additionally, the modelled
+matching access measure used assumes limited social mobility, allowing
+only equal education-income quintiles to be matched. Additional research
+in different contexts can clarify the sensitivity of this assumption.
+
+Furthermore, the analyses focus on the MPTN only, which overlooks street
+transit services. In the case of the study, this is largely constrained
+by the information available, given that comprehensive structured
+timetable data is not accessible. Also, the driving time estimates are
+limited to a fixed scenario based on the 2019 OSM network. This may
+introduce some inaccuracies due to potential changes in the road
+infrastructure over the study period. However, the sensitivity analysis
+using a range of accessibility percentiles as thresholds offers
+robustness to the findings.
 
 Future work is recommended to examine the sensitivity of results when
 using individual-level job characteristics to establish a match between
-residents and opportunities. Similar analyses in a diversity of contexts
-with a range of social and economic disparities would help to identify
-consistent patterns. This could help to establish the extent of the
-findings in our empirical case. Furthermore, additional work should
-examine the assumptions of matching measures and their relevance for
-specific applications, e.g.~in the housing market or commuting to work
-patterns.
+residents and employment opportunities. This could include factors such
+as the industry of the establishment or the number of jobs by
+type---e.g., blue- or white-collar---available at destinations, as
+collected in the Economic Census. Additionally, similar analyses in a
+diversity of contexts with a range of social and economic disparities
+would help to identify consistent patterns. Furthermore, additional work
+should examine the assumptions of matching measures and their relevance
+for specific applications, e.g.~in the housing market or commuting to
+work patterns.
 
-\FloatBarrier
+The temporal divergences among the data sources used are acknowledged,
+i.e.~the demographic, economic, and transport data. This reflects a
+common limitation in urban accessibility studies, as disaggregate
+socio-demographic data are commonly available from decennial censuses.
+The analysis intentionally excludes the COVID-19 period, which likely
+incentivised land use changes and mobility patterns. The authors are not
+aware of any major political or economic shocks during the study period
+that would have significantly altered land-use structures or undermined
+the relationships examined.
 
-\section{\texorpdfstring{Conclusions
-\label{sec:conclusions}}{Conclusions }}\label{conclusions}
+\section*{Appendix}\label{appendix}
+\addcontentsline{toc}{section}{Appendix}
 
-The present study relaxed a common assumption of accessibility analysis
-that access to employment is equally attractive to all types of
-residents. The study examines the specific differences between a generic
-and matching accessibility measures taking into the account the MAUP,
-and its relevance for equity assessments of public transport
-infrastructure.
+\subsection*{Appendix A. Spatial distributioon of key socioeconomic
+variables}\label{appendix-a.-spatial-distributioon-of-key-socioeconomic-variables}
+\addcontentsline{toc}{subsection}{Appendix A. Spatial distributioon of
+key socioeconomic variables}
 
-It is shown that both components of the modifiable areal unit problem,
-namely scale and zoning, play an important role in this distinction.
-Specifically, the added information regarding the matching employment is
-gradually smoothed with increased scale. Also, the difference between
-measures is sensitive to zoning as postcodes, for example, can
-over-represent the role or large zones in local spatial analyses.
+The spatial distribution of education level is shown in Figure
+\ref{fig:education-map} across the various SAS. The spatial patterns are
+consistent across units, with highly educated residents concentrated in
+the south-west, while lower-educated residents are mainly in peripheral
+areas, particularly in the south-east and north.
 
-A sensitivity analysis is recommended particularly in context with high
-social inequality. This is because the allocation of residential land
-use might push low-income residents more acutely with the consequence of
-the level of access to relevant employment being systematically
-underestimated for less advantaged populations. Also, the interpretation
-and information provided by the distinct measures will depend on
-specific applications. In this study, we have shown that both measures
-play complementary roles.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../output/plots_maps/edu_decile_map.png}
+  \caption{Education levels across Greater Mexico City. The map shows the median number of years in formal education by quintile.}
+  \footnotesize{\textit{Source:} The author based on Population Census 2010, INEGI.}
+  \label{fig:education-map}
+\end{figure}
+
+Figure \ref{fig:salaries-map} shows the spatial distribution of the type
+of employment across various SAS in Greater Mexico City. Lowest salaries
+are paid in periphery areas particularly in the east and south-east,
+e.g.~Texcoco, Ixtapaluca, Chalco, in Estado de Mexcio.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../output/plots_maps/inc_decile_map.png}
+  \caption{Type of employment categorised by salaries paid at establishments in Greater Mexico City. The salaries are shown by quintiles.}
+  \footnotesize{\textit{Source:} The author based on Economic Census 2014 and Denue 2015, INEGI.}
+  \label{fig:salaries-map}
+\end{figure}
+
+\subsection*{Appendix B. Public transport Mexibus (MXB)
+itineraries}\label{appendix-b.-public-transport-mexibus-mxb-itineraries}
+\addcontentsline{toc}{subsection}{Appendix B. Public transport Mexibus
+(MXB) itineraries}
+
+The detailed information for three BRT corridors operated by MXB agency
+was obtained directly from the Transport Agency of the State of Mexico
+(\emph{Sistema de Transporte Masivo y Teleferico del Estado de México}).
+The data provided included a collection of unstructured files,
+e.g.~stops and corridors were shared in \texttt{.kml} files and the rest
+of the information as text or figures in \texttt{.pdf} files. Some stop
+locations or access points to stations were adjusted manually based on
+satellite images. Table \ref{tab:mbx-services} summarises the details of
+the services used to extend and reconstruct the GTFS data used in the
+analyses. These are valid for the year 2019 in a regular business day
+(Monday to Friday), and were assumed as fixed for the corridors included
+in the different temporal scenarios of the main public transport
+network.
+
+\begin{table}[H]
+\centering
+\caption{\label{tab:mbx-services}Mexibus corridor services, 2019}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{l>{\centering\arraybackslash}p{19em}>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{5em}}
+\toprule
+Corridor/Route & Route service name & Total length (Km) & Travel time (minutes) & Average speed (Km/h) & Headway (seconds)\\
+\midrule
+Mexibús I & Ordinario (Cd. Azteca - Tecámac) & 33.6 & 78 & 25.85 & 300\\
+Mexibús I & TR3 Exprés Rosa (Cd. Azteca - Tecámac) & 33.6 & 60 & 33.60 & 540\\
+Mexibús I & TR3 Exprés Mixto(Cd. Azteca - Tecámac) & 33.6 & 60 & 33.60 & 360\\
+Mexibús I & TR4 Exprés (C. Azteca - Central de Abastos) & 22.5 & 40 & 33.75 & 180\\
+Mexibús II & Ordinario (Lechería - Plaza las Amerícas) & 46.1 & 120 & 23.05 & 240*\\
+\addlinespace
+Mexibús II & Ordinario Rosa (Lechería - Plaza las Amerícas) & 46.1 & 120 & 23.05 & 1200\\
+Mexibús II & Exprés Mixto (Lechería -Coacalco) & 34.0 & 70 & 29.14 & 600\\
+Mexibús II & Exprés Rosa (Lechería -Coacalco) & 34.0 & 70 & 29.14 & 1800\\
+Mexibús III & Ordinario (Chimalhuacán - Pantitlán) & 36.0 & 100 & 21.60 & 300*\\
+Mexibús III & Exprés 1 (Chimalhuacán - Pantitlán) & 34.0 & 80 & 25.50 & 480*\\
+\addlinespace
+Mexibús III & Exprés 2 (Chimalhuacán - Pantitlán) & 36.0 & 80 & 27.00 & 360*\\
+Mexibús III & Exprés 2 Rosa (Chimalhuacán - Pantitlán) & 36.0 & 80 & 27.00 & 1260\\
+Mexibús III & Exprés 3 (Nezahualcóyolt - Pantitlán) & 16.6 & 44 & 22.64 & 660\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Note: } 
+\item Source: Sistema de Transporte Masivo y Teleferico del Estado de México
+\item Total length and travel time and  are expressed as a full cycle wich includes the return trip to the starting terminal;
+\item Average speed is based the total length and travel time reported;
+\item * Headway considered is the largest reported (max. difference of 120 secs), since the specific frequency time windows are not defined. All other services are constant, as reported.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}
+
+\subsection{Appendix C. Calibration of accessibility
+parameters}\label{appendix-c.-calibration-of-accessibility-parameters}
+
+This study fitted a built-for-purpose gravity model to derive the
+spatial decay parameter \(\beta\). This analysis used data from the 2017
+Travel Survey (INEGI 2018). The selected data includes commuting
+journeys on weekdays completed by public transport, walking, or a
+combination of these. This resulted in a sample including 37,636
+observations. The spatial resolution of the journey is the traffic
+analysis zone, which includes 111 units.
+
+Alternative specifications were estimated within a doubly-constrained
+gravity model, expressed as:
+
+\begin{equation}
+  T_{jk} = A_j O_j B_k D_k f(c_{jk})
+  \label{eq:gravity-model}
+\end{equation}
+
+where \begin{equation} 
+  A_j = \left[ \sum{B_k D_k f(c_{jk})} \right]^{-1}
+\end{equation}
+
+and \begin{equation} 
+  B_k = \left[ \sum{A_j O_j f(c_{jk}) }  \right] ^{-1}
+\end{equation}
+
+with balancing factors \(A_j\) and \(B_k\) estimated iteratively.
+\(T_{jk}\) are commuter flows between origins (\(j\)) and destinations
+(\(k\)), with constraints on the number of journeys at each, i.e.,
+\(O_j\) and \(D_k\). \(f(c_{jk})\) is a spatial deterrence or decay
+function. The inverse power (\(c_{jk}^{-\beta}\)) and negative
+exponential (\(e^{(-\beta c_{jk})}\)) decay functions were tested.
+\(\beta\) represents the deterrence parameter. \(c_{jk}\) is the
+observed travel time.
+
+A modified specification aimed at capturing an start-up cost for
+inter-zone journeys or analogously a benefit of residing and working
+within the same zone is also considered (Thorsen and Gitlesen 1998).
+This includes a parameter \(\mu\) which affects only the diagonal
+elements of the OD matrix. The term is given by the following
+expression:
+
+\begin{equation} 
+  \mu \delta_{jk}
+\end{equation}
+
+where Kronecker delta takes the following value:
+
+\begin{equation}
+  \delta_{ij} \left\{
+    \begin{array}{ll}
+        0 & \quad \text{if   } j \neq k \\
+        1 & \quad \text{if   } j = k \\
+    \end{array} 
+   \right.\\
+\end{equation}
+
+The simultaneous calibration of the model parameters \(\beta\) and
+\(\mu\) is achieved via optimization by minimising the standardised root
+mean square error (SRMSE) using the \emph{Nelder-Mead's simplex
+algorithm} as implemented in base \texttt{R} (R Core Team 2021).
+
+The analyses shows that the negative exponential function provided
+better fitting estimates compared to the inverse power. Also, the use of
+the within-zone parameter \(\mu\) improves the model fit. Accordingly,
+the preferred decay function used in the accessibility measures in this
+study is the modified negative exponential including \(\mu\) expressed
+as follows:
+
+\begin{equation} 
+  f(c_{jkt}) = e^{(-\beta c^{PT}_{jkt} + \mu \delta_{jk})}
+\label{eq:seleected-decaying-function}
+\end{equation}
+
+where, \(c^{PT}_{jkt}\) is the modelled travel time from \(j\) to \(k\)
+at the MPTN temporal stage \(t\). The optimized parameters used are
+\(\beta = 0.044\) and \(\mu = 1.654\). Figure \ref{fig:impedance-curve}
+illustrates the calibrated parameter over the travel time considered in
+this study.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{../output/impedance_curves.png}
+  \caption{Impedance curve using the calibrated beta parameter.}
+  \label{fig:impedance-curve}
+\end{figure}
+
+\subsection{Appendix D. Sensitivity analysis according to various
+accessibility
+thresholds}\label{appendix-d.-sensitivity-analysis-according-to-various-accessibility-thresholds}
+
+Figure \ref{fig:sensitivity-headcount-lineplot} shows the results of the
+headcount ratio over a range of sufficiency thresholds (percentile 10 to
+25) in the period studied for both types of accessibility measures,
+namely `All' and Matching. Overall, the percentiles examined show very
+consistent trends and the differences captured by the distinct measures
+are also reflected at almost all thresholds. An observation, is that the
+general gap between measures narrows as the percentile increases. In
+other words, the larger the percentiles, the less relevant the
+distinction of the matching measure.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{../output/plots_maps/exploratory/sensitivity_equity_overtime.png}
+  \caption{Sensitivity analysis of the minimum accessibility headcount ratio over various thresholds and temporal stages. P = Percentile, representing the sufficiency threshold based on the accessibility level by car.}
+  \label{fig:sensitivity-headcount-lineplot}
+\end{figure}
+
+Figure \ref{fig:sensitivity-equity-barplot} shows the net population
+lifted above the sufficiency threshold by education quintile across the
+MPTN stages, evaluated over a range of percentile thresholds (e.g.~10 to
+25). General trends remain consistent across thresholds. For instance,
+the progressive distributional effect in Stage 4---where benefits are
+concentrated among lower-educated groups (quintiles 1 to 3)---is
+constant under all percentiles. Similarly, the lack of improvement in
+Stages 6 and 7 is consistent throughout. Additionally, the trend that
+benefits are generally greater for the generic accessibility measure
+than for the matching one holds across all thresholds.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{../output/plots_maps/exploratory/sensitivity_equity_barplot.png}
+  \caption{Sensitivity analysis for equity assessment by education level over various temporal stages. S = Stage; P = Percentile, representing the sufficiency threshold based on the accessibility level by car.}
+  \label{fig:sensitivity-equity-barplot}
+\end{figure}
+
+Overall, the results do not appear to be overly sensitive to the choice
+of percentile used to represent the sufficiency threshold within the
+range explored, which is common in empirical studies.
 
 \FloatBarrier
 
@@ -1403,7 +1613,15 @@ play complementary roles.
 \bibitem[\citeproctext]{ref-Ahlfeldt2013}
 Ahlfeldt, Gabriel M. 2013. {``If We Build It, Will They Pay? Predicting
 Property Price Effects of Transport Innovations.''} \emph{Environment
-and Planning A} 45 (8): 1977--94. \url{https://doi.org/10.1068/a4549}.
+and Planning A} 45 (8, 8): 1977--94.
+\url{https://doi.org/10.1068/a4549}.
+
+\bibitem[\citeproctext]{ref-Basso2020}
+Basso, Franco, Jonathan Frez, Luis Martínez, Raúl Pezoa, and Mauricio
+Varas. 2020. {``Accessibility to Opportunities Based on Public Transport
+Gps-Monitored Data: {The} Case of {Santiago}, {Chile}.''} \emph{Travel
+Behaviour and Society} 21 (October): 140--53.
+\url{https://doi.org/10.1016/j.tbs.2020.06.004}.
 
 \bibitem[\citeproctext]{ref-Becker1994}
 Becker, Gary S. 1994. \emph{Human {Capital}: {A Theoretical} and
@@ -1417,18 +1635,18 @@ Perspective.''} \emph{European Journal of Training and Development} 44
 
 \bibitem[\citeproctext]{ref-R-spdep}
 Bivand, Roger. 2021. \emph{Spdep: {Spatial} Dependence: {Weighting}
-Schemes, Statistics}. Manual.
+Schemes, Statistics}. Manual. \url{https://github.com/r-spatial/spdep/}.
 
 \bibitem[\citeproctext]{ref-Conway2018}
 Conway, Matthew Wigginton, Andrew Byrd, and Michael Van Eggermond. 2018.
 {``Accounting for Uncertainty and Variation in Accessibility Metrics for
 Public Transport Sketch Planning.''} \emph{Journal of Transport and Land
-Use} 11 (1). \url{https://doi.org/10.5198/jtlu.2018.1074}.
+Use} 11 (1, 1). \url{https://doi.org/10.5198/jtlu.2018.1074}.
 
 \bibitem[\citeproctext]{ref-Dark2007}
 Dark, Shawna J., and Danielle Bram. 2007. {``The Modifiable Areal Unit
 Problem ({MAUP}) in Physical Geography.''} \emph{Progress in Physical
-Geography: Earth and Environment} 31 (5): 471--79.
+Geography: Earth and Environment} 31 (5, 5): 471--79.
 \url{https://doi.org/10.1177/0309133307083294}.
 
 \bibitem[\citeproctext]{ref-Duranton2015}
@@ -1443,32 +1661,38 @@ Ermagun, Alireza. 2021. {``Transit Access and Urban Space-Time Structure
 of {American} Cities.''} \emph{Journal of Transport Geography} 93 (May).
 \url{https://doi.org/10.1016/j.jtrangeo.2021.103066}.
 
+\bibitem[\citeproctext]{ref-Ermagun2020}
+Ermagun, Alireza, and Nebiyou Tilahun. 2020. {``Equity of Transit
+Accessibility Across {Chicago}.''} \emph{Transportation Research Part D:
+Transport and Environment} 86 (September): 102461.
+\url{https://doi.org/10.1016/j.trd.2020.102461}.
+
 \bibitem[\citeproctext]{ref-Fotheringham1991}
 Fotheringham, A Stewart, and David W S Wong. 1991. {``The Modifiable
 Areal Unit Problem in Multivariate Statistical Analysis.''}
-\emph{Environment \& Planning A} 23 (7): 1025--44.
+\emph{Environment \& Planning A} 23 (7, 7): 1025--44.
 \url{https://doi.org/10.1068/a231025}.
 
 \bibitem[\citeproctext]{ref-Frost1995}
 Frost, M. E., and N. A. Spence. 1995. {``The Rediscovery of
 Accessibility and Economic Potential: The Critical Issue of
-Self-Potential.''} \emph{Environment \& Planning A} 27 (11): 1833--48.
-\url{https://doi.org/10.1068/a271833}.
+Self-Potential.''} \emph{Environment \& Planning A} 27 (11, 11):
+1833--48. \url{https://doi.org/10.1068/a271833}.
 
 \bibitem[\citeproctext]{ref-Geurs2004}
 Geurs, Karst T., and Bert van Wee. 2004. {``Accessibility Evaluation of
 Land-Use and Transport Strategies: {Review} and Research Directions.''}
-\emph{Journal of Transport Geography} 12 (2): 127--40.
+\emph{Journal of Transport Geography} 12 (2, 2): 127--40.
 \url{https://doi.org/10.1016/j.jtrangeo.2003.10.005}.
 
-\bibitem[\citeproctext]{ref-geurs2023accessibility}
+\bibitem[\citeproctext]{ref-Geurs2023}
 ---------. 2023. {``Accessibility: Perspectives, Measures and
-Applications.''} In \emph{The Transport System and Transport Policy: An
-Introduction}, 178--99. Edward Elgar.
+Applications.''} In \emph{The {Transport System} and {Transport
+Policy}}, 2nd ed. Edward Elgar.
 
 \bibitem[\citeproctext]{ref-Gibbons2005}
 Gibbons, Stephen, and Stephen Machin. 2005. {``Valuing Rail Access Using
-Transport Innovations.''} \emph{Journal of Urban Economics} 57 (1):
+Transport Innovations.''} \emph{Journal of Urban Economics} 57 (1, 1):
 148--69. \url{https://doi.org/10.1016/j.jue.2004.10.002}.
 
 \bibitem[\citeproctext]{ref-Guerra2015}
@@ -1480,7 +1704,7 @@ Decisions.''} \emph{Journal of Transport Geography} 43 (February):
 \bibitem[\citeproctext]{ref-Handy1997}
 Handy, Susan L, and Deb A Niemeier. 1997. {``Measuring Accessibility: An
 Exploration of Issues and Alternatives.''} \emph{Environment and
-Planning A} 29 (7): 1175--94. \url{https://doi.org/10.1068/a291175}.
+Planning A} 29 (7, 7): 1175--94. \url{https://doi.org/10.1068/a291175}.
 
 \bibitem[\citeproctext]{ref-Houston2005}
 Houston, Donald S. 2005. {``Methods to {Test} the {Spatial Mismatch
@@ -1488,26 +1712,29 @@ Hypothesis}.''} \emph{Economic Geography} 81 (4): 407--34.
 \url{https://doi.org/10.1111/j.1944-8287.2005.tb00281.x}.
 
 \bibitem[\citeproctext]{ref-INEGI2012}
-INEGI. 2012. {``Sistema Para La {Consulta} de {Informaci{ó}n Censal}
-({SCINCE}).''} \emph{Instituto Nacional de Estad{í}stica y Geograf{í}a}.
-https://www.inegi.org.mx/app/descarga/?ti=13\&ag=01.
+INEGI. 2012. {``Sistema Para La {Consulta} de {Información Censal}
+({SCINCE}).''} Instituto Nacional de Estadística y Geografía. 2012.
+\url{https://www.inegi.org.mx/app/descarga/?ti=13&ag=01}.
 
 \bibitem[\citeproctext]{ref-INEGI2015a}
----------. 2015a. {``Censos {Econ{ó}micos} 2014.''} Instituto Nacional
-de Estad{í}stica y Geograf{í}a.
+---------. 2015a. {``Directorio {Estadístico Nacional} de {Unidades
+Económicas} 2015.''} 2015. \url{https://www.inegi.org.mx/default.html}.
 
 \bibitem[\citeproctext]{ref-INEGI2015}
----------. 2015b. {``Encuesta {Intercensal} 2015.''}
-https://www.inegi.org.mx/programas/intercensal/2015/.
+---------. 2015b. {``Encuesta {Intercensal} 2015.''} 2015.
+\url{https://www.inegi.org.mx/programas/intercensal/2015/}.
 
 \bibitem[\citeproctext]{ref-INEGI2018}
 ---------. 2018. {``Encuesta {Origen Destino} En {Hogares} de La {Zona
-Metropolitana} Del {Valle} de {M{é}xico} ({EOD}) 2017.''}
+Metropolitana} Del {Valle} de {México} ({EOD}) 2017.''}
+\href{https://www.inegi.org.mx/programas/eod/2017/\#:~:text=Las\%20Encuestas\%20de\%20Origen\%20y,ciudad\%20durante\%20un\%20tiempo\%20determinado.}{https://www.inegi.org.mx/programas/eod/2017/\#:\textasciitilde:text=Las
+Encuestas de Origen y,ciudad durante un tiempo determinado.}
 
-\bibitem[\citeproctext]{ref-johnson2017econometric}
+\bibitem[\citeproctext]{ref-Johnson2017}
 Johnson, Daniel, Marco Ercolani, and Peter Mackie. 2017. {``Econometric
 Analysis of the Link Between Public Transport Accessibility and
-Employment.''} \emph{Transport Policy} 60: 1--9.
+Employment.''} \emph{Transport Policy} 60 (November): 1--9.
+\url{https://doi.org/10.1016/j.tranpol.2017.08.001}.
 
 \bibitem[\citeproctext]{ref-Karner2024}
 Karner, Alex, Rafael H. M. Pereira, and Steven Farber. 2024. {``Advances
@@ -1519,8 +1746,8 @@ and Pitfalls in Measuring Transportation Equity.''}
 Lee, Sang-Il, Monghyeon Lee, Yongwan Chun, and Daniel A. Griffith. 2019.
 {``Uncertainty in the Effects of the Modifiable Areal Unit Problem Under
 Different Levels of Spatial Autocorrelation: A Simulation Study.''}
-\emph{International Journal of Geographical Information Science} 33 (6):
-1135--54. \url{https://doi.org/10.1080/13658816.2018.1542699}.
+\emph{International Journal of Geographical Information Science} 33 (6,
+6): 1135--54. \url{https://doi.org/10.1080/13658816.2018.1542699}.
 
 \bibitem[\citeproctext]{ref-Letouze2022}
 Letouzé, Emmanuel, Zinnya del Villar, Rodrigo Lara Molina, Berenice
@@ -1528,10 +1755,11 @@ Fernandez Nieto, Guillermo Romero, Julie Ricard, Diego Vazquez, and
 Laura Arely Centeno Maya. 2022. {``Parallel {Worlds}: {Revealing} the
 {Inequity} of {Access} to {Urban Spaces} in {Mexico City Through
 Mobility Data}.''} \emph{Projections} 16 (June).
+\url{https://projections.pubpub.org/pub/01kebgos/release/1}.
 
 \bibitem[\citeproctext]{ref-Levinson2020}
 Levinson, David M, and Hao Wu. 2020. {``Towards a General Theory of
-Access.''} \emph{Journal of Transport and Land Use} 13 (1): 129--58.
+Access.''} \emph{Journal of Transport and Land Use} 13 (1, 1): 129--58.
 \url{https://doi.org/10.5198/jtlu.2020.1660}.
 
 \bibitem[\citeproctext]{ref-Liu2022}
@@ -1552,16 +1780,16 @@ Ariane Dupont-Kieffer, 3--12. Elsevier.
 Malekzadeh, Ali, and Edward Chung. 2020. {``A Review of Transit
 Accessibility Models: {Challenges} in Developing Transit Accessibility
 Models.''} \emph{International Journal of Sustainable Transportation} 14
-(10): 733--48. \url{https://doi.org/10.1080/15568318.2019.1625087}.
+(10, 10): 733--48. \url{https://doi.org/10.1080/15568318.2019.1625087}.
 
-\bibitem[\citeproctext]{ref-Martens2019a}
+\bibitem[\citeproctext]{ref-Martens2019}
 Martens, Karel, and Jeroen Bastiaanssen. 2019. {``An Index to Measure
 Accessibility Poverty Risk.''} In \emph{Measuring {Transport Equity}},
 edited by Karen Lucas, Karel Martens, Floridea Di Ciommo, and Ariane
 Dupont-Kieffer, 39--55. Elsevier.
 \url{https://doi.org/10.1016/B978-0-12-814818-1.00003-2}.
 
-\bibitem[\citeproctext]{ref-Martens2019}
+\bibitem[\citeproctext]{ref-Martens2019a}
 Martens, Karel, Jeroen Bastiaanssen, and Karen Lucas. 2019. {``Measuring
 Transport Equity: {Key} Components, Framings and Metrics.''} In
 \emph{Measuring {Transport Equity}}, 13--36. Elsevier.
@@ -1570,21 +1798,29 @@ Transport Equity: {Key} Components, Framings and Metrics.''} In
 \bibitem[\citeproctext]{ref-Merlin2017}
 Merlin, Louis A. 2017. {``A Portrait of Accessibility Change for Four
 {US} Metropolitan Areas.''} \emph{Journal of Transport and Land Use} 10
-(1). \url{https://doi.org/10.5198/jtlu.2015.808}.
+(1, 1). \url{https://doi.org/10.5198/jtlu.2015.808}.
 
-\bibitem[\citeproctext]{ref-miller2018accessibility}
+\bibitem[\citeproctext]{ref-Miller2018}
 Miller, Eric J. 2018. {``Accessibility: Measurement and Application in
-Transportation Planning.''} \emph{Transport Reviews} 38 (5): 551--55.
+Transportation Planning.''} \emph{Transport Reviews} 38 (5, 5): 551--55.
+\url{https://doi.org/10.1080/01441647.2018.1492778}.
 
 \bibitem[\citeproctext]{ref-Moraga2023}
 Moraga, Paula. 2023. \emph{Spatial {Statistics} for {Data Science}:
 {Theory} and {Practice} with {R}}. Chapman \& Hall/CRC Data Science
-Series.
+Series. \url{https://www.paulamoraga.com/book-spatial/index.html}.
+
+\bibitem[\citeproctext]{ref-Nie2024}
+Nie, Yuxin, Shivani Bhatnagar, Duncan Smith, and Esra Suel. 2024.
+{``Disparities in Public Transport Accessibility in {London} from 2011
+to 2021.''} \emph{Computers, Environment and Urban Systems} 113
+(October): 102169.
+\url{https://doi.org/10.1016/j.compenvurbsys.2024.102169}.
 
 \bibitem[\citeproctext]{ref-Nunez2017}
 Nuñez, Hector M., Dusan Paredes, and Rafael Garduño-Rivera. 2017. {``Is
 Crime in {Mexico} a Disamenity? {Evidence} from a Hedonic Valuation
-Approach.''} \emph{Annals of Regional Science} 59 (1): 171--87.
+Approach.''} \emph{Annals of Regional Science} 59 (1, 1): 171--87.
 \url{https://doi.org/10.1007/s00168-017-0823-8}.
 
 \bibitem[\citeproctext]{ref-Ortega-Avila2023}
@@ -1596,13 +1832,14 @@ Characterization} of the {Retail Food Environment} in {Mexico City}.''}
 \bibitem[\citeproctext]{ref-Osland2010a}
 Osland, Liv. 2010. {``Spatial Variation in Job Accessibility and Gender:
 {An} Intraregional Analysis Using Hedonic House-Price Estimation.''}
-\emph{Environment and Planning A} 42 (9): 2220--37.
+\emph{Environment and Planning A} 42 (9, 9): 2220--37.
 \url{https://doi.org/10.1068/a42422}.
 
-\bibitem[\citeproctext]{ref-osland2008effects}
+\bibitem[\citeproctext]{ref-Osland2008}
 Osland, Liv, and Inge Thorsen. 2008. {``Effects on Housing Prices of
 Urban Attraction and Labor-Market Accessibility.''} \emph{Environment
-and Planning A} 40 (10): 2490--2509.
+and Planning A} 40 (10, 10): 2490--2509.
+\url{https://doi.org/10.1068/a39305}.
 
 \bibitem[\citeproctext]{ref-Paez2012}
 Páez, Antonio, Darren M. Scott, and Catherine Morency. 2012.
@@ -1625,48 +1862,63 @@ Effects of Job Competition and Matching on Employment Accessibility.''}
 
 \bibitem[\citeproctext]{ref-Pereira2018}
 Pereira, Rafael H M. 2018. {``Distributive {Justice} and {Transportation
-Equity}: {Inequality} in Accessibility in {Rio} de {Janeiro}.''} PhD
-thesis.
+Equity}: {Inequality} in Accessibility in {Rio} de {Janeiro}.''}
+\url{https://www.researchgate.net/publication/328969941\%0ADistributive}.
 
 \bibitem[\citeproctext]{ref-Pereira2019}
+---------. 2019. {``Future Accessibility Impacts of Transport Policy
+Scenarios: {Equity} and Sensitivity to Travel Time Thresholds for {Bus
+Rapid Transit} Expansion in {Rio} de {Janeiro}.''} \emph{Journal of
+Transport Geography} 74 (October 2018, October 2018): 321--32.
+\url{https://doi.org/10.1016/j.jtrangeo.2018.12.005}.
+
+\bibitem[\citeproctext]{ref-Pereira2019a}
 Pereira, Rafael H M, David Banister, Tim Schwanen, and Nate Wessel.
 2019. {``Distributional Effects of Transport Policies on Inequalities in
 Access to Opportunities in {Rio} de {Janeiro}.''} \emph{Journal of
-Transport and Land Use} 12 (1 SE -).
+Transport and Land Use} 12 (1 SE -, 1 SE -).
 \url{https://doi.org/10.5198/jtlu.2019.1523}.
-
-\bibitem[\citeproctext]{ref-Pereira2019a}
-Pereira, Rafael H M, Laurent Grégoire, and Alex Karner. 2019.
-{``Tutorial with Reproducible Example to Estimate a Travel Time Matrix
-Using {OpenTripPlanner} and {Python}.''}
-\url{https://doi.org/10.5281/zenodo.3242134}.
 
 \bibitem[\citeproctext]{ref-R-base}
 R Core Team. 2021. \emph{R: {A} Language and Environment for Statistical
 Computing}. Manual. Vienna, Austria: R Foundation for Statistical
-Computing.
+Computing. \url{https://www.R-project.org/}.
 
 \bibitem[\citeproctext]{ref-Rojas2000}
 Rojas, Mariano, Humberto Angulo, and Irene Velázquez. 2000.
-{``Rentabilidad de La Inversi{ó}n En Capital Humano En {M{é}xico}.''}
-\emph{Econom{í}a Mexicana. Nueva {É}poca} IX (2): 113--42.
+{``Rentabilidad de La Inversión En Capital Humano En {México}.''}
+\emph{Economía Mexicana. Nueva Época} IX (2, 2): 113--42.
+\url{http://hdl.handle.net/11651/4177}.
+
+\bibitem[\citeproctext]{ref-Salonen2013}
+Salonen, Maria, and Tuuli Toivonen. 2013. {``Modelling Travel Time in
+Urban Networks: Comparable Measures for Private Car and Public
+Transport.''} \emph{Journal of Transport Geography} 31: 143--53.
+\url{https://doi.org/10.1016/j.jtrangeo.2013.06.011}.
 
 \bibitem[\citeproctext]{ref-Saporito2007}
 Saporito, Salvatore, Jana M Chavers, Laura C Nixon, and Megan R
 McQuiddy. 2007. {``From Here to There: {Methods} of Allocating Data
 Between Census Geography and Socially Meaningful Areas.''} \emph{Social
-Science Research} 36 (3): 897--920.
+Science Research} 36 (3, 3): 897--920.
 \url{https://doi.org/10.1016/j.ssresearch.2006.05.004}.
 
 \bibitem[\citeproctext]{ref-R-r5r}
 Saraiva, Marcus, Rafael H. M. Pereira, Daniel Herszenhut, Carlos Kaue
 Vieira Braga, and Matthew Wigginton Conway. 2021. \emph{R5r: {Rapid}
 Realistic Routing with {R5}}. Manual.
+\url{https://github.com/ipeaGIT/r5r}.
+
+\bibitem[\citeproctext]{ref-Schuetz2012}
+Schuetz, J., and R. Meltzer. 2012. {``Inclusionary {Zoning} to {Support
+Affordable Housing}.''} In \emph{International {Encyclopedia} of
+{Housing} and {Home}}, 32--36. Elsevier.
+\url{https://doi.org/10.1016/B978-0-08-047163-1.00242-3}.
 
 \bibitem[\citeproctext]{ref-Schultz1961}
 Schultz, Theodore W. 1961. {``Investment in {Human Capital}.''}
-\emph{The American Economic Review} 51 (1): 1--17.
-\url{https://www.jstor.org/stable/1818907}.
+\emph{The American Economic Review} 51 (1, 1): 1--17.
+\url{http://www.jstor.org/stable/1818907}.
 
 \bibitem[\citeproctext]{ref-Shen1998}
 Shen, Q. 1998. {``Location Characteristics of Inner-City Neighborhoods
@@ -1674,11 +1926,17 @@ and Employment Accessibility of Low-Wage Workers.''} \emph{Environment
 and Planning B: Planning and Design} 25 (3): 345--65.
 \url{https://doi.org/10.1068/b250345}.
 
+\bibitem[\citeproctext]{ref-Shoup2006}
+Shoup, Donald C. 2006. {``Cruising for Parking.''} \emph{Transport
+Policy} 13 (6, 6): 479--86.
+\url{https://doi.org/10.1016/j.tranpol.2006.05.005}.
+
 \bibitem[\citeproctext]{ref-Stepniak2017}
 Stepniak, Marcin, and Chris Jacobs-Crisioni. 2017. {``Reducing the
 Uncertainty Induced by Spatial Aggregation in Accessibility and Spatial
 Interaction Applications.''} \emph{Journal of Transport Geography} 61
-(April): 17--29. \url{https://doi.org/10.1016/j.jtrangeo.2017.04.001}.
+(April, April): 17--29.
+\url{https://doi.org/10.1016/j.jtrangeo.2017.04.001}.
 
 \bibitem[\citeproctext]{ref-Stepniak2015}
 Stepniak, Marcin, and Piotr Rosik. 2015. {``The {Impact} of {Data
@@ -1690,7 +1948,7 @@ Inspektor, 227--40. Cham: Springer International Publishing.
 
 \bibitem[\citeproctext]{ref-Theriault2013}
 Thériault, Marius, Marion Voisin, and François Des Rosiers. 2013.
-{``Accessibility of {Urban Services}: {Modeling Socio}-Spatial
+{``Accessibility of {Urban Services}: {Modeling Socio}‐spatial
 {Differences} and Their {Impacts} on {Residential Values}.''} In
 \emph{Modeling {Urban Dynamics}: {Mobility}, {Accessibility} and {Real
 Estate Value}}, edited by Marius Thériault and François Des Rosiers,
@@ -1699,14 +1957,15 @@ Estate Value}}, edited by Marius Thériault and François Des Rosiers,
 \bibitem[\citeproctext]{ref-Thorsen1998}
 Thorsen, Inge, and Jens Petter Gitlesen. 1998. {``Empirical Evaluation
 of Alternative Model Specifications to Predict Commuting Flows.''}
-\emph{Journal of Regional Science} 38 (2): 273--92.
+\emph{Journal of Regional Science} 38 (2, 2): 273--92.
 \url{https://doi.org/10.1111/1467-9787.00092}.
 
-\bibitem[\citeproctext]{ref-tiznado2021public}
+\bibitem[\citeproctext]{ref-Tiznado-Aitken2021}
 Tiznado-Aitken, Ignacio, Juan Carlos Muñoz, and Ricardo Hurtubia. 2021.
 {``Public Transport Accessibility Accounting for Level of Service and
-Competition for Urban Opportunities: An Equity Analysis for Education in
-Santiago de Chile.''} \emph{Journal of Transport Geography} 90: 102919.
+Competition for Urban Opportunities: {An} Equity Analysis for Education
+in {Santiago} de {Chile}.''} \emph{Journal of Transport Geography} 90
+(January): 102919. \url{https://doi.org/10.1016/j.jtrangeo.2020.102919}.
 
 \bibitem[\citeproctext]{ref-Walker2021}
 Walker, Jeffery T. 2021. {``Ecological {Fallacy}.''} In \emph{The
@@ -1714,13 +1973,13 @@ Walker, Jeffery T. 2021. {``Ecological {Fallacy}.''} In \emph{The
 Justice}}, 478--82. John Wiley \& Sons, Ltd.
 \url{https://doi.org/10.1002/9781119111931.ch98}.
 
-\bibitem[\citeproctext]{ref-Wong2009}
+\bibitem[\citeproctext]{ref-Wong2009a}
 Wong, David W S. 2009a. {``The {Modifiable Areal Unit Problem}
 ({MAUP}).''} In \emph{The {SAGE Handbook} of {Spatial Analysis}}.
 London: SAGE Publications Ltd.
 \url{https://doi.org/10.4135/9780857020130}.
 
-\bibitem[\citeproctext]{ref-Wong2009a}
+\bibitem[\citeproctext]{ref-Wong2009}
 ---------. 2009b. {``Modifiable {Areal Unit Problem}.''} In
 \emph{International {Encyclopedia} of {Human Geography}}, edited by Rob
 Kitchin and Nigel Thrift, 169--74. Oxford: Elsevier.
@@ -1730,7 +1989,7 @@ Kitchin and Nigel Thrift, 169--74. Oxford: Elsevier.
 Wong, David W S, H. Lasus, and R. F. Falk. 1999. {``Exploring the
 Variability of Segregation Index {D} with Scale and Zonal Systems: An
 Analysis of Thirty {US} Cities.''} \emph{Environment and Planning A} 31
-(3): 507--22. \url{https://doi.org/10.1068/a310507}.
+(3, 3): 507--22. \url{https://doi.org/10.1068/a310507}.
 
 \end{CSLReferences}
 

@@ -1,24 +1,24 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  23 OCT 2024 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.22)  25 APR 2025 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count194
-\c@section=\count195
-\c@subsection=\count196
-\c@subsubsection=\count197
-\c@paragraph=\count198
-\c@subparagraph=\count199
-\c@figure=\count266
-\c@table=\count267
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
@@ -30,11 +30,11 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
+\Gm@cnth=\count270
+\Gm@cntv=\count271
+\c@Gm@tempcnt=\count272
 \Gm@bindingoffset=\dimen142
 \Gm@wd@mp=\dimen143
 \Gm@odd@mp=\dimen144
@@ -45,23 +45,29 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks18
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip51
-\f@nch@O@elh=\skip52
-\f@nch@O@erh=\skip53
-\f@nch@O@olh=\skip54
-\f@nch@O@orh=\skip55
-\f@nch@O@elf=\skip56
-\f@nch@O@erf=\skip57
-\f@nch@O@olf=\skip58
-\f@nch@O@orf=\skip59
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
 )
-\@abovecaptionskip=\skip60
-\@belowcaptionskip=\skip61
+\@abovecaptionskip=\skip65
+\@belowcaptionskip=\skip66
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 116.
@@ -102,7 +108,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -130,26 +136,26 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count271
+\c@section@level=\count273
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count272
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen150
-\Hy@linkcounter=\count273
-\Hy@pagecounter=\count274
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count275
+\Hy@SavedSpaceFactor=\count277
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -160,7 +166,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count276
+\c@Hy@tempcnt=\count278
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -172,7 +178,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count277
+\Fld@menulength=\count279
 \Field@Width=\dimen152
 \Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -186,19 +192,19 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count278
-\c@Item=\count279
-\c@Hfootnote=\count280
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count281
-\c@bookmark@seq@number=\count282
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -206,7 +212,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip67
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen154
@@ -219,16 +225,16 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen161
 \cmidrulekern=\dimen162
 \defaultaddspace=\dimen163
-\@cmidla=\count283
-\@cmidlb=\count284
+\@cmidla=\count285
+\@cmidlb=\count286
 \@aboverulesep=\dimen164
 \@belowrulesep=\dimen165
-\@thisruleclass=\count285
-\@lastruleclass=\count286
+\@thisruleclass=\count287
+\@lastruleclass=\count288
 \@thisrulewidth=\dimen166
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks21
+\@emptytoks=\toks22
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -236,37 +242,40 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip63
-\L@UnitsRaiseTextstyle=\skip64
-\L@UnitsRaiseScriptstyle=\skip65
+\L@UnitsRaiseDisplaystyle=\skip68
+\L@UnitsRaiseTextstyle=\skip69
+\L@UnitsRaiseScriptstyle=\skip70
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
-\MT@toks=\toks22
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+\MT@toks=\toks23
 \MT@tempbox=\box52
-\MT@count=\count287
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
-LaTeX Info: Redefining \leftprotrusion on input line 1062.
-\MT@prot@toks=\toks23
-LaTeX Info: Redefining \rightprotrusion on input line 1081.
-LaTeX Info: Redefining \textls on input line 1392.
+\MT@count=\count289
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks24
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen167
-LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
-\MT@listname@count=\count288
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count290
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 902.
-LaTeX Info: Redefining \lslig on input line 902.
-\MT@outer@space=\skip66
+File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip71
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
-)) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
@@ -279,38 +288,38 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
 )
-\cslhangindent=\skip67
-\csllabelwidth=\skip68
+\cslhangindent=\skip72
+\csllabelwidth=\skip73
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count289
-\calc@Bcount=\count290
+\calc@Acount=\count291
+\calc@Bcount=\count292
 \calc@Adimen=\dimen170
 \calc@Bdimen=\dimen171
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count291
-\calc@Cskip=\skip71
+\calc@Ccount=\count293
+\calc@Cskip=\skip76
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count292
-\float@exts=\toks24
+\c@float@type=\count294
+\float@exts=\toks25
 \float@box=\box53
-\@float@everytoks=\toks25
+\@float@everytoks=\toks26
 \@floatcapt=\box54
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/05/23 v2.17q AMS math features
-\@mathmargin=\skip72
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip77
 For additional information on amsmath, use the `?' option.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
+\@emptytoks=\toks27
 \ex@=\dimen172
 )) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -318,14 +327,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count293
+\inf@bad=\count295
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count294
-\leftroot@=\count295
+\uproot@=\count296
+\leftroot@=\count297
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count296
-\DOTSCASE@=\count297
+\classnum@=\count298
+\DOTSCASE@=\count299
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -338,31 +347,31 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen174
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count298
+\macc@depth=\count300
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count299
+\c@MaxMatrixCols=\count301
 \dotsspace@=\muskip18
-\c@parentequation=\count300
-\dspbrk@lvl=\count301
-\tag@help=\toks27
-\row@=\count302
-\column@=\count303
-\maxfields@=\count304
-\andhelp@=\toks28
+\c@parentequation=\count302
+\dspbrk@lvl=\count303
+\tag@help=\toks28
+\row@=\count304
+\column@=\count305
+\maxfields@=\count306
+\andhelp@=\toks29
 \eqnshift@=\dimen175
 \alignsep@=\dimen176
 \tagshift@=\dimen177
 \tagwidth@=\dimen178
 \totwidth@=\dimen179
 \lineht@=\dimen180
-\@envbody=\toks29
-\multlinegap=\skip73
-\multlinetaggap=\skip74
-\mathdisplay@stack=\toks30
+\@envbody=\toks30
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
@@ -370,57 +379,57 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-04-26 v4.20 Multi-page Table package (DPC)
-\LTleft=\skip75
-\LTright=\skip76
-\LTpre=\skip77
-\LTpost=\skip78
-\LTchunksize=\count305
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip80
+\LTright=\skip81
+\LTpre=\skip82
+\LTpost=\skip83
+\LTchunksize=\count307
 \LTcapwidth=\dimen181
 \LT@head=\box57
 \LT@firsthead=\box58
 \LT@foot=\box59
 \LT@lastfoot=\box60
 \LT@gbox=\box61
-\LT@cols=\count306
-\LT@rows=\count307
-\c@LT@tables=\count308
-\c@LT@chunks=\count309
-\LT@p@ftn=\toks31
+\LT@cols=\count308
+\LT@rows=\count309
+\c@LT@tables=\count310
+\c@LT@chunks=\count311
+\LT@p@ftn=\toks32
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen182
 \ar@mcellbox=\box62
 \extrarowheight=\dimen183
-\NC@list=\toks32
-\extratabsurround=\skip79
-\backup@length=\skip80
+\NC@list=\toks33
+\extratabsurround=\skip84
+\backup@length=\skip85
 \ar@cellbox=\box63
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip81
-\multirow@cntb=\count310
-\multirow@dima=\skip82
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip86
+\multirow@cntb=\count312
+\multirow@dima=\skip87
 \bigstrutjot=\dimen184
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen185
 \WF@size=\dimen186
-\c@WF@wrappedlines=\count311
+\c@WF@wrappedlines=\count313
 \WF@box=\box64
-\WF@everypar=\toks33
+\WF@everypar=\toks34
 Package: wrapfig 2003/01/31  v 3.6
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/01/14 v1.3d Standard LaTeX Color (DPC)
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-\everycr=\toks34
-\minrowclearance=\skip83
-\rownum=\count312
+\everycr=\toks35
+\minrowclearance=\skip88
+\rownum=\count314
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -431,16 +440,16 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box65
-\sift@deathcycles=\count313
+\sift@deathcycles=\count315
 \@vwid@loff=\dimen187
 \@vwid@roff=\dimen188
 )
-\c@taburow=\count314
-\tabu@nbcols=\count315
-\tabu@cnt=\count316
-\tabu@Xcol=\count317
-\tabu@alloc=\count318
-\tabu@nested=\count319
+\c@taburow=\count316
+\tabu@nbcols=\count317
+\tabu@cnt=\count318
+\tabu@Xcol=\count319
+\tabu@alloc=\count320
+\tabu@nested=\count321
 \tabu@target=\dimen189
 \tabu@spreadtarget=\dimen190
 \tabu@naturalX=\dimen191
@@ -450,13 +459,13 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen195
 \belowtabulinesep=\dimen196
 \tabustrutrule=\dimen197
-\tabu@thebody=\toks35
-\tabu@footnotes=\toks36
+\tabu@thebody=\toks36
+\tabu@footnotes=\toks37
 \tabu@box=\box66
 \tabu@arstrutbox=\box67
 \tabu@hleads=\box68
 \tabu@vleads=\box69
-\tabu@cellskip=\skip84
+\tabu@cellskip=\skip89
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box70
@@ -467,14 +476,14 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip85
+\TPTL@width=\skip90
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box71
 \UL@hyphenbox=\box72
-\UL@skip=\skip86
-\UL@hook=\toks37
+\UL@skip=\skip91
+\UL@hook=\toks38
 \UL@height=\dimen198
-\UL@pe=\count320
+\UL@pe=\count322
 \UL@pixel=\dimen199
 \ULC@box=\box73
 Package: ulem 2019/11/18
@@ -482,34 +491,38 @@ Package: ulem 2019/11/18
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen257
-\c@nlinenum=\count321
-\TeXr@lab=\toks38
+\c@nlinenum=\count323
+\TeXr@lab=\toks39
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-LaTeX Info: Redefining \color on input line 758.
+LaTeX Info: Redefining \color on input line 762.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 101.
 (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/Users/rafa/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count322
+\l__color_backend_stack_int=\count324
 \l__pdf_internal_box=\box74
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `eq:seleected-decaying-function' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -601,6 +614,9 @@ Package hyperref Info: Link coloring OFF on input line 101.
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
+Package microtype Info: Patching varwidth to enable character protrusion.
+\MT@vwid@leftmargin=\dimen258
+\MT@vwid@rightmargin=\dimen259
 LaTeX Info: Redefining \microtypecontext on input line 101.
 Package microtype Info: Applying patch `item' on input line 101.
 Package microtype Info: Applying patch `toc' on input line 101.
@@ -609,6 +625,7 @@ Package microtype Info: Applying patch `eqnum' on input line 101.
 Package microtype Warning: Unable to apply patch `footnote' on input line 101.
 
 Package microtype Info: Applying patch `verbatim' on input line 101.
+LaTeX Info: Redefining \microtypesetup on input line 101.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -689,20 +706,23 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 
 
 {/Users/rafa/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \vbox (badness 5652) has occurred while \output is active []
+
+
 
 [2]
 
-[3{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[3]
 
-
-
-[4{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[4{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/rafa/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -710,14 +730,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [7]
-<figures/metro_map.png, id=191, 505.89pt x 505.89pt>
-File: figures/metro_map.png Graphic file (type png)
-<use figures/metro_map.png>
-Package pdftex.def Info: figures/metro_map.png  used on input line 527.
+<figures/metro_map-JGS.png, id=201, 505.89pt x 505.89pt>
+File: figures/metro_map-JGS.png Graphic file (type png)
+<use figures/metro_map-JGS.png>
+Package pdftex.def Info: figures/metro_map-JGS.png  used on input line 509.
 (pdftex.def)             Requested size: 422.77661pt x 422.7833pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<figures/evo_transit_network-JGS.png, id=205, 578.16pt x 361.35pt>
+File: figures/evo_transit_network-JGS.png Graphic file (type png)
+<use figures/evo_transit_network-JGS.png>
+Package pdftex.def Info: figures/evo_transit_network-JGS.png  used on input line 587.
+(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
 
 
 [8]
@@ -726,50 +748,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.559 
-       <./figures/metro_map.png>]
-<figures/evo_transit_network.png, id=207, 578.16pt x 361.35pt>
-File: figures/evo_transit_network.png Graphic file (type png)
-<use figures/evo_transit_network.png>
-Package pdftex.def Info: figures/evo_transit_network.png  used on input line 604.
-(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
-
+l.607 
+       <./figures/metro_map-JGS.png>]
 
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.632 
-      ]
-LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 638.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 638.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.64996> on input line 638.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.75> on input line 638.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[11
+l.607 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.667 T
-       he count data included were transferred to the SAS using the
+l.607 
+       <./figures/evo_transit_network-JGS.png>]
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 621.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.5> on input line 621.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.64996> on input line 621.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.75> on input line 621.
+
+
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.667 T
-       he count data included were transferred to the SAS using the <./figures/evo_transit_network.png>]
+l.668 
+      ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6380) has occurred while \output is active []
 
 
 
@@ -779,12 +792,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [14]
-Underfull \vbox (badness 1360) has occurred while \output is active []
-
-
 
 [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1694) has occurred while \output is active []
 
 
 
@@ -794,175 +804,254 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1009 
-       ]
-
-[18]
-<../output/plots_maps/exploratory/access_map_grid.png, id=272, 794.97pt x 563.706pt>
+l.1002 \begin{landscape}
+                        ]
+<../output/plots_maps/exploratory/access_map_grid.png, id=285, 794.97pt x 563.706pt>
 File: ../output/plots_maps/exploratory/access_map_grid.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/access_map_grid.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/access_map_grid.png  used on input line 1014.
+Package pdftex.def Info: ../output/plots_maps/exploratory/access_map_grid.png  used on input line 1006.
 (pdftex.def)             Requested size: 657.65411pt x 466.35341pt.
 
-Overfull \hbox (7.22412pt too wide) in paragraph at lines 1014--1015
+Overfull \hbox (7.22412pt too wide) in paragraph at lines 1006--1007
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 37.74841pt on input line 1018.
+LaTeX Warning: Float too large for page by 37.74841pt on input line 1010.
 
 
 
-[19
+[18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1020 \end{landscape}
+l.1012 \end{landscape}
                        <../output/plots_maps/exploratory/access_map_grid.png>]
-<../output/plots_maps/exploratory/lisa_diff_map.png, id=282, 578.16pt x 433.62pt>
+<../output/plots_maps/exploratory/lisa_diff_map.png, id=295, 578.16pt x 433.62pt>
 File: ../output/plots_maps/exploratory/lisa_diff_map.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/lisa_diff_map.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_diff_map.png  used on input line 1094.
+Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_diff_map.png  used on input line 1083.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 
-[20
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1111 
+l.1098 
        
 
 
 ]
-<../output/plots_maps/exploratory/lisa_composition_plot.png, id=291, 578.16pt x 361.35pt>
-File: ../output/plots_maps/exploratory/lisa_composition_plot.png Graphic file (type png)
-<use ../output/plots_maps/exploratory/lisa_composition_plot.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_composition_plot.png  used on input line 1127.
-(pdftex.def)             Requested size: 399.2946pt x 249.55783pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[21
+[20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1131 \end{figure}
-                    <../output/plots_maps/exploratory/lisa_diff_map.png>]
-<../output/plots_maps/exploratory/plot_longitudinal_relative_500.png, id=298, 433.62pt x 289.08pt>
+l.1119 
+        <../output/plots_maps/exploratory/lisa_diff_map.png>]
+<../output/plots_maps/exploratory/lisa_composition_plot.png, id=309, 578.16pt x 361.35pt>
+File: ../output/plots_maps/exploratory/lisa_composition_plot.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/lisa_composition_plot.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/lisa_composition_plot.png  used on input line 1122.
+(pdftex.def)             Requested size: 399.2946pt x 249.55783pt.
+<../output/plots_maps/exploratory/plot_longitudinal_relative_500.png, id=311, 433.62pt x 289.08pt>
 File: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png  used on input line 1161.
+Package pdftex.def Info: ../output/plots_maps/exploratory/plot_longitudinal_relative_500.png  used on input line 1149.
 (pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
 
-Underfull \vbox (badness 4366) has occurred while \output is active []
+
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1162 
+        <../output/plots_maps/exploratory/lisa_composition_plot.png>]
+<../output/plots_maps/exploratory/equity_overtime.png, id=320, 433.62pt x 289.08pt>
+File: ../output/plots_maps/exploratory/equity_overtime.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/equity_overtime.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/equity_overtime.png  used on input line 1175.
+(pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
 
 
 
 [22
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1174 
-        <../output/plots_maps/exploratory/lisa_composition_plot.png>]
-<../output/plots_maps/exploratory/equity_overtime.png, id=306, 433.62pt x 289.08pt>
-File: ../output/plots_maps/exploratory/equity_overtime.png Graphic file (type png)
-<use ../output/plots_maps/exploratory/equity_overtime.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/equity_overtime.png  used on input line 1186.
-(pdftex.def)             Requested size: 399.2946pt x 266.20824pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1212 
+l.1197 
         <../output/plots_maps/exploratory/plot_longitudinal_relative_500.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[24
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1239 
+l.1226 
         <../output/plots_maps/exploratory/equity_overtime.png>]
-<../output/plots_maps/exploratory/equity_barplot.png, id=320, 578.16pt x 361.35pt>
+<../output/plots_maps/exploratory/equity_barplot.png, id=334, 578.16pt x 216.81pt>
 File: ../output/plots_maps/exploratory/equity_barplot.png Graphic file (type png)
 <use ../output/plots_maps/exploratory/equity_barplot.png>
-Package pdftex.def Info: ../output/plots_maps/exploratory/equity_barplot.png  used on input line 1242.
-(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
+Package pdftex.def Info: ../output/plots_maps/exploratory/equity_barplot.png  used on input line 1229.
+(pdftex.def)             Requested size: 446.2658pt x 167.34781pt.
+
+Underfull \vbox (badness 2088) has occurred while \output is active []
 
 
-[25
+
+[24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1273 
+l.1274 
         <../output/plots_maps/exploratory/equity_barplot.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[25]
+Underfull \vbox (badness 6493) has occurred while \output is active []
+
+
+
 [26]
-Underfull \vbox (badness 1436) has occurred while \output is active []
+<../output/plots_maps/edu_decile_map.png, id=350, 578.16pt x 469.755pt>
+File: ../output/plots_maps/edu_decile_map.png Graphic file (type png)
+<use ../output/plots_maps/edu_decile_map.png>
+Package pdftex.def Info: ../output/plots_maps/edu_decile_map.png  used on input line 1400.
+(pdftex.def)             Requested size: 446.2658pt x 362.58696pt.
+<../output/plots_maps/inc_decile_map.png, id=352, 578.16pt x 469.755pt>
+File: ../output/plots_maps/inc_decile_map.png Graphic file (type png)
+<use ../output/plots_maps/inc_decile_map.png>
+Package pdftex.def Info: ../output/plots_maps/inc_decile_map.png  used on input line 1413.
+(pdftex.def)             Requested size: 446.2658pt x 362.58696pt.
 
-
-
-[27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[28]
+[27
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1417 \end{figure}
+                    <../output/plots_maps/edu_decile_map.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[29]
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1473 \end{table}
+                   <../output/plots_maps/inc_decile_map.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[29
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1510 
+       ]
+<../output/impedance_curves.png, id=373, 505.89pt x 289.08pt>
+File: ../output/impedance_curves.png Graphic file (type png)
+<use ../output/impedance_curves.png>
+Package pdftex.def Info: ../output/impedance_curves.png  used on input line 1558.
+(pdftex.def)             Requested size: 446.2658pt x 255.01312pt.
+<../output/plots_maps/exploratory/sensitivity_equity_overtime.png, id=375, 433.62pt x 289.08pt>
+File: ../output/plots_maps/exploratory/sensitivity_equity_overtime.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/sensitivity_equity_overtime.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/sensitivity_equity_overtime.png  used on input line 1579.
+(pdftex.def)             Requested size: 446.2658pt x 297.52634pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [30]
+<../output/plots_maps/exploratory/sensitivity_equity_barplot.png, id=386, 578.16pt x 361.35pt>
+File: ../output/plots_maps/exploratory/sensitivity_equity_barplot.png Graphic file (type png)
+<use ../output/plots_maps/exploratory/sensitivity_equity_barplot.png>
+Package pdftex.def Info: ../output/plots_maps/exploratory/sensitivity_equity_barplot.png  used on input line 1597.
+(pdftex.def)             Requested size: 446.2658pt x 278.91304pt.
+
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1606 \FloatBarrier
+                     <../output/impedance_curves.png>]
+
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1606 \FloatBarrier
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1606 \FloatBarrier
+                     <../output/plots_maps/exploratory/sensitivity_equity_overtime.png> <../output/plots_maps/exploratory/sensitivity_equity_barplot.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[31]
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[36]
 No file paper.bbl.
 
 
-[32] (./paper.aux)
+[37] (./paper.aux)
  ***********
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: CF569A73B278CBD10E5A5C5DE38CD78D;6117.
+(rerunfilecheck)             Checksum: 55A10B5C494242E7C3975A687BA265A8;7607.
  ) 
 Here is how much of TeX's memory you used:
- 15176 strings out of 475539
- 243578 string characters out of 5776837
- 1948957 words of memory out of 5000000
- 37162 multiletter control sequences out of 15000+600000
- 657468 words of font info for 209 fonts, out of 8000000 for 9000
+ 15456 strings out of 475172
+ 250635 string characters out of 5765381
+ 701729 words of memory out of 5000000
+ 37766 multiletter control sequences out of 15000+600000
+ 658673 words of font info for 212 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,15n,79p,1002b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/rafa/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on paper.pdf (32 pages, 7799372 bytes).
+Output written on paper.pdf (37 pages, 11870685 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
- 151 named destinations out of 1000 (max. 500000)
- 50457 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 596 compressed objects within 6 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 50506 words of extra memory for PDF output out of 51595 (max. 10000000)
 
