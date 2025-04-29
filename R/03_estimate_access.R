@@ -83,6 +83,8 @@ write_csv(acc_pars, "data/accessibility/access_pars.csv")
 # Public transport --------------------------------------------------------
 
 # Find files for PT TTM
+# These travel times correspond to the new estimates by r5r, 
+# and not those used in PhD originally estimated using OpenTripPlanner
 ttm_paths_pt <- list.files('data/ttm_mexicocity/ttm_pt/', full.names = TRUE)
 
 
