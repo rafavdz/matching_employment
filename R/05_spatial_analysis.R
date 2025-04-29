@@ -600,7 +600,11 @@ access_pt_wide <- access_pt_aggregated %>%
 mean_diff <- access_pt_wide %>% 
   st_drop_geometry() %>% 
   group_by(grid) %>% 
-  summarise(mean_diff = mean(access_diff, na.rm = TRUE))
+  summarise(
+    mean_diff = mean(access_diff, na.rm = TRUE),
+    min_diff = min(access_diff, na.rm = TRUE),
+    max_diff = max(access_diff, na.rm = TRUE)
+  )
 mean_diff
 
 
@@ -753,6 +757,31 @@ access_spat_stats <-  bind_rows(access_spat_stats, .id = 'grid')
 access_spat_stats <- access_spat_stats %>% 
   left_join(grid_geoms, by = c('grid', 'from_id' = 'id')) %>% 
   st_as_sf()
+
+
+# Map raw differences -----------------------------------------------------
+
+access_spat_stats %>%
+  ggplot() + 
+  geom_sf(aes(fill = access_diff), col = NA) +
+  geom_star(
+    data = zocalo, 
+    aes(x, y, starshape = "CBD (Zócalo)"), 
+    fill = "white", 
+    col = "black", 
+    size = 1.5, 
+    alpha = 0.9
+  ) + 
+  facet_wrap(~ grid_labelled) + 
+  scale_starshape(name = NULL) + 
+  scale_fill_viridis_b(
+    option = 'turbo', 
+    n.breaks = 6,
+    direction = -1,
+    begin = 0.1,
+    end = 0.9
+  ) + 
+  theme_void() 
 
 
 # LISA visualisations -----------------------------------------------------
