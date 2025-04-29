@@ -151,7 +151,9 @@ popden_map <- grids_data_long %>%
     legend.title = element_text(size = 9),
     legend.text = element_text(size = 8),
     legend.key.height = unit(.5, "cm"),
-    legend.key.width = unit(.2, "cm")
+    legend.key.width = unit(.2, "cm"),
+    panel.spacing.y = unit(0, "lines"),
+    strip.text = element_text(size = 8, margin = margin(0, 0, 0, 0))
   )
 
 
@@ -160,7 +162,7 @@ ggsave(
   filename = "output/plots_maps/pop_den_map.png",
   plot = popden_map,
   width = 8, 
-  height = 7, 
+  height = 6.5, 
   bg = "white", 
   dpi = 600
 )
@@ -172,9 +174,13 @@ ggsave(
 title_edu <- "Education level. Greater Mexico City, 2010."
 fill_edu <- "Median \nyears of education \nby quintile."
 
+# Legend labs
+edu_quintile_labs <- c('1 - Lowest', 2:4, '5 - Highest')
+
 # Plot grid
 edu_map <- grids_data_long %>%
   filter(!is.na(education_ntile)) %>%
+  mutate(education_ntile = factor(education_ntile, labels = edu_quintile_labs)) %>% 
   ggplot() +
   geom_sf(aes(fill = factor(education_ntile)), col = NA) +
   geom_sf(data = states, fill = NA, size = .4, col = "White") +
@@ -187,7 +193,7 @@ edu_map <- grids_data_long %>%
   scale_starshape(name = NULL) +
   scale_fill_viridis_d(option = "turbo", direction = -1, end = 0.95, begin = 0.15) +
   labs(
-    title = title_edu,
+    # title = title_edu,
     fill = fill_edu,
     # caption = caption_popden
   ) +
@@ -208,7 +214,9 @@ edu_map <- grids_data_long %>%
     legend.title = element_text(size = 9),
     legend.text = element_text(size = 8),
     legend.key.height = unit(.5, "cm"),
-    legend.key.width = unit(.2, "cm")
+    legend.key.width = unit(.2, "cm"),
+    panel.spacing.y = unit(0, "lines"),
+    strip.text = element_text(size = 8, margin = margin(0, 0, 0, 0))
   )
 
 # Save plot
@@ -216,7 +224,7 @@ ggsave(
   filename = "output/plots_maps/edu_decile_map.png",
   plot = edu_map,
   width = 8, 
-  height = 7, 
+  height = 6.5,
   bg = "white", 
   dpi = 600
 )

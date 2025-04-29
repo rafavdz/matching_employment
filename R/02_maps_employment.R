@@ -193,18 +193,18 @@ ggsave(
 # Title
 title_income <- "Median salary. Greater Mexico City, 2014."
 caption_income <- "Soruce: The Author based on Censos Economicos 2014 (INEGI, n.d.)"
-fill_income <- "Median salary \nby quintile"
+fill_income <- "Salary paid at \nestablisments by quintile"
 grids_data_long$avg_income <-
   ifelse(is.infinite(grids_data_long$avg_income), NA, grids_data_long$avg_income)
 
-# Estimate map breaks
-breaks_income <- BAMMtools::getJenksBreaks(grids_data_long$avg_income, 12)
+# Legend labs
+income_quintile_labs <- c('1 - Lowest', 2:4, '5 - Highest')
 
 # Plot grid
 income_map <- grids_data_long %>%
   filter(!is.na(avg_income)) %>%
   mutate(
-    income_br = cut(avg_income, breaks_income, include.lowest = TRUE)
+    inc_ntile = factor(inc_ntile, labels = income_quintile_labs)
   ) %>%
   ggplot() +
   geom_sf(aes(fill = factor(inc_ntile)), col = NA) +
@@ -217,7 +217,7 @@ income_map <- grids_data_long %>%
   scale_fill_viridis_d(option = "turbo", direction = -1, end = 0.95, begin = 0.15) +
   guides(fill = guide_legend(order = 1)) +
   labs(
-    title = title_income,
+    # title = title_income,
     fill = fill_income,
     # caption = caption_income
   ) +
@@ -238,7 +238,9 @@ income_map <- grids_data_long %>%
     legend.title = element_text(size = 9),
     legend.text = element_text(size = 8),
     legend.key.height = unit(.5, "cm"),
-    legend.key.width = unit(.25, "cm")
+    legend.key.width = unit(.25, "cm"),
+    panel.spacing.y = unit(0, "lines"),
+    strip.text = element_text(size = 8, margin = margin(0, 0, 0, 0))
   )
 
 # Save plot
@@ -246,7 +248,7 @@ ggsave(
   filename = "output/plots_maps/inc_decile_map.png",
   plot = income_map,
   width = 8, 
-  height = 7, 
+  height = 6.5, 
   bg = "white", 
   dpi = 600
 )
