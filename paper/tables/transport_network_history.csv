@@ -1,11 +1,11 @@
-﻿agency,route_short_name,stage,stage_from,stage_to,announced,construction,operation,time_diff,period_2,based_on_gtfs
+agency,route_short_name,stage,stage_from,stage_to,announced,construction,operation,time_diff,period_2,based_on_gtfs
 MB,8,1,Alameda Oriente,Toreo,01/06/2020,,,,,
 Metro,12,2,Mixcoac,Observatorio,01/06/2020,,,,,
 MXB,4,1,Tecámac,Indios Verdes,01/11/2019,01/06/2014,,,,
 MB,4,2,San Lázaro,Pantitlán,01/10/2019,,,,,
 MB,5,2,San Lázaro,Prepa 1,01/11/2016,01/08/2017,,,,
 MB,3,2,Etiopia,Eje 8 Popocatépetl,,,,,,
-MB,7,1,Indio Verdes,Campo Marte,01/06/2015,01/01/2017,01/03/2018,26,2018-2019,20190109
+MB,7,1,Indios Verdes,Campo Marte,01/06/2015,01/01/2017,01/03/2018,26,2018-2019,20190109
 MB,6,1,El Rosario ,Martín Carrera,,01/08/2014,01/01/2016,12,2016-2018,20170902
 MXB,2,1,La Quebrada,Las Americas,,,01/01/2015,14,2015-2016,20150128
 MB,5,1,Río de los Remedios,San Lázaro,,01/03/2013,01/11/2013,6,2013-2015,20141230
@@ -17,7 +17,7 @@ MXB,1,1,Ciudad Azteca,Ojo de Agua,,,01/10/2010,10,2010-2012,20131021
 MB,2,1,Tepalcates,Tacubaya,01/01/2007,01/09/2007,01/12/2009,19,before-2010,20131021
 SUB,1,1,Buenavista,Cuautitlán,,,01/05/2008,2,before-2010,20131021
 MB,1,2,Dr. Galvez,El Caminero,,,01/03/2008,33,before-2010,20131021
-MB,1,1,Indio Verdes,Dr. Galvez,,,01/06/2005,55,before-2010,20131021
+MB,1,1,Indios Verdes,Dr. Galvez,,,01/06/2005,55,before-2010,20131021
 Metro,B,2,Villa de Aragón,Ciudad Azteca,,,01/11/2000,11,before-2010,20131021
 Metro,B,1,Buenavista,Villa de Aragón,,,01/12/1999,65,before-2010,20131021
 Metro,8,1,Garibaldi,Constitución de 1917,,,01/07/1994,35,before-2010,20131021

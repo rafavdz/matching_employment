@@ -3,17 +3,17 @@ title: "Assessing public transport infrastructure: the role of employment matchi
 authors:
   - name: J Rafael Verduzco-Torres
     thanks: "Corresponding author. Email: JoseRafael.Verduzco-Torres@glasgow.ac.uk."
-    department: Urban Analytics
+    department: Urban Studies & Social Policy
     affiliation: University of Glasgow
     location: Hillhead, Glasgow G12 8RZ, United Kingdom
     email: JoseRafael.Verduzco-Torres@glasgow.ac.uk
   - name: David Philip McArthur
-    department: Urban Analytics
+    department: Urban Studies & Social Policy
     affiliation: University of Glasgow
     location: Hillhead, Glasgow G12 8RZ, United Kingdom
     email: David.McArthur@glasgow.ac.uk
 abstract: |
- The definition of accessibility encompasses the role of the attractiveness of opportunities at potential destinations that people consider valuable. This study revises the common assumption in empirical studies that residents are equally attracted to all types of employment and examines its implications for public transport evaluation from a social equity perspective. Additionally, the role of the modifiable areal unit problem (MAUP) is also explored in this relationship. The study draws on the case of Greater Mexico City over a ten-year period, in which seven temporal stages of the main public transport network are examined. The key results highlight a significant difference between accessibility measures that account for employment matching and those that do not, though these distinctions diminish when lower spatial resolutions are used. The spatial analysis also shows that the differences are consistently larger for lower-educated populations. In terms of public transport infrastructure evaluation over time, the study confirms that relying on simple measures, such as the global average, may overlook critical transport equity insights. Additionally, the impact of including employment matching in equity analyses varies, with outcomes differing case by case. Depending on the accessibility measure, the analyses show that a transport improvement might have progressive effects with one measure, while another measure may indicate regressive effects, or both measures can sometimes align. Overall, the comparisons between measures suggest their complementarity in equity evaluations. The findings have implications for policy analysts, given the systematic differences in how transport projects tend to affect less-educated populations and the heterogeneity in the type of population impacted by specific transport projects on a case-by-case basis.
+ The definition of accessibility encompasses the role of opportunities at potential destinations that people consider valuable. This study revises the common assumption in empirical studies that residents are equally attracted to all types of employment and examines its implications for public transport evaluation from a social equity perspective. Additionally, the role of the modifiable areal unit problem (MAUP) is also explored in this relationship. The study draws on the case of Greater Mexico City over a ten-year period, in which seven temporal stages of the main public transport network are examined. The key results highlight a significant difference between accessibility measures that account for employment matching and those that do not, though these distinctions diminish when lower spatial resolutions are used. The spatial analysis also shows that the differences are consistently larger for lower-educated populations. In terms of public transport infrastructure evaluation over time, the study confirms that relying on simple measures, such as the global average, may overlook critical transport equity insights. Additionally, the impact of including employment matching in equity analyses varies, with outcomes differing case by case. Depending on the accessibility measure, the analyses show that a transport improvement might have progressive effects with one measure, while another measure may indicate regressive effects, or both measures can sometimes align. Overall, the comparisons between measures suggest their complementarity in equity evaluations. The findings have implications for researchers and policy analysts, given the systematic differences in how transport projects tend to affect less-educated populations and the heterogeneity in the type of population impacted by specific transport projects on a case-by-case basis.
  
 keywords:
   - Accessibility
@@ -61,7 +61,7 @@ format2 <-
 
 # Introduction
 
-A key function of a transport system is to provide people with access to different locations at different times so that they can physically participate in a diverse range of activities [@Miller2018]. Accessibility therefore has an important role to play in transport planning, and various measures have been proposed (see @Geurs2023 for a summary). Location-based measures, which measure the level of accessibility to a particular type of activity available at a location, have been especially popular. They have been used to study the impacts of accessibility on property prices [@Osland2008], labour market outcomes [@Johnson2017], and social equity [@Tiznado-Aitken2021], among other things.
+A key function of a transport system is to provide people with access to different locations so that they can physically participate in a diverse range of activities [@Miller2018]. Accessibility therefore has an important role to play in transport planning, and various measures have been proposed (see @Geurs2023 for a summary). Location-based measures, which indicate the level of accessibility to a particular type of activity available at a location, have been especially popular. They have been used to study the impacts of accessibility on property prices [@Osland2008], labour market outcomes [@Johnson2017], and social equity [@Tiznado-Aitken2021], among other things.
 
 A common application of the measures is to quantify accessibility to employment. Measuring a location's access to jobs can incorporate a wide range of factors. A simple measure might take into account only the location of employment opportunities and a measure of impedance (e.g., travel time) incurred to reach those destinations from a given origin. One assumption implicit in such a simple measure, and one common in empirical studies, is that all types of employment are potentially relevant for, and equally attractive to, everyone. Studies examining the implications of this assumption are rare; See @Osland2010a or @Theriault2013 for examples.
 
@@ -79,7 +79,7 @@ The remainder of the paper is structured as follows. Section \ref{sec:lit_review
 
 <!-- The employment mismatch literature distinguishes two types of imbalances, namely a numerical (objective) and an expectation one (subjective) [@Bian2020]. The first focuses on the under- or over-supply of job openings in relation to job seekers. Meanwhile, the expectation imbalance goes beyond numeric imbalances by considering a mismatch in expectations between recruiters and job seekers in relation to a range of characteristics, e.g. payment, location, workload, skills, motivation. -->
 
-@Levinson2020 assert that accessibility measures "the ease of reaching valued destinations" (p. 130). This notion combines two fundamental elements, namely the ease of travel and the spatial dispersion of opportunities reflected in land use patterns, including services and other people, for example. Furthermore, this definition limits opportunities to those which are deemed valuable. Thus, the *for whom* question becomes relevant. In line with this discussion, @Theriault2013 provides a more explicit definition of accessibility, regarding it as “the ability that persons living in that area can, within an acceptable travel time, reach a satisfactory diversity of activity locations that are important to them” (p. 234).
+@Levinson2020 assert that accessibility measures "the ease of reaching valued destinations" (p. 130). This notion combines two fundamental elements, namely the ease of travel and the spatial dispersion of opportunities reflected in land use patterns, including services and other people, for example. Furthermore, this definition limits opportunities to those which are deemed valuable. Thus, the *for whom* question becomes relevant. In line with this discussion, @Theriault2013 provides a more explicit definition, regarding it as “the ability that persons living in that area can, within an acceptable travel time, reach a satisfactory diversity of activity locations that are important to them” (p. 234).
 
 The operationalisation of accessibility has taken various forms in the literature [@Geurs2004]. Infrastructure-based measures focus on the performance of the transport network, such as travel times or distances. Person-based measures consider individual constraints, such as time availability or personal mobility. Utility-based measures, rooted in economic theory, estimate the perceived benefit or satisfaction individuals derive from accessing opportunities. Place-based measures are frequently used in empirical studies due to their consistency with conceptual definitions, flexibility, and ease of interpretation, enhancing their impact on transport policy. These measures characterise space based on mobility constraints or enablers, combined with land use patterns, by dividing regions into spatial units or zones. This review focuses on location-based measures due to their relevance in policy discussions and their ability to account for people's abilities and preferences [@Paez2012].
 
@@ -215,7 +215,7 @@ The MPTN stages and corresponding corridors are shown in Figure \ref{fig:evoluti
   \centering
   \includegraphics[width=0.95\textwidth]{figures/evo_transit_network-JGS.png}
   \caption{Temporal stages of the main public transport network. Greater Mexico City, 2010 to 2019.}
-  \footnotesize{\textit{Source:} The author based on Semovi (n.d.) and SITRAMyTEM (n.d.).}
+  \footnotesize{\textit{Source:} The authors based on Semovi (n.d.) and SITRAMyTEM (n.d.).}
   \label{fig:evolution-network}
 \end{figure}
 
@@ -631,6 +631,18 @@ Future work is recommended to examine the sensitivity of results when using indi
 The temporal divergences among the data sources used are acknowledged, i.e. the demographic, economic, and transport data. This reflects a common limitation in urban accessibility studies, as disaggregate socio-demographic data are commonly available from decennial censuses. Specifically, the operational information for three Mexibus corridors (out of 24 in the MPTN) is extrapolated over time due to the lack of detailed historical records, with periods ranging from 4 (MXB-LII) to 9 years (MXB-LI). Substantial operational changes during these periods could lead to misrepresentation in the accessibility models. While this remains a limitation, its impact is restricted to some geographies (northern areas) and earlier stages.
 
 The analysis intentionally excludes the COVID-19 period, which likely incentivised changes in land use and mobility patterns. The authors are not aware of any major political or economic shocks during the study period that would have significantly altered land-use structures or undermined the relationships examined.
+
+# Code availability{-}
+
+All analyses were conducted using R (version 4.4.1). The source code for the analyses is openly available at the following GitHub repository: <https://github.com/rafavdz/matching_employment>.
+
+Access to the employment data from the 2014 Economic Census is subject to a license agreement with INEGI.
+
+# Acknowledgements{-}
+
+This study was supported by funding from the Economic and Social Research Council (ESRC) for the Urban Big Data Centre (grant numbers ES/L011921/1 and ES/S007105/1). Verduzco-Torres was supported by the scholarship 2018-000037-01EXTF-00438 awarded by the National Council of Science and Technology of Mexico (CONACYT), and by the University of Glasgow.
+
+The authors thank Dr Natalia Volkow, Director of Microdata at INEGI, and her team for making the 2014 Economic Census microdata available.
 
 # Appendix{-#appendix}
 
